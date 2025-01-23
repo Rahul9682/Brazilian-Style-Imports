@@ -1,0 +1,6 @@
+framework module Pods_Brazilian_Style_Imports_Brazilian_Style_ImportsUITests {
+  umbrella header "Pods-Brazilian Style Imports-Brazilian Style ImportsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

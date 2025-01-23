@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Brazilian_Style_Imports_Brazilian_Style_ImportsUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Brazilian_Style_Imports_Brazilian_Style_ImportsUITests
+@end
