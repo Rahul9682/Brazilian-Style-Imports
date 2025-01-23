@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="EmailCallTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailCallTableViewCell" rowHeight="144" id="KGk-i7-Jjw" customClass="EmailCallTableViewCell" customModule="QuickB2B_Wholesale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="195"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-Ui-1eb">
+                        <rect key="frame" x="0.0" y="8" width="347" height="169"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT MY ACCOUNT MANAGER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-C8-r98">
+                                <rect key="frame" x="0.0" y="0.0" width="347" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="wPB-ly-Yp8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6o-2b-DSb">
+                                <rect key="frame" x="12" y="50" width="323" height="32"/>
+                                <color key="backgroundColor" red="0.37489295010000001" green="0.37496256830000002" blue="0.3748886287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="vmQ-rM-I1w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9I8-M1-ya1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjW-hX-N7s">
+                                <rect key="frame" x="12" y="100" width="323" height="32"/>
+                                <color key="backgroundColor" red="0.37489295010000001" green="0.37496256830000002" blue="0.3748886287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="iKv-8X-pbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="callButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xwR-ra-LDi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XjW-hX-N7s" secondAttribute="trailing" constant="12" id="A9T-xj-CrJ"/>
+                            <constraint firstItem="wRF-C8-r98" firstAttribute="leading" secondItem="BAB-Ui-1eb" secondAttribute="leading" id="Goy-5A-1IX"/>
+                            <constraint firstItem="XjW-hX-N7s" firstAttribute="leading" secondItem="BAB-Ui-1eb" secondAttribute="leading" constant="12" id="LB0-CF-BiN"/>
+                            <constraint firstItem="XjW-hX-N7s" firstAttribute="top" secondItem="B6o-2b-DSb" secondAttribute="bottom" constant="18" id="S66-xh-5dK"/>
+                            <constraint firstItem="B6o-2b-DSb" firstAttribute="leading" secondItem="BAB-Ui-1eb" secondAttribute="leading" constant="12" id="YKc-ga-Wpj"/>
+                            <constraint firstAttribute="trailing" secondItem="B6o-2b-DSb" secondAttribute="trailing" constant="12" id="eKw-IB-gHC"/>
+                            <constraint firstAttribute="trailing" secondItem="wRF-C8-r98" secondAttribute="trailing" id="jcR-QS-lpe"/>
+                            <constraint firstItem="B6o-2b-DSb" firstAttribute="top" secondItem="wRF-C8-r98" secondAttribute="bottom" constant="18" id="k2o-Ec-5CD"/>
+                            <constraint firstItem="wRF-C8-r98" firstAttribute="top" secondItem="BAB-Ui-1eb" secondAttribute="top" id="u2J-os-okO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="BAB-Ui-1eb" secondAttribute="bottom" constant="18" id="Kaf-Fh-ia4"/>
+                    <constraint firstItem="BAB-Ui-1eb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UZq-MI-245"/>
+                    <constraint firstAttribute="trailing" secondItem="BAB-Ui-1eb" secondAttribute="trailing" id="iix-K2-YGF"/>
+                    <constraint firstItem="BAB-Ui-1eb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="u2i-zu-3gJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="callButton" destination="XjW-hX-N7s" id="Aeg-0u-MYV"/>
+                <outlet property="callButtonHeightConst" destination="iKv-8X-pbW" id="Tfw-Gi-zkw"/>
+                <outlet property="callButtonTopConst" destination="S66-xh-5dK" id="wxL-7v-69R"/>
+                <outlet property="emailButton" destination="B6o-2b-DSb" id="oBI-lx-7yI"/>
+                <outlet property="emailButtonHeightConst" destination="vmQ-rM-I1w" id="jEn-cf-5q6"/>
+                <outlet property="emailButtonTopConst" destination="k2o-Ec-5CD" id="cFP-N7-MKw"/>
+                <outlet property="viewContactMyAccount" destination="BAB-Ui-1eb" id="ZoH-qN-I9L"/>
+            </connections>
+            <point key="canvasLocation" x="2.1739130434782612" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

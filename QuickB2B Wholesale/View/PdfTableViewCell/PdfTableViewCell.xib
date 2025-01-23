@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PdfTableViewCell" rowHeight="158" id="KGk-i7-Jjw" customClass="PdfTableViewCell" customModule="QuickB2B_Wholesale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq4-jN-ZX3">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="32"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ffd-Xd-D4z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-bW-cmQ">
+                        <rect key="frame" x="122" y="50" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2yv-Ez-Vx3"/>
+                            <constraint firstAttribute="height" constant="80" id="jxl-7O-H6l"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Apj-bW-cmQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="RPF-pe-t6y"/>
+                    <constraint firstItem="Bq4-jN-ZX3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ut3-kZ-Qmg"/>
+                    <constraint firstItem="Apj-bW-cmQ" firstAttribute="top" secondItem="Bq4-jN-ZX3" secondAttribute="bottom" constant="18" id="ePV-ga-oYt"/>
+                    <constraint firstAttribute="trailing" secondItem="Bq4-jN-ZX3" secondAttribute="trailing" id="oFx-yO-BvD"/>
+                    <constraint firstItem="Bq4-jN-ZX3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v2j-Ri-jFC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="pdfTitleLabel" destination="Bq4-jN-ZX3" id="AvQ-kQ-g1D"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pdf" width="49.5" height="60"/>
+    </resources>
+</document>

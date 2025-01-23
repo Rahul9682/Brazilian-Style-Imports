@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OutletsTableViewCell" rowHeight="46" id="KGk-i7-Jjw" customClass="OutletsTableViewCell" customModule="QuickB2BWholesale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5h-dK-MGF">
+                        <rect key="frame" x="0.0" y="0.0" width="425" height="46"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZN2-Yf-dl1">
+                                <rect key="frame" x="397" y="13" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3Bx-jI-Vmd"/>
+                                    <constraint firstAttribute="height" constant="20" id="Dmz-fS-rzy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--NA--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i70-i2-RSh" customClass="RegularLabelSize16" customModule="QuickB2BWholesale" customModuleProvider="target">
+                                <rect key="frame" x="8" y="12.5" width="381" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9ia-Of-wkf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZN2-Yf-dl1" secondAttribute="trailing" constant="8" id="RKK-3i-dt4"/>
+                            <constraint firstItem="i70-i2-RSh" firstAttribute="centerY" secondItem="e5h-dK-MGF" secondAttribute="centerY" id="Y39-DW-ym6"/>
+                            <constraint firstItem="ZN2-Yf-dl1" firstAttribute="centerY" secondItem="e5h-dK-MGF" secondAttribute="centerY" id="ZZ0-57-J2O"/>
+                            <constraint firstItem="i70-i2-RSh" firstAttribute="leading" secondItem="e5h-dK-MGF" secondAttribute="leading" constant="8" id="smB-Yi-aSC"/>
+                            <constraint firstItem="ZN2-Yf-dl1" firstAttribute="leading" secondItem="i70-i2-RSh" secondAttribute="trailing" constant="8" id="ytV-yj-EK6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e5h-dK-MGF" secondAttribute="bottom" id="PdC-qz-5M5"/>
+                    <constraint firstItem="e5h-dK-MGF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bhn-vx-07M"/>
+                    <constraint firstAttribute="trailing" secondItem="e5h-dK-MGF" secondAttribute="trailing" id="icI-Id-n4a"/>
+                    <constraint firstItem="e5h-dK-MGF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zvY-Xx-YqS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImageView" destination="ZN2-Yf-dl1" id="O8d-dF-hDa"/>
+                <outlet property="outletNameLabel" destination="i70-i2-RSh" id="xFD-9O-okJ"/>
+            </connections>
+            <point key="canvasLocation" x="207.97101449275365" y="117.85714285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

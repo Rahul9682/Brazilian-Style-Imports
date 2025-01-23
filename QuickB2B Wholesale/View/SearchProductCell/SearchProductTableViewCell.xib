@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SearchProductTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchProductTableViewCell" id="KGk-i7-Jjw" customClass="SearchProductTableViewCell" customModule="QuickB2B_Wholesale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-3x-RB5">
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-It-UGS">
+                                <rect key="frame" x="289" y="0.0" width="70" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="4Hy-91-xcS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="13"/>
+                                <state key="normal" title="+ To List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addItemToListButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qD1-HJ-fxi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eog-lf-V37">
+                                <rect key="frame" x="16" y="8" width="273" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="m0t-Pw-frK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-pU-Sri">
+                                <rect key="frame" x="0.0" y="0.0" width="289" height="44"/>
+                                <connections>
+                                    <action selector="showItemDataButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cas-dO-nHJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eog-lf-V37" firstAttribute="leading" secondItem="Uab-3x-RB5" secondAttribute="leading" constant="16" id="0L2-lm-TPL"/>
+                            <constraint firstAttribute="bottom" secondItem="WdW-pU-Sri" secondAttribute="bottom" id="1KA-EV-BT2"/>
+                            <constraint firstItem="WdW-pU-Sri" firstAttribute="top" secondItem="Uab-3x-RB5" secondAttribute="top" id="3u4-5f-4N3"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBc-It-UGS" secondAttribute="trailing" id="EZ4-0d-wLe"/>
+                            <constraint firstItem="WdW-pU-Sri" firstAttribute="leading" secondItem="Uab-3x-RB5" secondAttribute="leading" id="HAi-Jv-wFc"/>
+                            <constraint firstItem="eog-lf-V37" firstAttribute="centerY" secondItem="Uab-3x-RB5" secondAttribute="centerY" id="UEE-ej-wJS"/>
+                            <constraint firstItem="ZBc-It-UGS" firstAttribute="leading" secondItem="WdW-pU-Sri" secondAttribute="trailing" id="b8P-lC-UBk"/>
+                            <constraint firstAttribute="bottom" secondItem="ZBc-It-UGS" secondAttribute="bottom" id="d1A-dD-XF4"/>
+                            <constraint firstItem="ZBc-It-UGS" firstAttribute="leading" secondItem="eog-lf-V37" secondAttribute="trailing" id="fRt-21-GWP"/>
+                            <constraint firstItem="ZBc-It-UGS" firstAttribute="top" secondItem="Uab-3x-RB5" secondAttribute="top" id="xXP-0K-AR8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Uab-3x-RB5" secondAttribute="trailing" id="CLb-Ll-oHc"/>
+                    <constraint firstItem="Uab-3x-RB5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SqC-Es-yim"/>
+                    <constraint firstAttribute="bottom" secondItem="Uab-3x-RB5" secondAttribute="bottom" id="iT3-OQ-0AH"/>
+                    <constraint firstItem="Uab-3x-RB5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rDw-xc-Zks"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addToListButton" destination="ZBc-It-UGS" id="RW0-eW-b3k"/>
+                <outlet property="itemsToAddLabel" destination="eog-lf-V37" id="Icw-Y2-UN4"/>
+                <outlet property="showItemDataButton" destination="WdW-pU-Sri" id="mAI-Lr-HH4"/>
+            </connections>
+            <point key="canvasLocation" x="160.1449275362319" y="84.375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

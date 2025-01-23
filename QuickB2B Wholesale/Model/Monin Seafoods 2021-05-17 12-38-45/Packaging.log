@@ -1,0 +1,1178 @@
+2021-05-17 07:07:38 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7ff5485da070; archive(resolved)='<IDEArchive: 0x7ff57af8f5e0>', distributionTask(resolved)='2', distributionDestination(resolved)='1', distributionMethod(resolved)='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7ff5485da070; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7ff5485efc10; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff57a4bafe0; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff5867a7a90; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff57ae0cd80; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff57bc60ac0; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff57b9d7260; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff54945a110; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff54607b4b0; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff573e6e3d0; teamID='42737QD2XU', teamName='Monin Seafoods Pty Ltd', teamType='Company', username='john@quiksys.com.au', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff57804eea0; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='(null)'>
+	<IDEDistributionContext: 0x7ff54850c8b0; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='(null)'>
+	<IDEDistributionContext: 0x7ff548526870; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='(null)'>
+	<IDEDistributionContext: 0x7ff5776a1cd0; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ff5742f7540>', team='(null)'>
+	<IDEDistributionContext: 0x7ff58e95e750; archive = '<IDEArchive: 0x7ff57af8f5e0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7ff5485da070>
+2021-05-17 07:07:38 +0000  Processing step: IDEDistributionCreateDestRootStep
+2021-05-17 07:07:38 +0000  Processing step: IDEDistributionCopyItemStep
+2021-05-17 07:07:38 +0000  Running /usr/bin/ditto '-V' '/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app'
+2021-05-17 07:07:38 +0000  >>> Copying /Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app 
+2021-05-17 07:07:38 +0000  copying file ./_CodeSignature/CodeResources ... 
+2021-05-17 07:07:38 +0000  50933 bytes for ./_CodeSignature/CodeResources
+2021-05-17 07:07:38 +0000  copying file ./OpenSans-Semibold.ttf ... 
+2021-05-17 07:07:38 +0000  221328 bytes for ./OpenSans-Semibold.ttf
+2021-05-17 07:07:38 +0000  copying file ./ItemTableViewCell.nib ... 
+2021-05-17 07:07:38 +0000  6794 bytes for ./ItemTableViewCell.nib
+2021-05-17 07:07:38 +0000  copying file ./CellFooterConfirmPayment.nib ... 
+2021-05-17 07:07:38 +0000  10840 bytes for ./CellFooterConfirmPayment.nib
+copying file ./AppIcon60x60@2x.png ... 
+2021-05-17 07:07:38 +0000  6045 bytes for ./AppIcon60x60@2x.png
+2021-05-17 07:07:38 +0000  copying file ./OpenSans-Light.ttf ... 
+2021-05-17 07:07:38 +0000  222412 bytes for ./OpenSans-Light.ttf
+2021-05-17 07:07:38 +0000  copying file ./GoogleService-Info.plist ... 
+2021-05-17 07:07:38 +0000  721 bytes for ./GoogleService-Info.plist
+2021-05-17 07:07:38 +0000  copying file ./CursiveSerif.ttf ... 
+2021-05-17 07:07:38 +0000  167968 bytes for ./CursiveSerif.ttf
+2021-05-17 07:07:38 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2021-05-17 07:07:38 +0000  3238 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2021-05-17 07:07:38 +0000  896 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2021-05-17 07:07:38 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2021-05-17 07:07:38 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2021-05-17 07:07:38 +0000  copying file ./Monin Seafoods ... 
+2021-05-17 07:07:38 +0000  11670976 bytes for ./Monin Seafoods
+2021-05-17 07:07:38 +0000  copying file ./AccordionHeaderView.nib ... 
+2021-05-17 07:07:38 +0000  1867 bytes for ./AccordionHeaderView.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  8060 bytes for ./Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/runtime.nib
+copying file ./Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  8060 bytes for ./Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  7559 bytes for ./Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  7563 bytes for ./Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  14224 bytes for ./Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/runtime.nib
+copying file ./Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  14224 bytes for ./Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/FeaturedPopupVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1043 bytes for ./Main.storyboardc/FeaturedPopupVC.nib/runtime.nib
+copying file ./Main.storyboardc/FeaturedPopupVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1043 bytes for ./Main.storyboardc/FeaturedPopupVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  29949 bytes for ./Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/runtime.nib
+copying file ./Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  30181 bytes for ./Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ConfirmDeliveryVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1045 bytes for ./Main.storyboardc/ConfirmDeliveryVC.nib/runtime.nib
+copying file ./Main.storyboardc/ConfirmDeliveryVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1045 bytes for ./Main.storyboardc/ConfirmDeliveryVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/PopupVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1035 bytes for ./Main.storyboardc/PopupVC.nib/runtime.nib
+copying file ./Main.storyboardc/PopupVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1035 bytes for ./Main.storyboardc/PopupVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  2084 bytes for ./Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/runtime.nib
+copying file ./Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  2084 bytes for ./Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1720 bytes for ./Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/runtime.nib
+copying file ./Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1720 bytes for ./Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/CalendarVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1010 bytes for ./Main.storyboardc/CalendarVC.nib/runtime.nib
+copying file ./Main.storyboardc/CalendarVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1010 bytes for ./Main.storyboardc/CalendarVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  5789 bytes for ./Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/runtime.nib
+copying file ./Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  5782 bytes for ./Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/PopupCancelConfirmVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1020 bytes for ./Main.storyboardc/PopupCancelConfirmVC.nib/runtime.nib
+copying file ./Main.storyboardc/PopupCancelConfirmVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1020 bytes for ./Main.storyboardc/PopupCancelConfirmVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  5154 bytes for ./Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  5158 bytes for ./Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  6297 bytes for ./Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/runtime.nib
+copying file ./Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  6297 bytes for ./Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  10745 bytes for ./Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  10750 bytes for ./Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  5956 bytes for ./Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  5951 bytes for ./Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  29657 bytes for ./Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  29850 bytes for ./Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/FirstViewController.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  989 bytes for ./Main.storyboardc/FirstViewController.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/FirstViewController.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  989 bytes for ./Main.storyboardc/FirstViewController.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/ConfirmPaymentVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1180 bytes for ./Main.storyboardc/ConfirmPaymentVC.nib/runtime.nib
+copying file ./Main.storyboardc/ConfirmPaymentVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1180 bytes for ./Main.storyboardc/ConfirmPaymentVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  14149 bytes for ./Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  14124 bytes for ./Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  6727 bytes for ./Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/runtime.nib
+copying file ./Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  6731 bytes for ./Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/UsersListVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  981 bytes for ./Main.storyboardc/UsersListVC.nib/runtime.nib
+copying file ./Main.storyboardc/UsersListVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  981 bytes for ./Main.storyboardc/UsersListVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ChangePasswordVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  986 bytes for ./Main.storyboardc/ChangePasswordVC.nib/runtime.nib
+copying file ./Main.storyboardc/ChangePasswordVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  986 bytes for ./Main.storyboardc/ChangePasswordVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/EditProfileVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  983 bytes for ./Main.storyboardc/EditProfileVC.nib/runtime.nib
+copying file ./Main.storyboardc/EditProfileVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  983 bytes for ./Main.storyboardc/EditProfileVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/ViewController.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1062 bytes for ./Main.storyboardc/ViewController.nib/runtime.nib
+copying file ./Main.storyboardc/ViewController.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1062 bytes for ./Main.storyboardc/ViewController.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  7543 bytes for ./Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  7549 bytes for ./Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/SignUpVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1056 bytes for ./Main.storyboardc/SignUpVC.nib/runtime.nib
+copying file ./Main.storyboardc/SignUpVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1056 bytes for ./Main.storyboardc/SignUpVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  16198 bytes for ./Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  16192 bytes for ./Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/FeaturedVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  980 bytes for ./Main.storyboardc/FeaturedVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/FeaturedVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  980 bytes for ./Main.storyboardc/FeaturedVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  4184 bytes for ./Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  4187 bytes for ./Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/SignUpNewVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1011 bytes for ./Main.storyboardc/SignUpNewVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/SignUpNewVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1011 bytes for ./Main.storyboardc/SignUpNewVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ShowDataVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1008 bytes for ./Main.storyboardc/ShowDataVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ShowDataVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1008 bytes for ./Main.storyboardc/ShowDataVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  3691 bytes for ./Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/runtime.nib
+copying file ./Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  3696 bytes for ./Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/DeleteSupplierVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  986 bytes for ./Main.storyboardc/DeleteSupplierVC.nib/runtime.nib
+copying file ./Main.storyboardc/DeleteSupplierVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  986 bytes for ./Main.storyboardc/DeleteSupplierVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/OrderVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  977 bytes for ./Main.storyboardc/OrderVC.nib/runtime.nib
+copying file ./Main.storyboardc/OrderVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  977 bytes for ./Main.storyboardc/OrderVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  5283 bytes for ./Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/runtime.nib
+copying file ./Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  5290 bytes for ./Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/LinksVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1055 bytes for ./Main.storyboardc/LinksVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/LinksVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1055 bytes for ./Main.storyboardc/LinksVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/InfoVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1006 bytes for ./Main.storyboardc/InfoVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/InfoVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1006 bytes for ./Main.storyboardc/InfoVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/LeftMenuVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  2224 bytes for ./Main.storyboardc/LeftMenuVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/LeftMenuVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  2229 bytes for ./Main.storyboardc/LeftMenuVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  6533 bytes for ./Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/runtime.nib
+copying file ./Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  6535 bytes for ./Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  8875 bytes for ./Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/runtime.nib
+copying file ./Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  8876 bytes for ./Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  7123 bytes for ./Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  7124 bytes for ./Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/DashboardVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1406 bytes for ./Main.storyboardc/DashboardVC.nib/runtime.nib
+copying file ./Main.storyboardc/DashboardVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1406 bytes for ./Main.storyboardc/DashboardVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  37634 bytes for ./Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/runtime.nib
+copying file ./Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  37627 bytes for ./Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  22995 bytes for ./Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  22984 bytes for ./Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ShowThankYouPopUpVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1047 bytes for ./Main.storyboardc/ShowThankYouPopUpVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ShowThankYouPopUpVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1047 bytes for ./Main.storyboardc/ShowThankYouPopUpVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  27119 bytes for ./Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  27123 bytes for ./Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  6687 bytes for ./Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  6696 bytes for ./Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  8330 bytes for ./Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/runtime.nib
+copying file ./Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  8339 bytes for ./Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/PopupLoginRegisterVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1048 bytes for ./Main.storyboardc/PopupLoginRegisterVC.nib/runtime.nib
+copying file ./Main.storyboardc/PopupLoginRegisterVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1048 bytes for ./Main.storyboardc/PopupLoginRegisterVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/ForgotPasswordVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1064 bytes for ./Main.storyboardc/ForgotPasswordVC.nib/runtime.nib
+copying file ./Main.storyboardc/ForgotPasswordVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1064 bytes for ./Main.storyboardc/ForgotPasswordVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/WelcomeVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  979 bytes for ./Main.storyboardc/WelcomeVC.nib/runtime.nib
+copying file ./Main.storyboardc/WelcomeVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  979 bytes for ./Main.storyboardc/WelcomeVC.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/Info.plist ... 
+2021-05-17 07:07:38 +0000  1299 bytes for ./Main.storyboardc/Info.plist
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  5644 bytes for ./Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  5645 bytes for ./Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  6427 bytes for ./Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  6430 bytes for ./Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/SupplierNameVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  984 bytes for ./Main.storyboardc/SupplierNameVC.nib/runtime.nib
+2021-05-17 07:07:38 +0000  copying file ./Main.storyboardc/SupplierNameVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  984 bytes for ./Main.storyboardc/SupplierNameVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/LoginVC.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1055 bytes for ./Main.storyboardc/LoginVC.nib/runtime.nib
+copying file ./Main.storyboardc/LoginVC.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1055 bytes for ./Main.storyboardc/LoginVC.nib/objects-12.3+.nib
+copying file ./Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/runtime.nib ... 
+2021-05-17 07:07:38 +0000  1173 bytes for ./Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/runtime.nib
+copying file ./Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:38 +0000  1173 bytes for ./Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/objects-12.3+.nib
+2021-05-17 07:07:38 +0000  copying file ./Assets.car ... 
+2021-05-17 07:07:39 +0000  53281384 bytes for ./Assets.car
+copying file ./AppIcon76x76@2x~ipad.png ... 
+2021-05-17 07:07:39 +0000  7490 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./advantage book.ttf ... 
+2021-05-17 07:07:39 +0000  41976 bytes for ./advantage book.ttf
+2021-05-17 07:07:39 +0000  copying file ./OpenSans-Bold.ttf ... 
+2021-05-17 07:07:39 +0000  224592 bytes for ./OpenSans-Bold.ttf
+copying file ./LaunchImage-700-568h@2x.png ... 
+2021-05-17 07:07:39 +0000  15022 bytes for ./LaunchImage-700-568h@2x.png
+2021-05-17 07:07:39 +0000  copying file ./ConfirmPaymentHeadertableViewCell.nib ... 
+2021-05-17 07:07:39 +0000  4302 bytes for ./ConfirmPaymentHeadertableViewCell.nib
+copying file ./Frameworks/GoogleDataTransport.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/GoogleDataTransport.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/GoogleDataTransport.framework/GoogleDataTransport ... 
+2021-05-17 07:07:39 +0000  1165472 bytes for ./Frameworks/GoogleDataTransport.framework/GoogleDataTransport
+copying file ./Frameworks/GoogleDataTransport.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  761 bytes for ./Frameworks/GoogleDataTransport.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FBLPromises.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FBLPromises.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FBLPromises.framework/FBLPromises ... 
+2021-05-17 07:07:39 +0000  603936 bytes for ./Frameworks/FBLPromises.framework/FBLPromises
+copying file ./Frameworks/FBLPromises.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  744 bytes for ./Frameworks/FBLPromises.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseCore.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FirebaseCore.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseCore.framework/FirebaseCore ... 
+2021-05-17 07:07:39 +0000  658000 bytes for ./Frameworks/FirebaseCore.framework/FirebaseCore
+copying file ./Frameworks/FirebaseCore.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  745 bytes for ./Frameworks/FirebaseCore.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/GoogleUtilities.framework/GoogleUtilities ... 
+2021-05-17 07:07:39 +0000  1044960 bytes for ./Frameworks/GoogleUtilities.framework/GoogleUtilities
+copying file ./Frameworks/GoogleUtilities.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  753 bytes for ./Frameworks/GoogleUtilities.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FSCalendar.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FSCalendar.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FSCalendar.framework/FSCalendar ... 
+2021-05-17 07:07:39 +0000  1660448 bytes for ./Frameworks/FSCalendar.framework/FSCalendar
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FSCalendar.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  741 bytes for ./Frameworks/FSCalendar.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseMessaging.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FirebaseMessaging.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseMessaging.framework/FirebaseMessaging ... 
+2021-05-17 07:07:39 +0000  1158688 bytes for ./Frameworks/FirebaseMessaging.framework/FirebaseMessaging
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseMessaging.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  758 bytes for ./Frameworks/FirebaseMessaging.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/nanopb.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/nanopb.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/nanopb.framework/nanopb ... 
+2021-05-17 07:07:39 +0000  180288 bytes for ./Frameworks/nanopb.framework/nanopb
+copying file ./Frameworks/nanopb.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  737 bytes for ./Frameworks/nanopb.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/IQKeyboardManager.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/IQKeyboardManager.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/IQKeyboardManager.framework/IQKeyboardManager ... 
+2021-05-17 07:07:39 +0000  1169152 bytes for ./Frameworks/IQKeyboardManager.framework/IQKeyboardManager
+copying file ./Frameworks/IQKeyboardManager.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  757 bytes for ./Frameworks/IQKeyboardManager.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseInstallations.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FirebaseInstallations.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseInstallations.framework/FirebaseInstallations ... 
+2021-05-17 07:07:39 +0000  910688 bytes for ./Frameworks/FirebaseInstallations.framework/FirebaseInstallations
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseInstallations.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  765 bytes for ./Frameworks/FirebaseInstallations.framework/Info.plist
+copying file ./Frameworks/FirebaseInstanceID.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FirebaseInstanceID.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID ... 
+2021-05-17 07:07:39 +0000  1260784 bytes for ./Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseInstanceID.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  760 bytes for ./Frameworks/FirebaseInstanceID.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseCoreDiagnostics.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:39 +0000  1798 bytes for ./Frameworks/FirebaseCoreDiagnostics.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics ... 
+2021-05-17 07:07:39 +0000  200512 bytes for ./Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics
+2021-05-17 07:07:39 +0000  copying file ./Frameworks/FirebaseCoreDiagnostics.framework/Info.plist ... 
+2021-05-17 07:07:39 +0000  769 bytes for ./Frameworks/FirebaseCoreDiagnostics.framework/Info.plist
+2021-05-17 07:07:39 +0000  copying file ./OpenSans-Regular.ttf ... 
+2021-05-17 07:07:39 +0000  217360 bytes for ./OpenSans-Regular.ttf
+2021-05-17 07:07:39 +0000  copying file ./embedded.mobileprovision ... 
+9611 bytes for ./embedded.mobileprovision
+2021-05-17 07:07:39 +0000  copying file ./ItemTableViewCellWithoutPrice.nib ... 
+2021-05-17 07:07:39 +0000  3165 bytes for ./ItemTableViewCellWithoutPrice.nib
+copying file ./Info.plist ... 
+2021-05-17 07:07:39 +0000  2088 bytes for ./Info.plist
+2021-05-17 07:07:39 +0000  copying file ./ConfirmPaymentItemTableViewCell.nib ... 
+2021-05-17 07:07:39 +0000  4186 bytes for ./ConfirmPaymentItemTableViewCell.nib
+2021-05-17 07:07:39 +0000  copying file ./PkgInfo ... 
+2021-05-17 07:07:39 +0000  /usr/bin/ditto exited with 0
+2021-05-17 07:07:39 +0000  8 bytes for ./PkgInfo
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionEmbedProfileStep
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff545885a80; bundleID='org.cocoapods.FBLPromises', path='<DVTFilePath:0x7ff57df85190:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57bc6e200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586d4d6b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FBLPromises', executablePath='<DVTFilePath:0x7ff54982b740:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff577b930d0; bundleID='org.cocoapods.FSCalendar', path='<DVTFilePath:0x7ff541c8a890:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff571f7b420; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff58814fcb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58b892080>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FSCalendar', executablePath='<DVTFilePath:0x7ff58b8049a0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff5458b1510; bundleID='org.cocoapods.FirebaseCore', path='<DVTFilePath:0x7ff57dfc0780:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57a6cd920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586d4d6b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCore', executablePath='<DVTFilePath:0x7ff575ba5160:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff577b92f30; bundleID='org.cocoapods.FirebaseCoreDiagnostics', path='<DVTFilePath:0x7ff54648c340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff586e9dc10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586d93ac0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCoreDiagnostics', executablePath='<DVTFilePath:0x7ff546483480:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff545b378d0; bundleID='org.cocoapods.FirebaseInstallations', path='<DVTFilePath:0x7ff5450dbad0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff54669c710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586da1b50>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstallations', executablePath='<DVTFilePath:0x7ff545eb3340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff54829f170; bundleID='org.cocoapods.FirebaseInstanceID', path='<DVTFilePath:0x7ff545e95ab0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff546276390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586dd1890>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstanceID', executablePath='<DVTFilePath:0x7ff545e65c90:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff5463cc700; bundleID='org.cocoapods.FirebaseMessaging', path='<DVTFilePath:0x7ff547f40a70:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545961670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff577c6aa30; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff575f48fd0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseMessaging', executablePath='<DVTFilePath:0x7ff547f07690:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff5498b5070; bundleID='org.cocoapods.GoogleDataTransport', path='<DVTFilePath:0x7ff5496ed680:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff584e77390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586d0fab0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleDataTransport', executablePath='<DVTFilePath:0x7ff549a902f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff5461f84f0; bundleID='org.cocoapods.GoogleUtilities', path='<DVTFilePath:0x7ff5482f5de0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff562767bf0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586ded880>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleUtilities', executablePath='<DVTFilePath:0x7ff5908e4070:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff5482c01b0; bundleID='org.cocoapods.IQKeyboardManager', path='<DVTFilePath:0x7ff545e94bf0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5730c6af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586d811d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.IQKeyboardManager', executablePath='<DVTFilePath:0x7ff5459680d0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ff54581a7b0; bundleID='org.cocoapods.nanopb', path='<DVTFilePath:0x7ff545e7e8f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5497d74b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff586d106f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.nanopb', executablePath='<DVTFilePath:0x7ff578230490:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionInfoPlistStep
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Monin Seafoods' '-r' '-o' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Monin Seafoods'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionSymbolsStep
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionAppThinningStep
+2021-05-17 07:07:39 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionArchThinningStep
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FBLPromises" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FSCalendar" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FirebaseCore" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FirebaseCoreDiagnostics" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FirebaseInstallations" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FirebaseInstanceID" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "FirebaseMessaging" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "GoogleDataTransport" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "GoogleUtilities" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "IQKeyboardManager" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "nanopb" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Monin Seafoods' '-verify_arch' 'arm64e'
+2021-05-17 07:07:39 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-05-17 07:07:39 +0000  Skipping architecture thinning for item "Monin Seafoods" because arch "arm64e" wasn't found
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionODRStep
+2021-05-17 07:07:39 +0000  Processing step: IDEDistributionStripXattrsStep
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff545885a80; bundleID='org.cocoapods.FBLPromises', path='<DVTFilePath:0x7ff57df85190:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57bc6e200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff549f77fd0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FBLPromises', executablePath='<DVTFilePath:0x7ff54982b740:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff577b930d0; bundleID='org.cocoapods.FSCalendar', path='<DVTFilePath:0x7ff541c8a890:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff571f7b420; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff549f0b560>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FSCalendar', executablePath='<DVTFilePath:0x7ff58b8049a0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff5458b1510; bundleID='org.cocoapods.FirebaseCore', path='<DVTFilePath:0x7ff57dfc0780:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57a6cd920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff549f9f5e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCore', executablePath='<DVTFilePath:0x7ff575ba5160:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff577b92f30; bundleID='org.cocoapods.FirebaseCoreDiagnostics', path='<DVTFilePath:0x7ff54648c340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff586e9dc10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545511f20; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff5780b2920>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCoreDiagnostics', executablePath='<DVTFilePath:0x7ff546483480:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff545b378d0; bundleID='org.cocoapods.FirebaseInstallations', path='<DVTFilePath:0x7ff5450dbad0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff54669c710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545511f20; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff5455510e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstallations', executablePath='<DVTFilePath:0x7ff545eb3340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff54829f170; bundleID='org.cocoapods.FirebaseInstanceID', path='<DVTFilePath:0x7ff545e95ab0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff546276390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff549f1ac80>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstanceID', executablePath='<DVTFilePath:0x7ff545e65c90:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff5463cc700; bundleID='org.cocoapods.FirebaseMessaging', path='<DVTFilePath:0x7ff547f40a70:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545961670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff549f740d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseMessaging', executablePath='<DVTFilePath:0x7ff547f07690:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff5498b5070; bundleID='org.cocoapods.GoogleDataTransport', path='<DVTFilePath:0x7ff5496ed680:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff584e77390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58b91e280>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleDataTransport', executablePath='<DVTFilePath:0x7ff549a902f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff5461f84f0; bundleID='org.cocoapods.GoogleUtilities', path='<DVTFilePath:0x7ff5482f5de0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff562767bf0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff549f0b560>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleUtilities', executablePath='<DVTFilePath:0x7ff5908e4070:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff5482c01b0; bundleID='org.cocoapods.IQKeyboardManager', path='<DVTFilePath:0x7ff545e94bf0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5730c6af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5793f7380; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58ff671e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.IQKeyboardManager', executablePath='<DVTFilePath:0x7ff5459680d0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff54581a7b0; bundleID='org.cocoapods.nanopb', path='<DVTFilePath:0x7ff545e7e8f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5497d74b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545511f20; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54556b670>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.nanopb', executablePath='<DVTFilePath:0x7ff578230490:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb'>', hardenedRuntime='0'>'>
+2021-05-17 07:07:39 +0000  Running /usr/bin/xattr '-crs' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app'
+2021-05-17 07:07:40 +0000  /usr/bin/xattr exited with 0
+2021-05-17 07:07:40 +0000  Processing step: IDEDistributionCodesignStep
+2021-05-17 07:07:40 +0000  Entitlements for <IDEDistributionItem: 0x7ff545885a80; bundleID='org.cocoapods.FBLPromises', path='<DVTFilePath:0x7ff57df85190:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57bc6e200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff546043db0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff545542e00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FBLPromises', executablePath='<DVTFilePath:0x7ff54982b740:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:40 +0000  Entitlements for <IDEDistributionItem: 0x7ff545885a80; bundleID='org.cocoapods.FBLPromises', path='<DVTFilePath:0x7ff57df85190:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57bc6e200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff545798e80>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FBLPromises', executablePath='<DVTFilePath:0x7ff54982b740:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:40 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff545885a80; bundleID='org.cocoapods.FBLPromises', path='<DVTFilePath:0x7ff57df85190:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57bc6e200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e36a90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54578d3d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FBLPromises', executablePath='<DVTFilePath:0x7ff54982b740:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~tBxltR
+2021-05-17 07:07:40 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~tBxltR' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework'
+2021-05-17 07:07:40 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FBLPromises]
+2021-05-17 07:07:40 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:40 +0000  Entitlements for <IDEDistributionItem: 0x7ff577b930d0; bundleID='org.cocoapods.FSCalendar', path='<DVTFilePath:0x7ff541c8a890:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff571f7b420; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff547dd1350; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff573e94f60>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FSCalendar', executablePath='<DVTFilePath:0x7ff58b8049a0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:40 +0000  Entitlements for <IDEDistributionItem: 0x7ff577b930d0; bundleID='org.cocoapods.FSCalendar', path='<DVTFilePath:0x7ff541c8a890:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff571f7b420; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff546043db0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57de22a30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FSCalendar', executablePath='<DVTFilePath:0x7ff58b8049a0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:40 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff577b930d0; bundleID='org.cocoapods.FSCalendar', path='<DVTFilePath:0x7ff541c8a890:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff571f7b420; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff547fe8d70; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54552cb70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FSCalendar', executablePath='<DVTFilePath:0x7ff58b8049a0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~zCqgtQ
+2021-05-17 07:07:40 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~zCqgtQ' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework'
+2021-05-17 07:07:40 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FSCalendar]
+2021-05-17 07:07:40 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:40 +0000  Entitlements for <IDEDistributionItem: 0x7ff5458b1510; bundleID='org.cocoapods.FirebaseCore', path='<DVTFilePath:0x7ff57dfc0780:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57a6cd920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff58814fcb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57239bfc0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCore', executablePath='<DVTFilePath:0x7ff575ba5160:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:40 +0000  Entitlements for <IDEDistributionItem: 0x7ff5458b1510; bundleID='org.cocoapods.FirebaseCore', path='<DVTFilePath:0x7ff57dfc0780:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57a6cd920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c74f070>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCore', executablePath='<DVTFilePath:0x7ff575ba5160:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:40 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff5458b1510; bundleID='org.cocoapods.FirebaseCore', path='<DVTFilePath:0x7ff57dfc0780:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff57a6cd920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e36a90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff545798e80>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCore', executablePath='<DVTFilePath:0x7ff575ba5160:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~92tVGz
+2021-05-17 07:07:40 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~92tVGz' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework'
+2021-05-17 07:07:41 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FirebaseCore]
+2021-05-17 07:07:41 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff577b92f30; bundleID='org.cocoapods.FirebaseCoreDiagnostics', path='<DVTFilePath:0x7ff54648c340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff586e9dc10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54a84cc40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCoreDiagnostics', executablePath='<DVTFilePath:0x7ff546483480:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff577b92f30; bundleID='org.cocoapods.FirebaseCoreDiagnostics', path='<DVTFilePath:0x7ff54648c340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff586e9dc10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff54606b5a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c579f70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCoreDiagnostics', executablePath='<DVTFilePath:0x7ff546483480:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:41 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff577b92f30; bundleID='org.cocoapods.FirebaseCoreDiagnostics', path='<DVTFilePath:0x7ff54648c340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff586e9dc10; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e36a90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c724520>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseCoreDiagnostics', executablePath='<DVTFilePath:0x7ff546483480:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~ZKRnnm
+2021-05-17 07:07:41 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~ZKRnnm' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'
+2021-05-17 07:07:41 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FirebaseCoreDiagnostics]
+2021-05-17 07:07:41 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff545b378d0; bundleID='org.cocoapods.FirebaseInstallations', path='<DVTFilePath:0x7ff5450dbad0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff54669c710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff54606b5a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57ded7720>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstallations', executablePath='<DVTFilePath:0x7ff545eb3340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff545b378d0; bundleID='org.cocoapods.FirebaseInstallations', path='<DVTFilePath:0x7ff5450dbad0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff54669c710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff547dd1350; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff572323d40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstallations', executablePath='<DVTFilePath:0x7ff545eb3340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:41 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff545b378d0; bundleID='org.cocoapods.FirebaseInstallations', path='<DVTFilePath:0x7ff5450dbad0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff54669c710; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54a84cc40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstallations', executablePath='<DVTFilePath:0x7ff545eb3340:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~ZHQitj
+2021-05-17 07:07:41 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~ZHQitj' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'
+2021-05-17 07:07:41 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FirebaseInstallations]
+2021-05-17 07:07:41 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff54829f170; bundleID='org.cocoapods.FirebaseInstanceID', path='<DVTFilePath:0x7ff545e95ab0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff546276390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54a84cc40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstanceID', executablePath='<DVTFilePath:0x7ff545e65c90:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff54829f170; bundleID='org.cocoapods.FirebaseInstanceID', path='<DVTFilePath:0x7ff545e95ab0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff546276390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff54606b5a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c539920>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstanceID', executablePath='<DVTFilePath:0x7ff545e65c90:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:41 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff54829f170; bundleID='org.cocoapods.FirebaseInstanceID', path='<DVTFilePath:0x7ff545e95ab0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff546276390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e36a90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff543f82000>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseInstanceID', executablePath='<DVTFilePath:0x7ff545e65c90:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~IWXfIr
+2021-05-17 07:07:41 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~IWXfIr' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'
+2021-05-17 07:07:41 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FirebaseInstanceID]
+2021-05-17 07:07:41 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff5463cc700; bundleID='org.cocoapods.FirebaseMessaging', path='<DVTFilePath:0x7ff547f40a70:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545961670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5712336d0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57de947d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseMessaging', executablePath='<DVTFilePath:0x7ff547f07690:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff5463cc700; bundleID='org.cocoapods.FirebaseMessaging', path='<DVTFilePath:0x7ff547f40a70:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545961670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c74f070>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseMessaging', executablePath='<DVTFilePath:0x7ff547f07690:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:41 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff5463cc700; bundleID='org.cocoapods.FirebaseMessaging', path='<DVTFilePath:0x7ff547f40a70:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545961670; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e36a90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54571a720>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.FirebaseMessaging', executablePath='<DVTFilePath:0x7ff547f07690:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~k8KVty
+2021-05-17 07:07:41 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~k8KVty' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'
+2021-05-17 07:07:41 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FirebaseMessaging]
+2021-05-17 07:07:41 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff5498b5070; bundleID='org.cocoapods.GoogleDataTransport', path='<DVTFilePath:0x7ff5496ed680:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff584e77390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5793f7380; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58ff85050>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleDataTransport', executablePath='<DVTFilePath:0x7ff549a902f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:41 +0000  Entitlements for <IDEDistributionItem: 0x7ff5498b5070; bundleID='org.cocoapods.GoogleDataTransport', path='<DVTFilePath:0x7ff5496ed680:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff584e77390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c748f10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleDataTransport', executablePath='<DVTFilePath:0x7ff549a902f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:41 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff5498b5070; bundleID='org.cocoapods.GoogleDataTransport', path='<DVTFilePath:0x7ff5496ed680:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff584e77390; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e36a90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c76d340>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleDataTransport', executablePath='<DVTFilePath:0x7ff549a902f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~iTZrKj
+2021-05-17 07:07:41 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~iTZrKj' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'
+2021-05-17 07:07:42 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.GoogleDataTransport]
+2021-05-17 07:07:42 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff5461f84f0; bundleID='org.cocoapods.GoogleUtilities', path='<DVTFilePath:0x7ff5482f5de0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff562767bf0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54a84cc40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleUtilities', executablePath='<DVTFilePath:0x7ff5908e4070:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff5461f84f0; bundleID='org.cocoapods.GoogleUtilities', path='<DVTFilePath:0x7ff5482f5de0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff562767bf0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5712336d0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57decd520>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleUtilities', executablePath='<DVTFilePath:0x7ff5908e4070:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff5461f84f0; bundleID='org.cocoapods.GoogleUtilities', path='<DVTFilePath:0x7ff5482f5de0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff562767bf0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff547dd1350; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff574358ce0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.GoogleUtilities', executablePath='<DVTFilePath:0x7ff5908e4070:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~oW4QDs
+2021-05-17 07:07:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~oW4QDs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'
+2021-05-17 07:07:42 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.GoogleUtilities]
+2021-05-17 07:07:42 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff5482c01b0; bundleID='org.cocoapods.IQKeyboardManager', path='<DVTFilePath:0x7ff545e94bf0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5730c6af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54a84cc40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.IQKeyboardManager', executablePath='<DVTFilePath:0x7ff5459680d0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff5482c01b0; bundleID='org.cocoapods.IQKeyboardManager', path='<DVTFilePath:0x7ff545e94bf0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5730c6af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c724520>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.IQKeyboardManager', executablePath='<DVTFilePath:0x7ff5459680d0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff5482c01b0; bundleID='org.cocoapods.IQKeyboardManager', path='<DVTFilePath:0x7ff545e94bf0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5730c6af0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff58814fcb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff543f7c700>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.IQKeyboardManager', executablePath='<DVTFilePath:0x7ff5459680d0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~JFpQ0y
+2021-05-17 07:07:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~JFpQ0y' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'
+2021-05-17 07:07:42 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.IQKeyboardManager]
+2021-05-17 07:07:42 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff54581a7b0; bundleID='org.cocoapods.nanopb', path='<DVTFilePath:0x7ff545e7e8f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5497d74b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5712336d0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57dec20f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.nanopb', executablePath='<DVTFilePath:0x7ff578230490:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb'>', hardenedRuntime='0'>'>: {
+}
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff54581a7b0; bundleID='org.cocoapods.nanopb', path='<DVTFilePath:0x7ff545e7e8f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5497d74b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e2d6a0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c74f070>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.nanopb', executablePath='<DVTFilePath:0x7ff578230490:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb'>', hardenedRuntime='0'>'> are: {
+}
+2021-05-17 07:07:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff54581a7b0; bundleID='org.cocoapods.nanopb', path='<DVTFilePath:0x7ff545e7e8f0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff5497d74b0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5793f7380; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58ff671e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='(null)', teamID='42737QD2XU', identifier='org.cocoapods.nanopb', executablePath='<DVTFilePath:0x7ff578230490:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~jn6MU2
+2021-05-17 07:07:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~jn6MU2' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/nanopb.framework'
+2021-05-17 07:07:42 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/nanopb.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.nanopb]
+2021-05-17 07:07:42 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff546715d70; bundleID='com.QuikSys.Monin', path='<DVTFilePath:0x7ff545dc49c0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545f678f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff5712336d0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff57dec20f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='{
+    "application-identifier" = "42737QD2XU.com.QuikSys.Monin";
+    "aps-environment" = development;
+    "com.apple.developer.team-identifier" = 42737QD2XU;
+    "get-task-allow" = 1;
+}', teamID='42737QD2XU', identifier='com.QuikSys.Monin', executablePath='<DVTFilePath:0x7ff58897e110:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Monin Seafoods'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "42737QD2XU.com.QuikSys.Monin";
+    "aps-environment" = development;
+    "com.apple.developer.team-identifier" = 42737QD2XU;
+    "get-task-allow" = 1;
+}
+2021-05-17 07:07:42 +0000  Entitlements for <IDEDistributionItem: 0x7ff546715d70; bundleID='com.QuikSys.Monin', path='<DVTFilePath:0x7ff545dc49c0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545f678f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff549f8ab90; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff58c7186f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='{
+    "application-identifier" = "42737QD2XU.com.QuikSys.Monin";
+    "aps-environment" = development;
+    "com.apple.developer.team-identifier" = 42737QD2XU;
+    "get-task-allow" = 1;
+}', teamID='42737QD2XU', identifier='com.QuikSys.Monin', executablePath='<DVTFilePath:0x7ff58897e110:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Monin Seafoods'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "42737QD2XU.com.QuikSys.Monin";
+    "aps-environment" = development;
+    "com.apple.developer.team-identifier" = 42737QD2XU;
+    "get-task-allow" = 1;
+}
+2021-05-17 07:07:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff546715d70; bundleID='com.QuikSys.Monin', path='<DVTFilePath:0x7ff545dc49c0:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff545f678f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff545e5fbb0; name='Apple Development: John Valenti (9PJPQZNK5L)', hash='3327F76AF6B5BF3158E08055EB8F2A539700E105', serialNumber='<DVTSigningCertificateSerialNumber: 0x7ff54a806b30>', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2020-12-15 05:26:12 +0000''>', entitlements='{
+    "application-identifier" = "42737QD2XU.com.QuikSys.Monin";
+    "aps-environment" = development;
+    "com.apple.developer.team-identifier" = 42737QD2XU;
+    "get-task-allow" = 1;
+}', teamID='42737QD2XU', identifier='com.QuikSys.Monin', executablePath='<DVTFilePath:0x7ff58897e110:'/Users/Braintech/Library/Developer/Xcode/Archives/2021-05-17/Monin Seafoods 5-17-21, 12.36 PM.xcarchive/Products/Applications/Monin Seafoods.app/Monin Seafoods'>', hardenedRuntime='0'>'> to: /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~YxzEte
+2021-05-17 07:07:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '3327F76AF6B5BF3158E08055EB8F2A539700E105' '--entitlements' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/entitlements~~~YxzEte' '--preserve-metadata=identifier,flags,runtime' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app'
+2021-05-17 07:07:43 +0000  /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app: signed app bundle with Mach-O thin (arm64) [com.QuikSys.Monin]
+2021-05-17 07:07:43 +0000  /usr/bin/codesign exited with 0
+2021-05-17 07:07:43 +0000  Processing step: IDEDistributionZipODRItemStep
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-05-17 07:07:43 +0000  Processing step: IDEDistributionCreateIPAStep
+2021-05-17 07:07:43 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root' '/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Packages/Monin Seafoods.ipa'
+2021-05-17 07:07:43 +0000  >>> Copying /var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root 
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:43 +0000  50933 bytes for ./Payload/Monin Seafoods.app/_CodeSignature/CodeResources
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/OpenSans-Semibold.ttf ... 
+2021-05-17 07:07:43 +0000  221328 bytes for ./Payload/Monin Seafoods.app/OpenSans-Semibold.ttf
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/ItemTableViewCell.nib ... 
+6794 bytes for ./Payload/Monin Seafoods.app/ItemTableViewCell.nib
+copying file ./Payload/Monin Seafoods.app/CellFooterConfirmPayment.nib ... 
+10840 bytes for ./Payload/Monin Seafoods.app/CellFooterConfirmPayment.nib
+copying file ./Payload/Monin Seafoods.app/AppIcon60x60@2x.png ... 
+6045 bytes for ./Payload/Monin Seafoods.app/AppIcon60x60@2x.png
+copying file ./Payload/Monin Seafoods.app/OpenSans-Light.ttf ... 
+222412 bytes for ./Payload/Monin Seafoods.app/OpenSans-Light.ttf
+copying file ./Payload/Monin Seafoods.app/GoogleService-Info.plist ... 
+721 bytes for ./Payload/Monin Seafoods.app/GoogleService-Info.plist
+copying file ./Payload/Monin Seafoods.app/CursiveSerif.ttf ... 
+2021-05-17 07:07:43 +0000  167968 bytes for ./Payload/Monin Seafoods.app/CursiveSerif.ttf
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2021-05-17 07:07:43 +0000  3238 bytes for ./Payload/Monin Seafoods.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+896 bytes for ./Payload/Monin Seafoods.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Payload/Monin Seafoods.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+2021-05-17 07:07:43 +0000  copying file ./Payload/Monin Seafoods.app/Monin Seafoods ... 
+2021-05-17 07:07:43 +0000  1862848 bytes for ./Payload/Monin Seafoods.app/Monin Seafoods
+copying file ./Payload/Monin Seafoods.app/AccordionHeaderView.nib ... 
+2021-05-17 07:07:43 +0000  1867 bytes for ./Payload/Monin Seafoods.app/AccordionHeaderView.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/runtime.nib ... 
+2021-05-17 07:07:43 +0000  8060 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/objects-12.3+.nib ... 
+8060 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/s3f-kN-bUm-view-Mww-hJ-kNB.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/runtime.nib ... 
+7559 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/objects-12.3+.nib ... 
+7563 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Sjq-vx-vOG-view-vDb-Gu-8c9.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/runtime.nib ... 
+14224 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/objects-12.3+.nib ... 
+14224 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/E59-Tu-EZX-view-v9s-LN-eGM.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedPopupVC.nib/runtime.nib ... 
+1043 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedPopupVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedPopupVC.nib/objects-12.3+.nib ... 
+1043 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedPopupVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/runtime.nib ... 
+29949 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/objects-12.3+.nib ... 
+30181 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/fsb-tt-v8w-view-ZhW-3g-5C6.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmDeliveryVC.nib/runtime.nib ... 
+1045 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmDeliveryVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmDeliveryVC.nib/objects-12.3+.nib ... 
+1045 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmDeliveryVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/PopupVC.nib/runtime.nib ... 
+1035 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/PopupVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/PopupVC.nib/objects-12.3+.nib ... 
+1035 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/PopupVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/runtime.nib ... 
+2084 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/objects-12.3+.nib ... 
+2084 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-WJT-yG-LQ0.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/runtime.nib ... 
+2021-05-17 07:07:43 +0000  1720 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/objects-12.3+.nib ... 
+1720 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/UINavigationController-V59-Fb-L3E.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/CalendarVC.nib/runtime.nib ... 
+1010 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/CalendarVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/CalendarVC.nib/objects-12.3+.nib ... 
+1010 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/CalendarVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/runtime.nib ... 
+5789 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/objects-12.3+.nib ... 
+5782 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/CWG-nX-BKU-view-sun-N4-bia.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/PopupCancelConfirmVC.nib/runtime.nib ... 
+1020 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/PopupCancelConfirmVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/PopupCancelConfirmVC.nib/objects-12.3+.nib ... 
+1020 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/PopupCancelConfirmVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/runtime.nib ... 
+5154 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/objects-12.3+.nib ... 
+5158 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/yVM-n4-fTj-view-Gka-T4-FJb.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/runtime.nib ... 
+6297 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/objects-12.3+.nib ... 
+6297 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Bhi-JX-aEa-view-sdC-3n-VMP.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/runtime.nib ... 
+10745 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/objects-12.3+.nib ... 
+10750 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/c5f-GN-Gbt-view-Btv-bB-9TA.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/runtime.nib ... 
+5956 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/objects-12.3+.nib ... 
+5951 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/h46-Q7-k8a-view-Fkc-N1-ZQS.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/runtime.nib ... 
+29657 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/objects-12.3+.nib ... 
+29850 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/04H-Wy-o1d-view-fIY-7J-qS4.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/FirstViewController.nib/runtime.nib ... 
+989 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/FirstViewController.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/FirstViewController.nib/objects-12.3+.nib ... 
+989 bytes for ./Payload/Monin Seafoods.app/Main.storyboard
+2021-05-17 07:07:43 +0000  c/FirstViewController.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmPaymentVC.nib/runtime.nib ... 
+1180 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmPaymentVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmPaymentVC.nib/objects-12.3+.nib ... 
+1180 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ConfirmPaymentVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/runtime.nib ... 
+14149 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:43 +0000  14124 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/kbS-Eg-Dgs-view-I08-RZ-GDd.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/runtime.nib ... 
+6727 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/objects-12.3+.nib ... 
+6731 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Y6H-rr-hcc-view-RP1-2R-kJM.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/UsersListVC.nib/runtime.nib ... 
+981 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/UsersListVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/UsersListVC.nib/objects-12.3+.nib ... 
+981 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/UsersListVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ChangePasswordVC.nib/runtime.nib ... 
+986 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ChangePasswordVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ChangePasswordVC.nib/objects-12.3+.nib ... 
+986 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ChangePasswordVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/EditProfileVC.nib/runtime.nib ... 
+983 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/EditProfileVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/EditProfileVC.nib/objects-12.3+.nib ... 
+983 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/EditProfileVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ViewController.nib/runtime.nib ... 
+1062 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ViewController.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ViewController.nib/objects-12.3+.nib ... 
+1062 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ViewController.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/runtime.nib ... 
+7543 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/objects-12.3+.nib ... 
+7549 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/tmI-c9-u51-view-SHl-L2-awR.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpVC.nib/runtime.nib ... 
+1056 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpVC.nib/objects-12.3+.nib ... 
+1056 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/runtime.nib ... 
+16198 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/objects-12.3+.nib ... 
+16192 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/j0l-rX-7E7-view-kNU-V3-vDR.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedVC.nib/runtime.nib ... 
+980 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedVC.nib/objects-12.3+.nib ... 
+980 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/FeaturedVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/runtime.nib ... 
+4184 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/objects-12.3+.nib ... 
+2021-05-17 07:07:43 +0000  4187 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/g2s-gx-ri2-view-uWp-Li-yUQ.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpNewVC.nib/runtime.nib ... 
+1011 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpNewVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpNewVC.nib/objects-12.3+.nib ... 
+1011 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/SignUpNewVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ShowDataVC.nib/runtime.nib ... 
+1008 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ShowDataVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ShowDataVC.nib/objects-12.3+.nib ... 
+1008 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ShowDataVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/runtime.nib ... 
+3691 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/objects-12.3+.nib ... 
+3696 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/7P5-Cx-USr-view-2U8-ue-TxQ.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/DeleteSupplierVC.nib/runtime.nib ... 
+986 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/DeleteSupplierVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/DeleteSupplierVC.nib/objects-12.3+.nib ... 
+986 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/DeleteSupplierVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/OrderVC.nib/runtime.nib ... 
+977 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/OrderVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/OrderVC.nib/objects-12.3+.nib ... 
+977 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/OrderVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/runtime.nib ... 
+5283 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/objects-12.3+.nib ... 
+5290 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/u1c-Wh-fZC-view-mde-Jb-eGC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/LinksVC.nib/runtime.nib ... 
+1055 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/LinksVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/LinksVC.nib/objects-12.3+.nib ... 
+1055 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/LinksVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/InfoVC.nib/runtime.nib ... 
+1006 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/InfoVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/InfoVC.nib/objects-12.3+.nib ... 
+1006 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/InfoVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/LeftMenuVC.nib/runtime.nib ... 
+2224 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/LeftMenuVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/LeftMenuVC.nib/objects-12.3+.nib ... 
+2229 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/LeftMenuVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/runtime.nib ... 
+6533 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/objects-12.3+.nib ... 
+6535 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/JH9-yl-Lwv-view-Ta0-a1-ohc.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/runtime.nib ... 
+887
+2021-05-17 07:07:43 +0000  5 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/objects-12.3+.nib ... 
+8876 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/gva-5a-14U-view-lpl-K9-4b6.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/runtime.nib ... 
+7123 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/objects-12.3+.nib ... 
+7124 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Gnf-iD-PHf-view-3AI-Ou-1xy.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/DashboardVC.nib/runtime.nib ... 
+1406 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/DashboardVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/DashboardVC.nib/objects-12.3+.nib ... 
+1406 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/DashboardVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/runtime.nib ... 
+37634 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/objects-12.3+.nib ... 
+37627 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/2Pa-Ve-XUm-view-XQu-l4-P4O.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/runtime.nib ... 
+22995 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/objects-12.3+.nib ... 
+22984 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/fnf-R5-vIS-view-Bc4-0b-KFq.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ShowThankYouPopUpVC.nib/runtime.nib ... 
+1047 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ShowThankYouPopUpVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ShowThankYouPopUpVC.nib/objects-12.3+.nib ... 
+1047 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ShowThankYouPopUpVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/runtime.nib ... 
+2021-05-17 07:07:43 +0000  27119 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/objects-12.3+.nib ... 
+27123 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/VXO-jK-NIT-view-juO-PN-bQs.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/runtime.nib ... 
+6687 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/objects-12.3+.nib ... 
+6696 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/VYp-4F-9ew-view-B83-j9-CaF.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/runtime.nib ... 
+8330 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/objects-12.3+.nib ... 
+8339 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/BB1-jt-y8V-view-LFF-fh-PMh.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/PopupLoginRegisterVC.nib/runtime.nib ... 
+1048 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/PopupLoginRegisterVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/PopupLoginRegisterVC.nib/objects-12.3+.nib ... 
+1048 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/PopupLoginRegisterVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ForgotPasswordVC.nib/runtime.nib ... 
+1064 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ForgotPasswordVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/ForgotPasswordVC.nib/objects-12.3+.nib ... 
+1064 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/ForgotPasswordVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/WelcomeVC.nib/runtime.nib ... 
+979 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/WelcomeVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/WelcomeVC.nib/objects-12.3+.nib ... 
+979 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/WelcomeVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/Info.plist ... 
+1299 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Info.plist
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/runtime.nib ... 
+5644 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/objects-12.3+.nib ... 
+5645 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/hWK-cX-P7z-view-2od-nD-agi.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/runtime.nib ... 
+6427 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/objects-12.3+.nib ... 
+6430 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/gX1-Hr-Yt6-view-Gfv-sB-dx1.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/SupplierNameVC.nib/runtime.nib ... 
+984 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/SupplierNameVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/SupplierNameVC.nib/objects-12.3+.nib ... 
+984 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/SupplierNameVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/LoginVC.nib/runtime.nib ... 
+1055 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/LoginVC.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/LoginVC.nib/objects-12.3+.nib ... 
+1055 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/Logi
+2021-05-17 07:07:43 +0000  nVC.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/runtime.nib ... 
+1173 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/runtime.nib
+copying file ./Payload/Monin Seafoods.app/Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/objects-12.3+.nib ... 
+1173 bytes for ./Payload/Monin Seafoods.app/Main.storyboardc/JPZ-dk-HBf-view-SzD-Kp-PpS.nib/objects-12.3+.nib
+copying file ./Payload/Monin Seafoods.app/Assets.car ... 
+2021-05-17 07:07:45 +0000  53281384 bytes for ./Payload/Monin Seafoods.app/Assets.car
+copying file ./Payload/Monin Seafoods.app/AppIcon76x76@2x~ipad.png ... 
+2021-05-17 07:07:45 +0000  7490 bytes for ./Payload/Monin Seafoods.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/Monin Seafoods.app/advantage book.ttf ... 
+2021-05-17 07:07:45 +0000  41976 bytes for ./Payload/Monin Seafoods.app/advantage book.ttf
+copying file ./Payload/Monin Seafoods.app/OpenSans-Bold.ttf ... 
+2021-05-17 07:07:45 +0000  224592 bytes for ./Payload/Monin Seafoods.app/OpenSans-Bold.ttf
+copying file ./Payload/Monin Seafoods.app/LaunchImage-700-568h@2x.png ... 
+2021-05-17 07:07:45 +0000  15022 bytes for ./Payload/Monin Seafoods.app/LaunchImage-700-568h@2x.png
+copying file ./Payload/Monin Seafoods.app/ConfirmPaymentHeadertableViewCell.nib ... 
+2021-05-17 07:07:45 +0000  4302 bytes for ./Payload/Monin Seafoods.app/ConfirmPaymentHeadertableViewCell.nib
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport ... 
+2021-05-17 07:07:45 +0000  352768 bytes for ./Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/GoogleDataTransport
+copying file ./Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  761 bytes for ./Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises ... 
+2021-05-17 07:07:45 +0000  206032 bytes for ./Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/FBLPromises
+copying file ./Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  744 bytes for ./Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore ... 
+2021-05-17 07:07:45 +0000  210320 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/FirebaseCore
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  745 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities ... 
+2021-05-17 07:07:45 +0000  315216 bytes for ./Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/GoogleUtilities
+copying file ./Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  753 bytes for ./Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar ... 
+2021-05-17 07:07:45 +0000  482720 bytes for ./Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/FSCalendar
+copying file ./Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  741 bytes for ./Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework/Info.plist
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging ... 
+2021-05-17 07:07:45 +0000  345984 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/FirebaseMessaging
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  758 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/nanopb.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/nanopb.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb ... 
+2021-05-17 07:07:45 +0000  97632 bytes for ./Payload/Monin Seafoods.app/Frameworks/nanopb.framework/nanopb
+copying file ./Payload/Monin Seafoods.app/Frameworks/nanopb.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  737 bytes for ./Payload/Monin Seafoods.app/Frameworks/nanopb.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager ... 
+2021-05-17 07:07:45 +0000  373040 bytes for ./Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/IQKeyboardManager
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/Info.plist ... 
+757 bytes for ./Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations ... 
+2021-05-17 07:07:45 +0000  297088 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/FirebaseInstallations
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  765 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/_CodeSignature/CodeResources
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID ... 
+2021-05-17 07:07:45 +0000  365120 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/Info.plist ... 
+760 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework/Info.plist
+2021-05-17 07:07:45 +0000  copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/_CodeSignature/CodeResources ... 
+2021-05-17 07:07:45 +0000  1798 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/_CodeSignature/CodeResources
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics ... 
+2021-05-17 07:07:45 +0000  101248 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics
+copying file ./Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/Info.plist ... 
+2021-05-17 07:07:45 +0000  769 bytes for ./Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework/Info.plist
+copying file ./Payload/Monin Seafoods.app/OpenSans-Regular.ttf ... 
+2021-05-17 07:07:45 +0000  217360 bytes for ./Payload/Monin Seafoods.app/OpenSans-Regular.ttf
+copying file ./Payload/Monin Seafoods.app/embedded.mobileprovision ... 
+2021-05-17 07:07:45 +0000  9810 bytes for ./Payload/Monin Seafoods.app/embedded.mobileprovision
+copying file ./Payload/Monin Seafoods.app/ItemTableViewCellWithoutPrice.nib ... 
+2021-05-17 07:07:45 +0000  3165 bytes for ./Payload/Monin Seafoods.app/ItemTableViewCellWithoutPrice.nib
+copying file ./Payload/Monin Seafoods.app/Info.plist ... 
+2021-05-17 07:07:45 +0000  2088 bytes for ./Payload/Monin Seafoods.app/Info.plist
+copying file ./Payload/Monin Seafoods.app/ConfirmPaymentItemTableViewCell.nib ... 
+2021-05-17 07:07:45 +0000  4186 bytes for ./Payload/Monin Seafoods.app/ConfirmPaymentItemTableViewCell.nib
+copying file ./Payload/Monin Seafoods.app/PkgInfo ... 
+2021-05-17 07:07:45 +0000  8 bytes for ./Payload/Monin Seafoods.app/PkgInfo
+2021-05-17 07:07:45 +0000  /usr/bin/ditto exited with 0
+2021-05-17 07:07:45 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2021-05-17 07:07:45 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2021-05-17 07:07:45 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff578209190:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseMessaging.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff549a4d6b0:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/IQKeyboardManager.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff57825d170:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/nanopb.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff54a1b2b20:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FBLPromises.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff545547a50:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCore.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff5746fc5b0:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseCoreDiagnostics.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff549b0f0e0:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstanceID.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff5782560b0:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleDataTransport.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff549a11ea0:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FirebaseInstallations.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff54a1e7190:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/GoogleUtilities.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff547f2a370:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app/Frameworks/FSCalendar.framework'>
+2021-05-17 07:07:45 +0000  IDEDistributionItem init <DVTFilePath:0x7ff541c227d0:'/var/folders/ck/1sykmr6n45j37fdl1qc5zwcm0000gn/T/XcodeDistPipeline.~~~ECLB82/Root/Payload/Monin Seafoods.app'>
+2021-05-17 07:07:45 +0000  Processing step: IDEDistributionCreateManifestStep

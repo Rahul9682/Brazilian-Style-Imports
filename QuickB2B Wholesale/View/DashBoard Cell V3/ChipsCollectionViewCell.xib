@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChipsCollectionViewCell" id="gTV-IL-0wX" customClass="ChipsCollectionViewCell" customModule="Ezyfresh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etl-MA-Qrs">
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBr-aM-5tv">
+                                <rect key="frame" x="6" y="0.0" width="256" height="51"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQz-v3-Ic0">
+                                <rect key="frame" x="268" y="0.0" width="1" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="afz-Vq-v4e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rBr-aM-5tv" firstAttribute="top" secondItem="etl-MA-Qrs" secondAttribute="top" id="FUj-BB-3oD"/>
+                            <constraint firstAttribute="bottom" secondItem="rBr-aM-5tv" secondAttribute="bottom" id="Mti-ym-JAd"/>
+                            <constraint firstAttribute="trailing" secondItem="uQz-v3-Ic0" secondAttribute="trailing" id="PZs-Y0-Ann"/>
+                            <constraint firstItem="uQz-v3-Ic0" firstAttribute="top" secondItem="etl-MA-Qrs" secondAttribute="top" id="Tqi-Cx-gZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="uQz-v3-Ic0" secondAttribute="bottom" id="VPt-bT-8Bw"/>
+                            <constraint firstItem="rBr-aM-5tv" firstAttribute="leading" secondItem="etl-MA-Qrs" secondAttribute="leading" constant="6" id="cCs-Me-o9h"/>
+                            <constraint firstItem="uQz-v3-Ic0" firstAttribute="leading" secondItem="rBr-aM-5tv" secondAttribute="trailing" constant="6" id="kve-eI-N9t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="etl-MA-Qrs" secondAttribute="trailing" id="5bi-dE-eTM"/>
+                <constraint firstItem="etl-MA-Qrs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UTY-KY-nMl"/>
+                <constraint firstItem="etl-MA-Qrs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lR0-af-vLY"/>
+                <constraint firstAttribute="bottom" secondItem="etl-MA-Qrs" secondAttribute="bottom" id="tLM-Jk-ljq"/>
+            </constraints>
+            <size key="customSize" width="269" height="51"/>
+            <connections>
+                <outlet property="chipsLabel" destination="rBr-aM-5tv" id="GI2-z2-enm"/>
+                <outlet property="containerView" destination="etl-MA-Qrs" id="iYD-7e-a5G"/>
+                <outlet property="rightSeparatorView" destination="uQz-v3-Ic0" id="dp0-Hl-nbE"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="-19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+</document>

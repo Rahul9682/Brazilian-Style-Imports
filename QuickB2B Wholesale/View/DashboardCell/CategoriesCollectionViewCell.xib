@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CategoriesCollectionViewCell" reuseIdentifier="CategoriesCollectionViewCell" id="gTV-IL-0wX" customClass="CategoriesCollectionViewCell" customModule="QuickB2B_Wholesale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="229" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLB-WN-ggl">
+                        <rect key="frame" x="0.0" y="0.0" width="229" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4j-0n-5A1">
+                                <rect key="frame" x="228" y="9.5" width="1" height="21"/>
+                                <color key="backgroundColor" red="0.16823956370000001" green="0.58862674240000001" blue="0.83037418129999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="F8p-G7-e9u"/>
+                                    <constraint firstAttribute="width" constant="1" id="IG4-l2-1If"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUq-56-9YR">
+                                <rect key="frame" x="0.0" y="9.5" width="226" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KIe-SH-gSF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.16823956370000001" green="0.58862674240000001" blue="0.83037418129999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W4j-0n-5A1" secondAttribute="trailing" id="5qK-q3-8rH"/>
+                            <constraint firstItem="nUq-56-9YR" firstAttribute="centerY" secondItem="HLB-WN-ggl" secondAttribute="centerY" id="UVi-G0-8Ow"/>
+                            <constraint firstItem="nUq-56-9YR" firstAttribute="leading" secondItem="HLB-WN-ggl" secondAttribute="leading" id="dbb-gs-30N"/>
+                            <constraint firstItem="W4j-0n-5A1" firstAttribute="leading" secondItem="nUq-56-9YR" secondAttribute="trailing" constant="2" id="m61-CU-m8t"/>
+                            <constraint firstItem="W4j-0n-5A1" firstAttribute="centerY" secondItem="HLB-WN-ggl" secondAttribute="centerY" id="yU6-qg-6GI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HLB-WN-ggl" secondAttribute="bottom" id="TQq-az-LTI"/>
+                <constraint firstItem="HLB-WN-ggl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dVG-LW-CVe"/>
+                <constraint firstAttribute="trailing" secondItem="HLB-WN-ggl" secondAttribute="trailing" id="exv-jv-uB2"/>
+                <constraint firstItem="HLB-WN-ggl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xEN-dV-qWn"/>
+            </constraints>
+            <size key="customSize" width="229" height="40"/>
+            <connections>
+                <outlet property="categoryLabel" destination="nUq-56-9YR" id="NZu-Hv-9gy"/>
+                <outlet property="containerView" destination="HLB-WN-ggl" id="idb-Id-mL3"/>
+                <outlet property="labelView" destination="W4j-0n-5A1" id="sDx-Lb-3Jk"/>
+            </connections>
+            <point key="canvasLocation" x="261.59420289855075" y="117.1875"/>
+        </collectionViewCell>
+    </objects>
+</document>

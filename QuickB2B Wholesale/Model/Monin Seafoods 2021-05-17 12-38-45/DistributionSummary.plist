@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Monin Seafoods.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+				<key>dateExpires</key>
+				<string>12/15/21</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FBLPromises.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FSCalendar.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FirebaseCore.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FirebaseCoreDiagnostics.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FirebaseInstallations.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FirebaseInstanceID.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>FirebaseMessaging.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>GoogleDataTransport.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>GoogleUtilities.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>IQKeyboardManager.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>3327F76AF6B5BF3158E08055EB8F2A539700E105</string>
+						<key>dateExpires</key>
+						<string>12/15/21</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>nanopb.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>42737QD2XU</string>
+						<key>name</key>
+						<string>Monin Seafoods Pty Ltd</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>42737QD2XU.com.QuikSys.Monin</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>42737QD2XU</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>Monin Seafoods.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>a9e583c4-da4b-449f-8012-f37953d41dae</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.QuikSys.Monin</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>42737QD2XU</string>
+				<key>name</key>
+				<string>Monin Seafoods Pty Ltd</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

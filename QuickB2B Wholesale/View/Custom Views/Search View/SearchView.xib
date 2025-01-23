@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eTB-ys-4p6" customClass="SearchView" customModule="QuickB2BWholesale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mub-My-cvn">
+                    <rect key="frame" x="0.0" y="411" width="393" height="30"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOJ-AG-xRf">
+                            <rect key="frame" x="16" y="-1" width="361" height="32"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UjK-6o-dTj">
+                                    <rect key="frame" x="8" y="8.9999999999999964" width="16" height="14.333333333333339"/>
+                                    <color key="tintColor" red="0.15157559509999999" green="0.13838168980000001" blue="0.17433607579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="16" id="Qru-Nc-Bvg"/>
+                                        <constraint firstAttribute="height" constant="16" id="f12-kX-w2x"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search All Products" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgn-t7-hW2">
+                                    <rect key="frame" x="28" y="6.6666666666666874" width="325" height="18.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="searchTextChanged:" destination="eTB-ys-4p6" eventType="editingChanged" id="AQ6-sO-GHt"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="qgn-t7-hW2" firstAttribute="leading" secondItem="UjK-6o-dTj" secondAttribute="trailing" constant="4" id="0qj-9o-BV9"/>
+                                <constraint firstItem="UjK-6o-dTj" firstAttribute="leading" secondItem="gOJ-AG-xRf" secondAttribute="leading" constant="8" id="8h3-Jn-aE3"/>
+                                <constraint firstItem="UjK-6o-dTj" firstAttribute="centerY" secondItem="gOJ-AG-xRf" secondAttribute="centerY" id="BDb-0j-VMF"/>
+                                <constraint firstItem="qgn-t7-hW2" firstAttribute="centerY" secondItem="UjK-6o-dTj" secondAttribute="centerY" id="Dza-KV-eaU"/>
+                                <constraint firstAttribute="trailing" secondItem="qgn-t7-hW2" secondAttribute="trailing" constant="8" id="aBO-6a-KFp"/>
+                                <constraint firstAttribute="height" constant="32" id="pi0-vS-BhT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="gOJ-AG-xRf" firstAttribute="centerY" secondItem="Mub-My-cvn" secondAttribute="centerY" id="J3N-Yn-Gm7"/>
+                        <constraint firstAttribute="trailing" secondItem="gOJ-AG-xRf" secondAttribute="trailing" constant="16" id="LBm-85-RCa"/>
+                        <constraint firstAttribute="height" constant="30" id="TxT-NM-cFP"/>
+                        <constraint firstItem="gOJ-AG-xRf" firstAttribute="leading" secondItem="Mub-My-cvn" secondAttribute="leading" constant="16" id="r7K-Au-3Am"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PUf-f5-1FX"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PUf-f5-1FX" firstAttribute="trailing" secondItem="Mub-My-cvn" secondAttribute="trailing" id="CUR-1X-RHx"/>
+                <constraint firstItem="Mub-My-cvn" firstAttribute="leading" secondItem="PUf-f5-1FX" secondAttribute="leading" id="G58-x2-BW6"/>
+                <constraint firstItem="Mub-My-cvn" firstAttribute="centerY" secondItem="eTB-ys-4p6" secondAttribute="centerY" id="RBT-9Q-eX7"/>
+            </constraints>
+            <connections>
+                <outlet property="searchContainerView" destination="gOJ-AG-xRf" id="GEZ-dN-Rsi"/>
+                <outlet property="searchTextField" destination="qgn-t7-hW2" id="RTU-9V-14Z"/>
+            </connections>
+            <point key="canvasLocation" x="465" y="-391"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
