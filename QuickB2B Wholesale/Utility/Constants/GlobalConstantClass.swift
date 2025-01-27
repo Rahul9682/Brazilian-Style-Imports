@@ -80,8 +80,9 @@ struct KeyConstants {
     //static let clientCode = "PEZZANO"
     //static let clientCode = "MC5739"
     //MARK: - QUICKB2B-Cleint-Code-Live
-     static let clientCode = "quickb2b"
+    // static let clientCode = "quickb2b"
     //static let clientCode = "TZ2129"
+    static let clientCode = "XX3955"
 }
 
 struct UserDefaultsKeys {
