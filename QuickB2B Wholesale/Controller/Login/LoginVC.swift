@@ -28,6 +28,9 @@ class LoginVC: UIViewController {
     var isShowPassword:Bool = false
     var noOfoutlets = 0
     var  userCode = ""
+    var selectedRegionCode:String?
+    var selectedRegionName:String?
+    var selectedRegionIndex:Int?
     
     //MARK: - View-Life-Cycle
     override func viewDidLoad() {
@@ -77,32 +80,29 @@ class LoginVC: UIViewController {
             UserDefaults.standard.removeObject(forKey:UserDefaultsKeys.ponumber)
             UserDefaults.standard.removeObject(forKey:UserDefaultsKeys.comment)
         }
-        var db:DBHelper = DBHelper()
-        self.viewModel.arrSuppliers = viewModel.db.readData()
-        if(self.viewModel.arrSuppliers.count != 0) {
-            let userId = UserDefaults.standard.object(forKey:  "UserLoginID") as? String ?? ""
-            let loginId = UserDefaults.standard.object(forKey: UserDefaultsKeys.UserDefaultLoginID) as? String ?? ""
-          
-            if( userId != "") {
-                UserDefaults.standard.set("Yes", forKey: "featuredItemShow")
-                UserDefaults.standard.set(true, forKey: "isComingFromDashboard")
-                let dashboardVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
-                self.navigationController?.pushViewController(dashboardVC!, animated: false)
-            } else if (userId == "" && loginId != "" ) {
-                let outLetController = self.storyboard?.instantiateViewController(withIdentifier: "OutletsListController") as? OutletsListController
-                self.navigationController?.pushViewController(outLetController!, animated: false)
-            }
-        } else {
-            let acm_Code = UserDefaults.standard.object(forKey: UserDefaultsKeys.acmLoginID) as? String ?? ""
-            if (acm_Code != "") {
-                let acmController = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListViewController") as? CustomerListViewController
-                self.navigationController?.pushViewController(acmController!, animated: false)
-            }
-        }
-        
-
-        
-        
+//        var db:DBHelper = DBHelper()
+//        self.viewModel.arrSuppliers = viewModel.db.readData()
+//        if(self.viewModel.arrSuppliers.count != 0) {
+//            let userId = UserDefaults.standard.object(forKey:  "UserLoginID") as? String ?? ""
+//            let loginId = UserDefaults.standard.object(forKey: UserDefaultsKeys.UserDefaultLoginID) as? String ?? ""
+//          
+//            if( userId != "") {
+//                UserDefaults.standard.set("Yes", forKey: "featuredItemShow")
+//                UserDefaults.standard.set(true, forKey: "isComingFromDashboard")
+//                let dashboardVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
+//                self.navigationController?.pushViewController(dashboardVC!, animated: false)
+//            } else if (userId == "" && loginId != "" ) {
+//                let outLetController = self.storyboard?.instantiateViewController(withIdentifier: "OutletsListController") as? OutletsListController
+//                self.navigationController?.pushViewController(outLetController!, animated: false)
+//            }
+//        } else {
+//            let acm_Code = UserDefaults.standard.object(forKey: UserDefaultsKeys.acmLoginID) as? String ?? ""
+//            if (acm_Code != "") {
+//                let acmController = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListViewController") as? CustomerListViewController
+//                self.navigationController?.pushViewController(acmController!, animated: false)
+//            }
+//        }
+//
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.view.addGestureRecognizer(tap)
         setNeedsStatusBarAppearanceUpdate()
@@ -138,6 +138,7 @@ class LoginVC: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
         viewModel.strCustomerID = customerIDTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         viewModel.strPassword  = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        viewModel.selectedRegionCode = self.selectedRegionCode
         if let result = viewModel.validations() {
             self.presentPopUpVC(message: result, title: "")
         } else {
@@ -155,11 +156,15 @@ class LoginVC: UIViewController {
     
     @IBAction func accessAccount(_ sender: UIButton) {
         let createAnAccountVC = self.storyboard?.instantiateViewController(withIdentifier: "CreateAnAccountViewController") as? CreateAnAccountViewController
+        createAnAccountVC?.selectRegion = self.selectedRegionName
+        createAnAccountVC?.selectedIndex = self.selectedRegionIndex
         self.navigationController?.pushViewController(createAnAccountVC!, animated: false)
     }
     
     @IBAction func forgotPassword(_ sender: UIButton) {
         let forgotPasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController
+        forgotPasswordVC?.selectRegion = self.selectedRegionName
+        forgotPasswordVC?.selectedIndex = self.selectedRegionIndex
         self.navigationController?.pushViewController(forgotPasswordVC!, animated: false)
     }
     
@@ -179,6 +184,7 @@ class LoginVC: UIViewController {
 extension LoginVC {
     //Login-User
     func loginUser(with param: [String: Any]) {
+     
         viewModel.loginUser(with: param, view: self.view) { result in
             switch result {
             case .success(let login):
@@ -187,7 +193,7 @@ extension LoginVC {
                     if (status == 1) {
                         let outlets = login.outlets
                         UserDefaults.standard.set(outlets, forKey: "UserOutlets")
-                        
+                        UserDefaults.standard.setValue(self.selectedRegionCode, forKey: UserDefaultsKeys.clientRegionCode)
                         if let loginType = login.login_type {
                             if loginType == "ACM" {
                                 

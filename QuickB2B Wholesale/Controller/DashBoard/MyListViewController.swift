@@ -1134,7 +1134,7 @@ class MyListViewController: UIViewController, CalendarDelegate {
             navigationController?.pushViewController(tbc, animated: false)
         }
         else {
-            let tbc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            let tbc = storyboard?.instantiateViewController(withIdentifier: "RegionViewController") as! RegionViewController
             navigationController?.pushViewController(tbc, animated: false)
         }
     }

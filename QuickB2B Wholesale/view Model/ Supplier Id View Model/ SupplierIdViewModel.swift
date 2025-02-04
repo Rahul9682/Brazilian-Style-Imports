@@ -14,7 +14,7 @@ class SupplierIdViewModel {
 
 //MARK: -> Api-Integration
 extension SupplierIdViewModel {
-     func getAppDetails(with param: [String: Any],view: UIView,completionHandler: @escaping ((Result<AppDetailsModel?, NetworkError>?) -> ())) {
+    func getAppDetails(with param: [String: Any],view: UIView? = nil,completionHandler: @escaping ((Result<AppDetailsModel?, NetworkError>?) -> ())) {
         guard let url = URL(string: GlobalConstantClass.APIConstantNames.baseUrl + GlobalConstantClass.APIConstantNames.getCompanyDetails) else { fatalError("URL is incorrect.") }
         
         print(JSON(param))
@@ -27,12 +27,12 @@ extension SupplierIdViewModel {
         resource.body = data
         
         DispatchQueue.main.async { Constants.showIndicator()
-            view.isUserInteractionEnabled = false
+            view?.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
             
             DispatchQueue.main.async { Constants.hideIndicator()
-                view.isUserInteractionEnabled = true
+                view?.isUserInteractionEnabled = true
             }
             
             switch result{

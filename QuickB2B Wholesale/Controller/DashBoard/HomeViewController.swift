@@ -477,7 +477,7 @@ class HomeViewController: UIViewController{
             self.navigationController?.pushViewController(tbc, animated: false)
         } else {
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let tbc = storyBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            let tbc = storyBoard.instantiateViewController(withIdentifier: "RegionViewController") as! RegionViewController
             self.navigationController?.pushViewController(tbc, animated: false)
         }
     }

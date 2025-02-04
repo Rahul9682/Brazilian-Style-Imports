@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UserDefaults.standard.set(true, forKey:UserDefaultsKeys.isShowFeaturedImageOnDashboard)
         UserDefaults.standard.set(true, forKey:UserDefaultsKeys.isShowUpdateAppPopUp)
-        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.isEnabled = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
     //  Override point for customization after application launch.
         FirebaseApp.configure()
         Messaging.messaging().delegate = self

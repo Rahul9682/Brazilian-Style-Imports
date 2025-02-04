@@ -73,17 +73,14 @@ class WelcomeVC: UIViewController {
                     UserDefaults.standard.set(strUserLoginId, forKey:UserDefaultsKeys.UserDefaultLoginID)
                 }
             }
-            
             UserDefaults.standard.removeObject(forKey:UserDefaultsKeys.UserLoginID)
-//            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "SupplierIdViewController") as? SupplierIdViewController else {return}
-//            vc.viewModel.logoutString = "addSupplier"
-            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC else {return}
+            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegionViewController") as? RegionViewController else {return}
             self.navigationController?.pushViewController(vc, animated: false)
         } else {
 //            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "DashBoardViewController") as? DashBoardViewController else {return}
 //            UserDefaults.standard.set(true, forKey: "isComingFromDashboard")
 //            self.navigationController?.pushViewController(vc, animated: false)
-            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC else {return}
+            guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegionViewController") as? RegionViewController else {return}
             self.navigationController?.pushViewController(vc, animated: false)
         }
     }

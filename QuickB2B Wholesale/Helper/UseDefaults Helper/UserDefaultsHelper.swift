@@ -21,6 +21,21 @@ class LocalStorage {
        // }
     }
     
+    
+    static func saveRegionData(data: [ClientRegion]) {
+      //  if data.count > 0 {
+            do {
+                let encodedData = try JSONEncoder().encode(data)
+                let userDefaults = UserDefaults.standard
+                userDefaults.setValue(encodedData, forKey: UserDefaultsKeys.clientRegion)
+                print("Successfully Saved")
+            } catch {
+                // Failed to encode Contact to Data
+                print("Failed to encode [GetItemsData] to Data")
+            }
+       // }
+    }
+    
     static func saveMultiData(data: [GetItemsData]) {
       //  if data.count > 0 {
             do {
@@ -58,6 +73,24 @@ class LocalStorage {
         if let savedData = userDefaults.value(forKey: UserDefaultsKeys.getItemsData) as? Data {
             do {
                 let savedgetItemsData = try JSONDecoder().decode([GetItemsData].self, from: savedData)
+                getItemsData = savedgetItemsData
+                print("Successfully Retrievd")
+            } catch {
+                print("Failed to Convert to Data")
+            }
+            return getItemsData
+        } else {
+            return []
+        }
+    }
+    
+    //MARK: -> getClientRegionData
+    static func getClientRegionData() -> [ClientRegion] {
+        let userDefaults = UserDefaults.standard
+        var getItemsData = [ClientRegion]()
+        if let savedData = userDefaults.value(forKey: UserDefaultsKeys.clientRegion) as? Data {
+            do {
+                let savedgetItemsData = try JSONDecoder().decode([ClientRegion].self, from: savedData)
                 getItemsData = savedgetItemsData
                 print("Successfully Retrievd")
             } catch {

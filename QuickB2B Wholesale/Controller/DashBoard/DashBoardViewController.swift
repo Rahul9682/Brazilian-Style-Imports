@@ -75,7 +75,7 @@ class DashBoardViewController:UIViewController,CalendarDelegate,UITextFieldDeleg
         longPress.minimumPressDuration = 0.2 // optional
         itemsTableView.addGestureRecognizer(longPress)
         //footerView.translatesAutoresizingMaskIntoConstraints = true
-        IQKeyboardManager.shared.keyboardDistanceFromTextField = 40
+        IQKeyboardManager.shared.keyboardDistance = 40
         itemsTableView.dragInteractionEnabled = true
         itemsTableView.tableFooterView = viewFooter
         categoryCollectionView.dataSource = self

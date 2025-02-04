@@ -135,10 +135,10 @@ extension SupplierIdViewController {
                         if(self.viewModel.db.isAlreadyInSupplier(strClientCodee: self.supplierIDTextField.text ?? "")){
                             self.presentPopUpVC(message: "Supplier Id Already Exist", title: "")
                         } else {
-                            if let isEnableRetailFeatured = appDetails.data?.ENABLE_RETAIL_FEATURE {
+                            if let isEnableRetailFeatured = appDetails.data?.enableRetailFeature {
                                 UserDefaults.standard.setValue(isEnableRetailFeatured, forKey: "ENABLE_RETAIL_FEATURE")
                             }
-                            if let appName = appDetails.data?.APP_NAME {
+                            if let appName = appDetails.data?.appName {
                                 //UserDefaults.standard.set(appName, forKey: UserDefaultsKeys.AppName)
                             }
                             UserDefaults.standard.set(self.supplierIDTextField.text, forKey: "ClientCode")
@@ -178,10 +178,10 @@ extension SupplierIdViewController {
                         if(self.viewModel.db.isAlreadyInSupplier(strClientCodee: self.supplierIDTextField.text ?? "")){
                             self.presentPopUpVC(message: "Supplier Id Already Exist", title: "")
                         } else {
-                            if let isEnableRetailFeatured = appDetails.data?.ENABLE_RETAIL_FEATURE {
+                            if let isEnableRetailFeatured = appDetails.data?.enableRetailFeature {
                                 UserDefaults.standard.setValue(isEnableRetailFeatured, forKey: "ENABLE_RETAIL_FEATURE")
                             }
-                            if let appName = appDetails.data?.APP_NAME {
+                            if let appName = appDetails.data?.appName {
                                 //UserDefaults.standard.set(appName, forKey: UserDefaultsKeys.AppName)
                             }
                             UserDefaults.standard.set(KeyConstants.clientCode, forKey: "ClientCode")

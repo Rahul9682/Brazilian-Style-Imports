@@ -16,10 +16,10 @@ class CreateAnAccountViewModel {
 //MARK: -> Api-Integration
 extension CreateAnAccountViewModel {
     //Get-App-Data
-    func getAppData(with param: [String: Any],view: UIView,completionHandler: @escaping ((Result<AppDetailModel?, NetworkError>?) -> ())) {
+    func getAppData(with param: [String: Any],view: UIView,completionHandler: @escaping ((Result<AppDetailsModel?, NetworkError>?) -> ())) {
         guard let url = URL(string: GlobalConstantClass.APIConstantNames.baseUrl + GlobalConstantClass.APIConstantNames.getAppData) else { fatalError("URL is incorrect.") }
         guard let data = try? JSONSerialization.data(withJSONObject: param, options: .fragmentsAllowed) else { fatalError("Error encoding order.") }
-        var resource = Resource<AppDetailModel?>(url: url)
+        var resource = Resource<AppDetailsModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
         

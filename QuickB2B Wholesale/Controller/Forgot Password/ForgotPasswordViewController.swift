@@ -4,6 +4,7 @@
 
 import UIKit
 import SwiftyJSON
+import DropDown
 
 class ForgotPasswordViewController: UIViewController,UITextFieldDelegate {
     
@@ -13,14 +14,32 @@ class ForgotPasswordViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var customerIDTextField: UITextField!
     @IBOutlet var continueButton: UIButton!
     @IBOutlet weak var supplIerNameLabel: UILabel!
+    @IBOutlet weak var dropDownView: UIView!
+    @IBOutlet weak var dropDownImage: UIButton!
+    @IBOutlet weak var searchRegionTextfield: UITextField!
+    
     
     //MARK: -> Properties
     var viewModel = ForgotPasswordViewModel()
+    var dropDown = DropDown()
+    var arrayOfRegion: [ClientRegion] = []
+    var selectedRegionCode: String?
+    var selectedIndex: Int?
+    var selectRegion:String?
     
     //MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        arrayOfRegion = LocalStorage.getClientRegionData()
+        configuredropDown()
+        let showRegion = UserDefaults.standard.integer(forKey: UserDefaultsKeys.showRegion)
+           if showRegion  == 0 {
+               dropDownView.isHidden = true
+           } else {
+               dropDownView.isHidden = false
+           }
+        searchRegionTextfield.text = self.selectRegion
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -31,10 +50,12 @@ class ForgotPasswordViewController: UIViewController,UITextFieldDelegate {
        // supplIerNameLabel.text = "Supplier Name: " + KeyConstants.clientCode
         supplIerNameLabel.isHidden = true
         continueButton.layer.cornerRadius = 4
-        customerIDTextField.delegate = self
-        //customerIDTextField.addPlaceHolderText(placeHolderText: "Customer ID")
+        dropDownView.layer.borderWidth = 2
+        dropDownView.layer.borderColor = UIColor.black.cgColor
+        dropDownView.clipsToBounds = true
         
-        //customerView.layer.cornerRadius = 4
+        
+        customerIDTextField.delegate = self
         customerView.layer.borderWidth = 2
         customerView.layer.borderColor = UIColor.black.cgColor
         customerView.clipsToBounds = true
@@ -45,15 +66,41 @@ class ForgotPasswordViewController: UIViewController,UITextFieldDelegate {
         setNeedsStatusBarAppearanceUpdate()
     }
     
+    func configuredropDown() {
+        dropDown.backgroundColor = .white
+        dropDown.separatorColor = .white
+        dropDown.customCellConfiguration = { (index: Int, item: String, cell: DropDownCell) in
+            cell.optionLabel.textAlignment = .center // Change to .left or .right if needed
+        }
+       // dropDownView.layer.cornerRadius = 4
+        dropDown.anchorView = dropDownView
+       // dropDown.bottomOffset = CGPoint(x: 0, y: dropDownView.bounds.height)
+        dropDown.bounds = CGRect(x: 0, y: dropDownView.frame.height-60, width: dropDownView.frame.width - 40,height: dropDownView.frame.height)
+        // dropDown.width = dropDownView.bounds.width - 40
+        //dropDown.cornerRadius = 4
+        let arrayOfRegionName: [String] = self.arrayOfRegion.map { $0.companyName ?? "" }
+        dropDown.dataSource = arrayOfRegionName
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+            self.searchRegionTextfield.text = item
+            self.selectedRegionCode = arrayOfRegion[index].clientCode
+        }
+    }
+
     //MARK: - BUTTON ACTION
     @IBAction func backButton(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: false)
     }
     
+    
+    @IBAction func dropDownAction(_ sender: Any) {
+        dropDown.show()
+    }
+    
+    
     @IBAction func continueButton(_ sender: UIButton) {
         self.view.endEditing(true)
         viewModel.customerID  = customerIDTextField.text?.trimmingCharacters(in: .whitespaces) ?? ""
-        
+        viewModel.seletedRegionCode = selectedRegionCode
         if let result = viewModel.validation() {
             self.presentPopUpVC(message: result,title: "")
         } else {

@@ -8,14 +8,15 @@ import SwiftyJSON
 class ForgotPasswordViewModel {
     //MARK: -> Properties
     var customerID = ""
+    var seletedRegionCode: String?
     
     //MARK: -> Params
     func param() -> [String: Any] {
         let clientCode = UserDefaults.standard.object(forKey: "ClientCode") as? String  ?? ""
         let param = [
             ForgotPasswordParam.type.rawValue:KeyConstants.appType ,
-            ForgotPasswordParam.app_type.rawValue:KeyConstants.app_Type,
-            ForgotPasswordParam.client_code.rawValue:KeyConstants.clientCode ,
+            ForgotPasswordParam.app_type.rawValue: KeyConstants.appType,
+            ForgotPasswordParam.client_code.rawValue:seletedRegionCode ?? KeyConstants.clientCode ,
             ForgotPasswordParam.username.rawValue:customerID,
             ForgotPasswordParam.device_id.rawValue:Constants.deviceId] as [String : Any]
         print("Request Param:: ",JSON(param))

@@ -571,7 +571,7 @@ extension AddCustomerViewController {
                     if let status = appData.status {
                         if (status == 1) {
                             if let data = appData.data {
-                                if let enableRetailFeature = data.ENABLE_RETAIL_FEATURE {
+                                if let enableRetailFeature = data.enableRetailFeature {
                                     if(enableRetailFeature == "1") {
                                         self.showViewHomeDelivery()
                                     } else {

@@ -5,6 +5,7 @@
 import UIKit
 import UITextView_Placeholder
 import SwiftyJSON
+import DropDown
 
 class CreateAnAccountViewController: UIViewController {
     //MARK: - Outlets
@@ -43,28 +44,25 @@ class CreateAnAccountViewController: UIViewController {
     @IBOutlet var viewPostalAddressHeightConst: NSLayoutConstraint!
     @IBOutlet var businessNameTopConst: NSLayoutConstraint!
     @IBOutlet var businessNameHeightConst: NSLayoutConstraint!
-    @IBOutlet weak var headerlabel: UILabel!
+    @IBOutlet weak var selectRegionView: UIView!
+    @IBOutlet weak var selectRegionTextfield: UITextField!
     
     //MARK: - Properties
     var viewModel = CreateAnAccountViewModel()
-    var acmCode  = UserDefaults.standard.string(forKey: UserDefaultsKeys.acmLoginID)
+    var dropDown = DropDown()
+    var arrayOfRegion: [ClientRegion] = []
+    var selectedIndex: Int?
+    var selectRegion:String?
     
     //MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        confiqureDropDown()
         viewModel.isPostalAddressSame = false
         submitButton.layer.cornerRadius = 4
-      //  if acmCode != nil && !acmCode!.isEmpty {
-        //    submitButton.setTitle("SUBMIT & APPROVE", for: .normal)
-         //   headerlabel.text = "Add Customer"
-        //} else {
-          submitButton.setTitle("SUBMIT", for: .normal)
-         //   headerlabel.text = "Verify Your Details"
-       // }
         self.viewModel.arrSuppliers = viewModel.db.readData()
         let clientCode = UserDefaults.standard.object(forKey: "ClientCode") as? String ?? ""
-        
         let dictParam = [
             GetAppData.type.rawValue:KeyConstants.appType ,
             GetAppData.app_type.rawValue:KeyConstants.app_Type,
@@ -76,6 +74,14 @@ class CreateAnAccountViewController: UIViewController {
         configureUIAccToDeliveryType()
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.view.addGestureRecognizer(tap)
+        
+        let showRegion = UserDefaults.standard.integer(forKey: UserDefaultsKeys.showRegion)
+        if showRegion  == 0 {
+            selectRegionView.isHidden = true
+        } else {
+            selectRegionView.isHidden = false
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +99,11 @@ class CreateAnAccountViewController: UIViewController {
     }
     
     //MARK: - BUTTON ACTION
+    
+    @IBAction func selectRegionAction(_ sender: Any) {
+        dropDown.show()
+    }
+    
     @IBAction func radioButtonBusiness(_ sender: UIButton) {
         viewModel.deliveryType = .Business
         configureUIAccToDeliveryType()
@@ -138,14 +149,14 @@ class CreateAnAccountViewController: UIViewController {
             let strPostalState = postalState.text ??  ""
             let strPostalCountry = postalCountry.text ?? ""
             let strDeliveryInstructions = textViewInstructions.text  ?? ""
-            
+            let selectedRegion = arrayOfRegion[selectedIndex ?? 0].clientCode
             var dictParam = [String:Any]()
             let clientCode = UserDefaults.standard.object(forKey: "ClientCode") as? String ?? ""
             if(viewModel.deliveryType == .Business) {
                 dictParam = [
                     Signup.type.rawValue:KeyConstants.appType ,
                     Signup.app_type.rawValue:KeyConstants.app_TypeDual,
-                    Signup.client_code.rawValue:KeyConstants.clientCode,
+                    Signup.client_code.rawValue: selectedRegion,
                     Signup.email.rawValue:strEmail,
                     Signup.password.rawValue:strPassword,
                     Signup.business_name.rawValue:strBusinessName,
@@ -165,14 +176,13 @@ class CreateAnAccountViewController: UIViewController {
                     Signup.postal_country.rawValue:strPostalCountry,
                     Signup.postal_post_code.rawValue:strPostalPostCode,
                     Signup.device_type.rawValue:"I",
-                    Signup.device_id.rawValue: Constants.deviceId,
-                    Signup.acm_code.rawValue: acmCode
+                    Signup.device_id.rawValue: Constants.deviceId
                 ]
             } else {
                 dictParam = [
                     Signup.type.rawValue:KeyConstants.appType ,
                     Signup.app_type.rawValue:KeyConstants.app_TypeRetailer,
-                    Signup.client_code.rawValue:KeyConstants.clientCode,
+                    Signup.client_code.rawValue:selectedRegion,
                     Signup.password.rawValue:strPassword,
                     Signup.email.rawValue:strEmail,
                     Signup.business_name.rawValue:"",
@@ -192,8 +202,7 @@ class CreateAnAccountViewController: UIViewController {
                     Signup.postal_state.rawValue:"",
                     Signup.postal_country.rawValue:"",
                     Signup.postal_post_code.rawValue:"",
-                    Signup.device_type.rawValue:"I",
-                    Signup.acm_code.rawValue: acmCode
+                    Signup.device_type.rawValue:"I"
                 ]
             }
             print(JSON(dictParam))
@@ -220,7 +229,28 @@ class CreateAnAccountViewController: UIViewController {
         }
     }
     
+    //MARK: - confiqureDropDown
+    func confiqureDropDown() {
+        dropDown.backgroundColor = .white
+        dropDown.separatorColor = .white
+        dropDown.customCellConfiguration = { (index: Int, item: String, cell: DropDownCell) in
+            cell.optionLabel.textAlignment = .center // Change to .left or .right if needed
+        }
+        dropDown.anchorView = selectRegionView // UIView or UIBarButtonItem
+        let arrayOfRegionName: [String] = self.arrayOfRegion.map { $0.companyName ?? "" }
+        dropDown.dataSource = arrayOfRegionName
+        //dropDown.bottomOffset = CGPoint(x: 0, y: dropDownView.bounds.height)
+        dropDown.bounds = CGRect(x: 0, y: selectRegionView.frame.height-60, width: selectRegionView.frame.width,height: selectRegionView.frame.height)
+        //dropDown.width = dropDownView.bounds.width
+        dropDown.cornerRadius = 4
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+            selectRegionTextfield.text = item
+            self.selectedIndex = index
+        }
+    }
+    
     private func configureUI() {
+        selectRegionTextfield.text = self.selectRegion
         submitButton.layer.cornerRadius = 4
         userNameTextField.delegate  = self;
         passwordTextField.delegate = self;
@@ -244,6 +274,10 @@ class CreateAnAccountViewController: UIViewController {
         postalPostCode.delegate = self;
         deliveryPostCodeTextField.delegate = self;
         
+        selectRegionView.layer.borderWidth = 2;
+        selectRegionView.layer.borderColor = UIColor.black.cgColor
+        selectRegionTextfield.attributedPlaceholder = NSAttributedString(string: "Select your Region",
+                                                                         attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         userNameTextField.addPlaceHolderText(placeHolderText: "Customer ID")
         passwordTextField.addPlaceHolderText(placeHolderText: "Password")
         confirmPasswordTextField.addPlaceHolderText(placeHolderText: "Confirm Password")
@@ -288,6 +322,7 @@ class CreateAnAccountViewController: UIViewController {
         let postalCountry = self.postalCountry.text?.trimmingCharacters(in: .whitespaces) ?? ""
         let postalState = self.postalState.text?.trimmingCharacters(in: .whitespaces) ?? ""
         let postalPostCode = self.postalPostCode.text?.trimmingCharacters(in: .whitespaces) ?? ""
+        let selectedRegion = self.selectRegionTextfield.text?.trimmingCharacters(in: .whitespaces) ?? ""
         
         if(userName.count == 0) {
             self.presentPopUpVC(message: validateFirstName, title: "")
@@ -304,7 +339,11 @@ class CreateAnAccountViewController: UIViewController {
         } else if(password  != confirmPassword) {
             self.presentPopUpVC(message: vaidatePasswordConfirmPassword, title: "")
             return false
+        } else if(selectedRegion == "") {
+            self.presentPopUpVC(message: selectedRegionMsg, title: "")
+            return false
         }
+        
         if(viewModel.deliveryType == .Business) {
             if(businessName.count == 0) {
                 self.presentPopUpVC(message: validateBusinessName, title: "")
@@ -447,6 +486,8 @@ class CreateAnAccountViewController: UIViewController {
             businessNameTextField.isHidden = true
         }
     }
+    
+    
 }
 
 //MARK: - UITextFieldDelegate
@@ -556,7 +597,14 @@ extension CreateAnAccountViewController {
                     if let status = appData.status {
                         if (status == 1) {
                             if let data = appData.data {
-                                if let enableRetailFeature = data.ENABLE_RETAIL_FEATURE {
+                                if let arrayOfRegion = appData.data?.regions {
+                                  //  UserDefaults.standard.set(showRegion, forKey: "showRegion")
+                                  //  LocalStorage.saveRegionData(data: arrayOfRegion)
+                                    self.arrayOfRegion = arrayOfRegion
+                                    self.confiqureDropDown()
+                                   
+                                }
+                                if let enableRetailFeature = data.enableRetailFeature {
                                     if(enableRetailFeature == "1") {
                                         self.showViewHomeDelivery()
                                     } else {
@@ -617,6 +665,7 @@ extension CreateAnAccountViewController {
                                     UserDefaults.standard.set("Wholesale Customer", forKey:UserDefaultsKeys.CustomerType)
                                 } else {
                                     UserDefaults.standard.set("Retail Customer", forKey:UserDefaultsKeys.CustomerType)
+                                    UserDefaults.standard.setValue(self.arrayOfRegion[self.selectedIndex ?? 0].clientCode, forKey: UserDefaultsKeys.clientRegionCode)
                                 }
                                 let userCode = signupData.data?.user_code
                                 let appName = signupData.data?.APP_NAME
@@ -646,14 +695,8 @@ extension CreateAnAccountViewController {
                                     self.viewModel.db.insert(strClientCode: clientCode, strSupplierName: appName ?? "", strUserCode: userCode ?? "")
                                     self.viewModel.arrSuppliers = self.viewModel.db.readData()
                                 }
-                                
-                               // if self.acmCode != nil && !self.acmCode!.isEmpty {
-                                //    self.presentPopUpVC(message: signupData.message ?? "", title: "")
-                              //  } else {
-                                    let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC
-                                    self.navigationController?.pushViewController(welcomeVC!, animated: false)
-                              //  }
-                              
+                                let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC
+                                self.navigationController?.pushViewController(welcomeVC!, animated: false)
                             }
                         } else {
                             guard let messge = signupData.message else { return }

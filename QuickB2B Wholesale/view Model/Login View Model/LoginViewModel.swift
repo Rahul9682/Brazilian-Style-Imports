@@ -13,18 +13,32 @@ class LoginViewModel {
     var strCustomerID = ""
     var strPassword = ""
     let clientCode = UserDefaults.standard.object(forKey: "ClientCode") as? String ?? ""
+    var selectedRegionCode:String?
+    
     
     //MARK: -> Params
     func param() -> [String: Any] {
-        let param = [
-            login.type.rawValue:KeyConstants.appType ,
-            login.app_type.rawValue:KeyConstants.app_Type,
-            login.client_code.rawValue:KeyConstants.clientCode,
-            login.username.rawValue:strCustomerID,
-            login.password.rawValue:strPassword,
-            login.device_id.rawValue:Constants.deviceId] as [String : Any]
-        print(param)
-        return param
+        if let regionCode = selectedRegionCode {
+            let param = [
+                login.type.rawValue:KeyConstants.appType ,
+                login.app_type.rawValue:KeyConstants.app_Type,
+                login.client_code.rawValue:regionCode,
+                login.username.rawValue:strCustomerID,
+                login.password.rawValue:strPassword,
+                login.device_id.rawValue:Constants.deviceId] as [String : Any]
+            print(param)
+            return param
+        } else {
+            let param = [
+                login.type.rawValue:KeyConstants.appType ,
+                login.app_type.rawValue:KeyConstants.app_Type,
+                login.client_code.rawValue:KeyConstants.clientCode,
+                login.username.rawValue:strCustomerID,
+                login.password.rawValue:strPassword,
+                login.device_id.rawValue:Constants.deviceId] as [String : Any]
+            print(param)
+            return param
+        }
     }
     
     //MARK: - Validations

@@ -13,7 +13,7 @@ class GlobalConstantClass: NSObject {
     
     struct APIConstantNames {
         // MARK: - Testing-Url
-        //static let baseUrl = "https://develop.quickb2b.com/v3/apis/"
+      //  static let baseUrl = "https://develop.quickb2b.com/v3/apis/"
         
         // MARK: - APPStore-Live-Url
         static let baseUrl = "https://go.quickb2b.com/v3/apis/"
@@ -75,20 +75,28 @@ struct KeyConstants {
     
     //MARK: - Testing-Client-Code
     //static let clientCode = "DEVELOP"
-    //static let clientCode = "b2bdev"
+    //    static let clientCode = UserDefaults.standard.string(forKey: UserDefaultsKeys.clientRegionCode) ?? "b2bdev"
+    static var clientCode: String {
+        return UserDefaults.standard.string(forKey: UserDefaultsKeys.clientRegionCode) ?? "XX3955" // "ZP5986"
+    }
     //static let clientCode = "TK3757"
     //static let clientCode = "PEZZANO"
     //static let clientCode = "MC5739"
     //MARK: - QUICKB2B-Cleint-Code-Live
-    // static let clientCode = "quickb2b"
+    //static let clientCode = "quickb2b"
     //static let clientCode = "TZ2129"
-    static let clientCode = "XX3955"
+    
+    
+    
 }
 
 struct UserDefaultsKeys {
     //static let homeData = "homeData"
     static let getItemsData = "getItemsData"
+    static let showRegion = "showRegion"
     static let showList = "ShowList"
+    static let clientRegion = "clientRegion"
+    static let clientRegionCode = "clientRegionCode"
     static let showPrice = "showPrice"
     static let AppName = "AppName"  
     static let business_name = "business_name"
@@ -132,6 +140,7 @@ let validateEmptyEmail = "Please enter Email"
 let validateEmail = "Please enter valid Email"
 let validatePasswordLength = "Passsword should be minimum 6 characters"
 let vaidatePasswordConfirmPassword = "Password and Confirm Password do not match"
+let selectedRegionMsg = "Please select a region"
 let validateDeliveryNumber  = "Please enter Delivery Number/Street"
 let validateDeliverySubUrb  = "Please enter Delivery Suburb/City"
 let validateDeliveryCountry  = "Please enter Delivery Country"
@@ -482,6 +491,7 @@ extension Constants {
         UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.getItemsData)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.outletsListData)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.acmLoginID)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKeys.clientRegionCode)
     }
 }
 

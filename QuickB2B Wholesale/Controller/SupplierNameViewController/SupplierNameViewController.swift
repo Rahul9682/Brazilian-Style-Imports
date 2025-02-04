@@ -13,6 +13,8 @@ class SupplierNameViewController: UIViewController {
     
     //MARK:- Properties
     var logOutStr = ""
+    var selectedRegionIndex:Int?
+    var selectedRegion:ClientRegion?
     
     //MARK:- lifeCycle
     override func viewDidLoad() {
@@ -22,19 +24,16 @@ class SupplierNameViewController: UIViewController {
     
     //MARK:- Helpers
     private func configureUI() {
-        if let appName = UserDefaults.standard.object(forKey: UserDefaultsKeys.AppName) {
-            supplierNameLabel.text = appName as? String ?? ""
-        }
+        supplierNameLabel.text = self.selectedRegion?.companyName
     }
     
     private func configureNavigation() {
-        let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC
-        if(logOutStr == "addSupplier"){
-            loginVC?.viewModel.logoutString = "addSupplier"
-        } else if(logOutStr ==  "logout"){
-            loginVC?.viewModel.logoutString = "logout"
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC {
+            vc.selectedRegionName = self.selectedRegion?.companyName
+            vc.selectedRegionIndex = self.selectedRegionIndex
+            vc.selectedRegionCode = self.selectedRegion?.clientCode
+            self.navigationController?.pushViewController(vc, animated: false)
         }
-        self.navigationController?.pushViewController(loginVC!, animated: false)
     }
     
     //MARK:- Button Action

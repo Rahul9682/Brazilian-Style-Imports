@@ -2782,7 +2782,7 @@ extension ProductsViewController:PopUpDelegate {
             let tbc = storyboard?.instantiateViewController(withIdentifier: "OutletsListController") as! OutletsListController
             self.navigationController?.pushViewController(tbc, animated: false)
         } else {
-            let tbc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            let tbc = storyboard?.instantiateViewController(withIdentifier: "RegionViewController") as! RegionViewController
             self.navigationController?.pushViewController(tbc, animated: false)
         }
     }
