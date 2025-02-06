@@ -62,11 +62,17 @@ class RegionViewController: UIViewController, PopUpDelegate {
     
     
     func configureUI() {
+        searchRegionTextfield.attributedPlaceholder = NSAttributedString(
+            string: "Select your Region",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.MyTheme.searchPlaceHolderColor]
+        )
+        searchRegionTextfield.textColor = UIColor.MyTheme.searchPlaceHolderColor
         dropDownView.layer.cornerRadius = 4
         dropDown.anchorView = dropDownView
         dropDown.bounds = CGRect(x: 0, y: dropDownView.frame.height-60, width: dropDownView.frame.width - 40,height: dropDownView.frame.height)
         dropDown.width = dropDownView.bounds.width
         dropDown.cornerRadius = 4
+        dropDown.textColor = UIColor.MyTheme.searchPlaceHolderColor
         dropDown.backgroundColor = .white
         dropDown.separatorColor = .white
         dropDown.customCellConfiguration = { (index: Int, item: String, cell: DropDownCell) in
