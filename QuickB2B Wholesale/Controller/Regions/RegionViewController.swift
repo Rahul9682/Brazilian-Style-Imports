@@ -75,6 +75,7 @@ class RegionViewController: UIViewController, PopUpDelegate {
         dropDown.textColor = UIColor.MyTheme.searchPlaceHolderColor
         dropDown.backgroundColor = .white
         dropDown.separatorColor = .white
+        dropDown.textFont = UIFont(name: fontName.N_RegularFont.rawValue, size: 14) ?? UIFont()
         dropDown.customCellConfiguration = { (index: Int, item: String, cell: DropDownCell) in
             cell.optionLabel.textAlignment = .center // Change to .left or .right if needed
         }

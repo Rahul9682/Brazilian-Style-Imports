@@ -1219,7 +1219,7 @@ class ConfirmPaymentViewController: UIViewController,PopUpDelegate,ConfirmPaymen
                 ConfirmPaymentParam.CardNumber.rawValue:strCardNumber,
                 ConfirmPaymentParam.ExpiryYear.rawValue:strExpiryYear,
                 ConfirmPaymentParam.ExpiryMonth.rawValue:strExpiryMonth,
-                ConfirmPaymentParam.device_type.rawValue:"1",
+                ConfirmPaymentParam.device_type.rawValue:"I",
                 ConfirmPaymentParam.po_number.rawValue:strPONumber,
                 ConfirmPaymentParam.comment.rawValue:strCommentt,
                 ConfirmPaymentParam.delivery_type.rawValue:strPickUpDeliveryy,

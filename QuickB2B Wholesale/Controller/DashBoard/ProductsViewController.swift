@@ -929,7 +929,6 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
                 }
             }
             
-            cell.showItemDataButton.isHidden = true
             cell.addItemButton = {
                 if self.searching {
                     if let itemCode = self.viewModel.arrayOfFilteredData[indexPath.row].item_code {
