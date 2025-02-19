@@ -158,6 +158,9 @@ class ItemTableViewCellWithImage: UITableViewCell {
     @IBAction func AddToListAction(_ sender: Any) {
         didClickAdd?()
     }
+    @IBAction func didClickItemNamelabel(_ sender: UIControl) {
+        didClickProduct?()
+    }
 }
 
 //MARK: -> UITextFieldDelegate

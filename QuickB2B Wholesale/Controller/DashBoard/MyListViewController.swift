@@ -200,10 +200,13 @@ class MyListViewController: UIViewController, CalendarDelegate {
         refreshEnable = false
         self.searchTextField.text = ""
         //DispatchQueue.global().async {
-        if self.isChangedQuantity {
+//        if self.isChangedQuantity {
+//        DispatchQueue.main.async {
+//            self.sendRequestUpdateUserProductList()
+//        }
+//        }
         DispatchQueue.main.async {
             self.sendRequestUpdateUserProductList()
-        }
         }
         self.isChangedQuantity = false
         UserDefaults.standard.set(false, forKey: UserDefaultsKeys.isResetList)
@@ -2190,7 +2193,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == self.tableView {
             if self.showImage == "1" {
-                return 120
+                return 130
             } else {
                 return 74
             }
@@ -2510,11 +2513,12 @@ extension MyListViewController: DelegeteMyListSuccess {
 //        self.updateProductList(with: dictParam)
 //    }
     
-    func sendRequestUpdateUserProductList() {
+    func  sendRequestUpdateUserProductList() {
         self.view.endEditing(true)
         var arrUpdatedPriceQuantity = [[String:Any]]()
         var localStorageData = LocalStorage.getItemsData()
         localStorageData += LocalStorage.getShowItData()
+        //let localStorageData = self.viewModel.arrayOfListItems
         print(localStorageData)
         for i in 0..<localStorageData.count {
             var strQuantityy = ""
@@ -2569,6 +2573,38 @@ extension MyListViewController: DelegeteMyListSuccess {
             dictData["id"] = strId
             arrUpdatedPriceQuantity.insert(dictData, at: i)
         }
+        //----------------------------------------------------//
+        var arrayOfListItems = self.viewModel.arrayOfListItems
+        
+        // Step 1: Store items from arrUpdatedPriceQuantity in an array instead of a dictionary
+        var itemList = arrUpdatedPriceQuantity
+
+        // Step 2: Create a sorted array based on arrayOfListItems order
+        var sortedItems = [[String: Any]]()
+        var seenItemCodes = Set<String>()
+
+        for item in arrayOfListItems {
+            if let itemCode = item.item_code {
+                // Find the first matching item from itemList
+                if let index = itemList.firstIndex(where: { $0["item_code"] as? String == itemCode }) {
+                    sortedItems.append(itemList[index]) // Add the item in correct order
+                    seenItemCodes.insert(itemCode)      // Track seen items
+                    itemList.remove(at: index)          // Remove it to avoid duplicates
+                }
+            }
+        }
+
+        // Step 3: Append remaining items with originQty == "0"
+        for remainingItem in itemList {
+            if let originQty = remainingItem["originQty"] as? String, originQty == "0",
+               let itemCode = remainingItem["item_code"] as? String, !seenItemCodes.contains(itemCode) {
+                sortedItems.append(remainingItem) // Add only if originQty is zero and not already added
+            }
+        }
+
+        // Step 4: Assign back to arrUpdatedPriceQuantity
+        arrUpdatedPriceQuantity = sortedItems
+        //----------------------------------------------------//
         let userID = UserDefaults.standard.object(forKey:UserDefaultsKeys.UserLoginID) as? String ?? ""
         var dictParam = [String:Any]()
         var appType = ""

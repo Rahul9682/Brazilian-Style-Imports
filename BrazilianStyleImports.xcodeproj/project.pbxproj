@@ -207,8 +207,8 @@
 		C7850954264FF76300F9297C /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7850953264FF76300F9297C /* OpenSans-Regular.ttf */; };
 		C7850959264FF76C00F9297C /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7850958264FF76C00F9297C /* OpenSans-SemiBold.ttf */; };
 		C785095E264FF77400F9297C /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C785095D264FF77400F9297C /* OpenSans-SemiBoldItalic.ttf */; };
+		C78A5DA62D65B5BC0079534E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C78A5DA52D65B5BC0079534E /* GoogleService-Info.plist */; };
 		C78B44852C1339B7009314CF /* ConfirmationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B44842C1339B7009314CF /* ConfirmationPopUpViewController.swift */; };
-		C79790E42BF72830000BBDF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C79790E32BF72830000BBDF3 /* GoogleService-Info.plist */; };
 		C79BDA9E2C92AA2500E6FB85 /* ShowListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79BDA9D2C92AA2500E6FB85 /* ShowListTableViewCell.xib */; };
 		C79BDA9F2C92AA2500E6FB85 /* ShowListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79BDA9C2C92AA2500E6FB85 /* ShowListTableViewCell.swift */; };
 		C7AEB6EE264FB684003E4CC5 /* SearchProductHeaderItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AEB6EC264FB684003E4CC5 /* SearchProductHeaderItemTableViewCell.swift */; };
@@ -520,9 +520,9 @@
 		C7850953264FF76300F9297C /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		C7850958264FF76C00F9297C /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		C785095D264FF77400F9297C /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		C78A5DA52D65B5BC0079534E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C78B44842C1339B7009314CF /* ConfirmationPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPopUpViewController.swift; sourceTree = "<group>"; };
 		C78F0DCB26708DC6006F51BC /* BrazilianStyleImports.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrazilianStyleImports.entitlements; sourceTree = "<group>"; };
-		C79790E32BF72830000BBDF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79BDA9C2C92AA2500E6FB85 /* ShowListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListTableViewCell.swift; sourceTree = "<group>"; };
 		C79BDA9D2C92AA2500E6FB85 /* ShowListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowListTableViewCell.xib; sourceTree = "<group>"; };
 		C7AEB6EC264FB684003E4CC5 /* SearchProductHeaderItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductHeaderItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -1489,7 +1489,7 @@
 		C79790E22BF727D9000BBDF3 /* Google Firebase File */ = {
 			isa = PBXGroup;
 			children = (
-				C79790E32BF72830000BBDF3 /* GoogleService-Info.plist */,
+				C78A5DA52D65B5BC0079534E /* GoogleService-Info.plist */,
 			);
 			path = "Google Firebase File";
 			sourceTree = "<group>";
@@ -1984,6 +1984,7 @@
 				C7B2CC092A593509009EFA2E /* Acumin Pro Book.otf in Resources */,
 				C7C3FF2A264EAEBF00F8C8E1 /* SearchProductHeaderTableViewCell.xib in Resources */,
 				22465F5B2A36E11E00566BB7 /* CategoriesTableViewCell.xib in Resources */,
+				C78A5DA62D65B5BC0079534E /* GoogleService-Info.plist in Resources */,
 				2215B6602A6A442400C5F81E /* ButtonCollectionViewCell.xib in Resources */,
 				22465F242A36DC0900566BB7 /* ChipsTableViewCell.xib in Resources */,
 				C7850959264FF76C00F9297C /* OpenSans-SemiBold.ttf in Resources */,
@@ -2007,7 +2008,6 @@
 				221CBCD22A4AC3D800ED736A /* MenuV3FooterCell.xib in Resources */,
 				C7C1E109265CF58F0052E5B3 /* ConfirmPaymentItemTableViewCell.xib in Resources */,
 				22465F4F2A36E0A400566BB7 /* TitleTableViewCell.xib in Resources */,
-				C79790E42BF72830000BBDF3 /* GoogleService-Info.plist in Resources */,
 				22465F472A36E03000566BB7 /* AllCategoryStoryboard.storyboard in Resources */,
 				C7850945264FF74800F9297C /* OpenSans-Italic.ttf in Resources */,
 				22465F262A36DC0900566BB7 /* BannerImageCollectionViewCell.xib in Resources */,
@@ -2527,15 +2527,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 225C26548G;
+				DEVELOPMENT_TEAM = B6JLLSA569;
 				INFOPLIST_FILE = "QuickB2B Wholesale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.testQB2BWholesaleBrazilian;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quiksysptyltd.brazilianstyleimport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -2557,15 +2557,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 225C26548G;
+				DEVELOPMENT_TEAM = B6JLLSA569;
 				INFOPLIST_FILE = "QuickB2B Wholesale/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = com.testQB2BWholesaleBrazilian;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quiksysptyltd.brazilianstyleimport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

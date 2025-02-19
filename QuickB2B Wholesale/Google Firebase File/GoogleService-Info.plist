@@ -2,35 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>484178282351-0e9reb2h4h7o0tah2adljt32ns314qs5.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.484178282351-0e9reb2h4h7o0tah2adljt32ns314qs5</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCNWo2szoXSNOCQhuDjW7zdeWFpa1aadNU</string>
+	<string>AIzaSyBwFY5cf7_QTaaKhM7DZLcYMUszdX6ptq8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>484178282351</string>
+	<string>552666386104</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.quickb2b.QuickB2b</string>
+	<string>com.quiksysptyltd.brazilianstyleimport</string>
 	<key>PROJECT_ID</key>
-	<string>quickb2b-be2aa</string>
+	<string>brazilian-style-import</string>
 	<key>STORAGE_BUCKET</key>
-	<string>quickb2b-be2aa.appspot.com</string>
+	<string>brazilian-style-import.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:484178282351:ios:d693c40bd1fe8f048a4a9a</string>
-	<key>DATABASE_URL</key>
-	<string>https://quickb2b-be2aa.firebaseio.com</string>
+	<string>1:552666386104:ios:8486bd81127530d5ac2e4d</string>
 </dict>
 </plist>

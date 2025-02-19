@@ -1423,7 +1423,7 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
             return 38
         }  else {
             if self.viewModel.showImage == "1" {
-                return 120
+                return 130
             } else {
                 return 96
             }
