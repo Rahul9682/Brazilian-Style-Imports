@@ -1,7 +1,7 @@
 
 import Foundation
 import UIKit
-import MBProgressHUD
+//import MBProgressHUD
 import SwiftyJSON
 
 class GlobalConstantClass: NSObject {
@@ -209,23 +209,25 @@ struct Constants {
     }
     
     //MARK: - Show Indicator Method
-   static func showIndicator() {
-        guard let window = UIApplication.shared.keyWindow else { return }
-        let Indicator = MBProgressHUD.showAdded(to: window, animated: true)
-        Indicator.bezelView.color = UIColor.black // Your backgroundcolor
-        Indicator.bezelView.style = .solidColor
-        Indicator.contentColor = UIColor.white
-        //Indicator.label.text = title
-        Indicator.isUserInteractionEnabled = false
-        //Indicator.detailsLabel.text = Description
-        Indicator.show(animated: true)
-    }
-    
-    //MARK: - Hide Indicator Method
-    static func hideIndicator() {
-        guard let window = UIApplication.shared.keyWindow else { return }
-        MBProgressHUD.hide(for: window, animated: true)
-    }
+//   static func showIndicator() {
+//       CustomActivityIndicator.showIndicator()
+////        guard let window = UIApplication.shared.keyWindow else { return }
+////        let Indicator = MBProgressHUD.showAdded(to: window, animated: true)
+////        Indicator.bezelView.color = UIColor.black // Your backgroundcolor
+////        Indicator.bezelView.style = .solidColor
+////        Indicator.contentColor = UIColor.white
+////        //Indicator.label.text = title
+////        Indicator.isUserInteractionEnabled = false
+////        //Indicator.detailsLabel.text = Description
+////        Indicator.show(animated: true)
+//    }
+//    
+//    //MARK: - Hide Indicator Method
+//    static func hideIndicator() {
+//        CustomActivityIndicator.hideIndicator()
+////        guard let window = UIApplication.shared.keyWindow else { return }
+////        MBProgressHUD.hide(for: window, animated: true)
+//    }
     
     //MARK: -> htmlToAttributedString
     static func htmlToAttributedString(description: String, size: CGFloat) -> NSAttributedString? {
@@ -571,3 +573,60 @@ extension Constants {
         }
     }
 }
+
+import UIKit
+
+class CustomActivityIndicator {
+    
+    static var backgroundView: UIView?
+    
+    static func showIndicator() {
+        self.hideIndicator()
+        guard let window = UIApplication.shared.keyWindow else { return }
+        
+        // Create a background view
+        let bgView = UIView(frame: window.bounds)
+        bgView.backgroundColor = UIColor.black.withAlphaComponent(0.1) // Black transparent background
+        bgView.tag = 999 // To identify and remove later
+        
+        // Create a container for the indicator
+        let containerView = UIView()
+        containerView.backgroundColor = UIColor.black
+        containerView.layer.cornerRadius = 5
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Create the activity indicator
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.color = .white
+        indicator.startAnimating()
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Add the indicator to the container view
+        containerView.addSubview(indicator)
+        
+        // Add container to the background view
+        bgView.addSubview(containerView)
+        
+        // Add to the window
+        window.addSubview(bgView)
+        
+        // Center the indicator inside the container
+        NSLayoutConstraint.activate([
+            indicator.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+            indicator.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
+            
+            containerView.widthAnchor.constraint(equalToConstant: 72),
+            containerView.heightAnchor.constraint(equalToConstant: 72),
+            containerView.centerXAnchor.constraint(equalTo: bgView.centerXAnchor),
+            containerView.centerYAnchor.constraint(equalTo: bgView.centerYAnchor)
+        ])
+        
+        backgroundView = bgView
+    }
+
+    static func hideIndicator() {
+        backgroundView?.removeFromSuperview()
+        backgroundView = nil
+    }
+}
+

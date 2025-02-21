@@ -70,6 +70,7 @@ class MyListViewController: UIViewController, CalendarDelegate {
     
     
     //MARK: -> Properties
+    var isSpecialSelected = false
     var viewModel = MyListViewModel()
     var searching = false
     var refreshEnable = true
@@ -2801,6 +2802,16 @@ extension MyListViewController {
                     } else {
                         viewModel.isCategoryExist = true
                         if let arrItemsWithCategoryData = getUserItemsData.data_with_category  {
+                            
+                            for i in 0..<arrItemsWithCategoryData.count {
+//                                print("category_title ::", arrItemsWithCategoryData[i].category_title)
+                                if let catTitle = arrItemsWithCategoryData[i].category_title {
+                                    if self.isSpecialSelected && catTitle == "SPECIALS" {
+                                        selectedChipIndex = i
+                                    }
+                                }
+                            }
+                            
                             if arrItemsWithCategoryData.count > 0 {
                                 self.viewModel.arrItemsCategoryData = arrItemsWithCategoryData
                                 self.viewModel.arrayOfChips = arrItemsWithCategoryData

@@ -164,8 +164,6 @@ PODS:
     - IQKeyboardCore
   - IQTextView (1.0.5):
     - IQKeyboardToolbar/Placeholderable
-  - Kingfisher (6.3.1)
-  - MBProgressHUD (1.2.0)
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
     - nanopb/encode (= 3.30910.0)
@@ -190,8 +188,6 @@ DEPENDENCIES:
   - Firebase/Messaging
   - FSCalendar
   - IQKeyboardManagerSwift
-  - Kingfisher (~> 6.0)
-  - MBProgressHUD
   - SDWebImage
   - SwiftyJSON
   - Toast-Swift
@@ -223,8 +219,6 @@ SPEC REPOS:
     - IQKeyboardToolbarManager
     - IQTextInputViewNotification
     - IQTextView
-    - Kingfisher
-    - MBProgressHUD
     - nanopb
     - PromisesObjC
     - PromisesSwift
@@ -258,8 +252,6 @@ SPEC CHECKSUMS:
   IQKeyboardToolbarManager: 6f4072ac620c2572d4af8c09f42a801f3e4909f7
   IQTextInputViewNotification: f5e954d8881fd9808b744e49e024cc0d4bcfe572
   IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
-  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
@@ -268,6 +260,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 307e2b7683682c52d11ff7a6337330b6f43783f0
+PODFILE CHECKSUM: 4e759534d3eeed74551dd3e490c3f617e0a4d3c2
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.14.3

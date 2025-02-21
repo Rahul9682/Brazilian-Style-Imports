@@ -49,11 +49,11 @@ extension MyListViewModel {
         var resource = Resource<GetUserItemsModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             //self.view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 //self.view.isUserInteractionEnabled = true
             }
             switch result {
@@ -75,11 +75,11 @@ extension MyListViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             
@@ -98,11 +98,11 @@ extension MyListViewModel {
         var resource = Resource<GetCategoryModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             
@@ -126,12 +126,12 @@ extension MyListViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -182,9 +182,9 @@ extension MyListViewModel {
         var resource = Resource<HomeModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()}
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()}
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()}
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()}
             switch result{
             case .success(let cartData):
                 if let cartData = cartData {
@@ -230,9 +230,9 @@ extension MyListViewModel {
        var resource = Resource<GetPushNotificationModel?>(url: url)
        resource.httpMethods = .post
        resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()}
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()}
        WebService().load(resource: resource) { [self] result in
-           DispatchQueue.main.async { Constants.hideIndicator()}
+           DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()}
            switch result{
            case .success(let getPushNotificationData):
              completionHandler(result)

@@ -617,10 +617,26 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.titleLabel.text = "Specials"
                 cell.configureSellAllButton(isShow: true)
                 cell.didClickSeeAll = { [weak self] in
-                    let StoryBoard = UIStoryboard(name: "Main", bundle: nil)
-                    let tabVC = StoryBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as? SpecialsViewController
-                    // tabVC?.selectedTabIndex = 3
-                    self?.navigationController?.pushViewController(tabVC!, animated: false)
+//                    let StoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//                    let tabVC = StoryBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as? SpecialsViewController
+//                    // tabVC?.selectedTabIndex = 3
+//                    self?.navigationController?.pushViewController(tabVC!, animated: false)
+                    let notificationCenter = NotificationCenter.default
+                    notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
+                    DispatchQueue.main.async {
+                        if self?.displayAllItems == true {
+                            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                            let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                            vc.tabType = .myList
+                            self?.navigationController?.pushViewController(vc, animated: false)
+                        } else {
+                            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                            let vc = storyBoard.instantiateViewController(withIdentifier: "MyListViewController") as! MyListViewController
+                            vc.tabType = .myList
+                            vc.isSpecialSelected = true
+                            self?.navigationController?.pushViewController(vc, animated: false)
+                        }
+                    }
                 }
                 return cell
             case 3:

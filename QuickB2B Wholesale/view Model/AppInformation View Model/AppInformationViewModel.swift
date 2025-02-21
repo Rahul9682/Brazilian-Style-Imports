@@ -27,11 +27,11 @@ extension AppInformationViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -51,11 +51,11 @@ extension AppInformationViewModel {
         var resource = Resource<FeaturedProductModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
-            DispatchQueue.main.async { Constants.hideIndicator() }
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator() }
             switch result {
             case .success(_):
                 completionHandler(result)

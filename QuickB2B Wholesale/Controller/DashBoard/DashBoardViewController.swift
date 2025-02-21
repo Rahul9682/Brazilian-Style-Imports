@@ -3,7 +3,7 @@
 //  Created by Sazid Saifi on 23/01/2020 Saka.
 
 import UIKit
-import Kingfisher
+//import Kingfisher
 import IQKeyboardManagerSwift
 import SwiftyJSON
 import SDWebImage

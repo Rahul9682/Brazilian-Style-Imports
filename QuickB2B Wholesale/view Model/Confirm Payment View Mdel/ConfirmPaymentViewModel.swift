@@ -25,11 +25,11 @@ extension ConfirmPaymentViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -50,11 +50,11 @@ extension ConfirmPaymentViewModel {
         var resource = Resource<GetUserItemsModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             //self.view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 //self.view.isUserInteractionEnabled = true
             }
             switch result {

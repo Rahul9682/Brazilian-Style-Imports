@@ -7,11 +7,11 @@ target 'QuickB2B' do
 
   # Pods for QuickB2B
   pod 'IQKeyboardManagerSwift'
-  pod 'MBProgressHUD'
+#  pod 'MBProgressHUD'
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'UITextView+Placeholder'
-  pod 'Kingfisher', '~> 6.0'
+#  pod 'Kingfisher', '~> 6.0'
   pod 'FSCalendar'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'

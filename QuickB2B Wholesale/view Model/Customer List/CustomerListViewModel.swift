@@ -26,12 +26,12 @@ class CustomerListViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
             
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -52,12 +52,12 @@ class CustomerListViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
             
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{

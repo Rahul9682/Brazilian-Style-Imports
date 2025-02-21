@@ -36,12 +36,12 @@ extension ProductDetailsViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { result in
             
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -62,11 +62,11 @@ extension ProductDetailsViewModel {
         var resource = Resource<DeleteItemModel?>(url: url)
         resource.httpMethods = .post
         resource.body = data
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -89,11 +89,11 @@ extension ProductDetailsViewModel {
         var resource = Resource<ProductDetailsModel?>(url: URL(string: testUrl)!)
         resource.httpMethods = .get
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
@@ -116,12 +116,12 @@ extension ProductDetailsViewModel {
         resource.httpMethods = .post
         resource.body = data
         
-        DispatchQueue.main.async { Constants.showIndicator()
+        DispatchQueue.main.async { CustomActivityIndicator.showIndicator()
             view.isUserInteractionEnabled = false
         }
         
         WebService().load(resource: resource) { [self] result in
-            DispatchQueue.main.async { Constants.hideIndicator()
+            DispatchQueue.main.async { CustomActivityIndicator.hideIndicator()
                 view.isUserInteractionEnabled = true
             }
             switch result{
