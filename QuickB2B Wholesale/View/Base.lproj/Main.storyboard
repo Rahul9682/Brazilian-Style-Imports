@@ -2568,6 +2568,7 @@
                         <outlet property="customerIDTextField" destination="ceW-KS-h5N" id="VDI-Ax-qtc"/>
                         <outlet property="customerView" destination="1eu-oD-bf9" id="ngf-IK-XYa"/>
                         <outlet property="dropDownView" destination="z3B-df-cG7" id="9rT-W2-P7M"/>
+                        <outlet property="dropDownViewHeightConst" destination="0U4-K1-TuO" id="Dkp-zk-AR6"/>
                         <outlet property="searchRegionTextfield" destination="qyl-nG-uUJ" id="DEo-VM-aIG"/>
                         <outlet property="supplIerNameLabel" destination="OK9-PH-rev" id="dYh-e1-Eso"/>
                     </connections>
@@ -10943,6 +10944,7 @@ TUFOQUdFIFNVUFBMSUVSUwM
                         <outlet property="postalSubUrbTextField" destination="YT2-7s-ghu" id="1dz-h0-C7O"/>
                         <outlet property="radioButtonBusiness" destination="whu-3u-9ph" id="mcG-2b-AWX"/>
                         <outlet property="radioButtonHomeDelivery" destination="jY1-bi-Uym" id="DIv-I1-UOu"/>
+                        <outlet property="regionViewHeightConst" destination="J9f-Pd-NgP" id="Dwq-Y3-PdQ"/>
                         <outlet property="selectRegionTextfield" destination="w70-9B-kXF" id="bCO-nH-jTb"/>
                         <outlet property="selectRegionView" destination="qHP-K6-KFa" id="45W-PA-pTK"/>
                         <outlet property="submitButton" destination="ZFU-2K-mxL" id="mGR-oV-Sgg"/>
@@ -10969,8 +10971,8 @@ TUFOQUdFIFNVUFBMSUVSUwM
         <image name="backGroundSupplier" width="390" height="845"/>
         <image name="calendar" width="20" height="20"/>
         <image name="cancel" width="30" height="30"/>
-        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart" width="25" height="21"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="closeEye" width="22" height="15.666666984558105"/>
         <image name="crossBlack" width="20" height="20"/>
         <image name="crossWhite" width="20" height="20"/>

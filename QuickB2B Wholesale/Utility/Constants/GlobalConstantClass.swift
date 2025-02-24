@@ -77,7 +77,7 @@ struct KeyConstants {
     //static let clientCode = "DEVELOP"
     //    static let clientCode = UserDefaults.standard.string(forKey: UserDefaultsKeys.clientRegionCode) ?? "b2bdev"
     static var clientCode: String {
-        return UserDefaults.standard.string(forKey: UserDefaultsKeys.clientRegionCode) ?? "XX3955" // "ZP5986"
+        return UserDefaults.standard.string(forKey: UserDefaultsKeys.clientRegionCode) ?? "XX3955"  // "ZP5986"
     }
     //static let clientCode = "TK3757"
     //static let clientCode = "PEZZANO"

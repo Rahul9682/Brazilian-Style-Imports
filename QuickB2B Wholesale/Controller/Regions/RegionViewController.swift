@@ -135,7 +135,15 @@ extension RegionViewController {
                 if let appDetails = appDetails {
                     guard let status = appDetails.status else { return }
                     if (status == 1) {
+                        
+                        if let enableRetailFeature = appDetails.data?.enableRetailFeature {
+                            UserDefaults.standard.setValue(enableRetailFeature, forKey:  UserDefaultsKeys.showRegion)
+                        } else {
+                            UserDefaults.standard.setValue("0", forKey:  UserDefaultsKeys.showRegion)
+                        }
+                        
                         if let showRegion = appDetails.data?.enableRegionSystem {
+                            
                             if showRegion == 1 {
                                 if let arrayOfRegion = appDetails.data?.regions {
                                     UserDefaults.standard.setValue(showRegion, forKey: UserDefaultsKeys.showRegion)

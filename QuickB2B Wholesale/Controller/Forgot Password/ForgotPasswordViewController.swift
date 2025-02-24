@@ -18,6 +18,7 @@ class ForgotPasswordViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var dropDownImage: UIButton!
     @IBOutlet weak var searchRegionTextfield: UITextField!
     
+    @IBOutlet weak var dropDownViewHeightConst: NSLayoutConstraint!
     
     //MARK: -> Properties
     var viewModel = ForgotPasswordViewModel()
@@ -36,8 +37,10 @@ class ForgotPasswordViewController: UIViewController,UITextFieldDelegate {
         let showRegion = UserDefaults.standard.integer(forKey: UserDefaultsKeys.showRegion)
            if showRegion  == 0 {
                dropDownView.isHidden = true
+               dropDownViewHeightConst.constant = 0
            } else {
                dropDownView.isHidden = false
+               dropDownViewHeightConst.constant = 34
            }
         searchRegionTextfield.text = self.selectRegion
     }

@@ -46,6 +46,7 @@ class CreateAnAccountViewController: UIViewController {
     @IBOutlet var businessNameHeightConst: NSLayoutConstraint!
     @IBOutlet weak var selectRegionView: UIView!
     @IBOutlet weak var selectRegionTextfield: UITextField!
+    @IBOutlet weak var regionViewHeightConst: NSLayoutConstraint!
     
     //MARK: - Properties
     var viewModel = CreateAnAccountViewModel()
@@ -78,9 +79,12 @@ class CreateAnAccountViewController: UIViewController {
         let showRegion = UserDefaults.standard.integer(forKey: UserDefaultsKeys.showRegion)
         if showRegion  == 0 {
             selectRegionView.isHidden = true
+            self.regionViewHeightConst.constant = 0
         } else {
             selectRegionView.isHidden = false
+            self.regionViewHeightConst.constant = 30
         }
+       // self.regionViewHeightConst.constant = 0
         
     }
     
@@ -176,7 +180,8 @@ class CreateAnAccountViewController: UIViewController {
                     Signup.postal_country.rawValue:strPostalCountry,
                     Signup.postal_post_code.rawValue:strPostalPostCode,
                     Signup.device_type.rawValue:"I",
-                    Signup.device_id.rawValue: Constants.deviceId
+                    Signup.device_id.rawValue: Constants.deviceId,
+                    Signup.acm_code.rawValue: ""
                 ]
             } else {
                 dictParam = [
@@ -202,7 +207,8 @@ class CreateAnAccountViewController: UIViewController {
                     Signup.postal_state.rawValue:"",
                     Signup.postal_country.rawValue:"",
                     Signup.postal_post_code.rawValue:"",
-                    Signup.device_type.rawValue:"I"
+                    Signup.device_type.rawValue:"I",
+                    Signup.acm_code.rawValue: ""
                 ]
             }
             print(JSON(dictParam))
@@ -261,6 +267,22 @@ class CreateAnAccountViewController: UIViewController {
         phoneTextField.delegate = self;
         mobileTextField.delegate = self;
         emailTextField.delegate = self;
+        
+        userNameTextField.autocapitalizationType = .sentences
+        businessNameTextField.autocapitalizationType = .sentences
+        firstNameTextField.autocapitalizationType = .sentences
+        lastNameTextField.autocapitalizationType = .sentences
+        delieveryAddressNumberTextField.autocapitalizationType = .sentences
+        deliverySuburbTextField.autocapitalizationType = .sentences
+        deliveryCountryTextField.autocapitalizationType = .sentences
+        deliveryStateTextField.autocapitalizationType = .sentences
+        postalNumberTextField.autocapitalizationType = .sentences
+        postalSubUrbTextField.autocapitalizationType = .sentences
+        postalState.autocapitalizationType = .sentences
+        postalCountry.autocapitalizationType = .sentences
+        postalPostCode.autocapitalizationType = .sentences
+        deliveryPostCodeTextField.autocapitalizationType = .sentences
+        selectRegionTextfield.autocapitalizationType = .sentences
         
         delieveryAddressNumberTextField.delegate = self;
         deliverySuburbTextField.delegate = self;
@@ -324,6 +346,8 @@ class CreateAnAccountViewController: UIViewController {
         let postalPostCode = self.postalPostCode.text?.trimmingCharacters(in: .whitespaces) ?? ""
         let selectedRegion = self.selectRegionTextfield.text?.trimmingCharacters(in: .whitespaces) ?? ""
         
+        let enableRegionRequired = UserDefaults.standard.string(forKey: UserDefaultsKeys.showRegion) ?? "0"
+        
         if(userName.count == 0) {
             self.presentPopUpVC(message: validateFirstName, title: "")
             return false
@@ -339,7 +363,7 @@ class CreateAnAccountViewController: UIViewController {
         } else if(password  != confirmPassword) {
             self.presentPopUpVC(message: vaidatePasswordConfirmPassword, title: "")
             return false
-        } else if(selectedRegion == "") {
+        } else if enableRegionRequired == "1"  && selectedRegion == "" {
             self.presentPopUpVC(message: selectedRegionMsg, title: "")
             return false
         }
@@ -553,36 +577,87 @@ extension CreateAnAccountViewController: UITextFieldDelegate{
         }
         
         else if(textField == mobileTextField ) {
-            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-            let compSepByCharInSet = string.components(separatedBy: aSet)
-            let numberFiltered = compSepByCharInSet.joined(separator: "")
-            let count = updatedText.count
-            if string != "" {
-                if ( count == 4 || count == 8) {
-                    textField.text = updatedText + " "
-                }
-                if(string != numberFiltered) {
-                    return false
-                }
-                return updatedText.count <= 20
+//            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+//            let compSepByCharInSet = string.components(separatedBy: aSet)
+//            let numberFiltered = compSepByCharInSet.joined(separator: "")
+//            let count = updatedText.count
+//            if string != "" {
+//                if ( count == 4 || count == 8) {
+//                    textField.text = updatedText + " "
+//                }
+//                if(string != numberFiltered) {
+//                    return false
+//                }
+//                return updatedText.count <= 20
+//            }
+            
+            let allowedCharacters = CharacterSet(charactersIn: "0123456789").inverted
+            let filteredText = string.components(separatedBy: allowedCharacters).joined()
+
+            if string != filteredText {
+                return false
             }
+
+            var newText = (textField.text as? NSString)?.replacingCharacters(in: range, with: string) ?? string
+            newText = newText.replacingOccurrences(of: " ", with: "") // Remove existing spaces
+
+            let formattedText = formatPhoneNumber(newText, type: mobileTextField)
+            textField.text = formattedText
+
+            return false
         }
         else if(textField == phoneTextField ) {
-            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-            let compSepByCharInSet = string.components(separatedBy: aSet)
-            let numberFiltered = compSepByCharInSet.joined(separator: "")
-            let count = updatedText.count
-            if string != "" {
-                if ( count == 2 || count == 7) {
-                    textField.text = updatedText + " "
-                }
-                if(string != numberFiltered) {
-                    return false
-                }
-                return updatedText.count <= 20
+//            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+//            let compSepByCharInSet = string.components(separatedBy: aSet)
+//            let numberFiltered = compSepByCharInSet.joined(separator: "")
+//            let count = updatedText.count
+//            if string != "" {
+//                if ( count == 2 || count == 7) {
+//                    textField.text = updatedText + " "
+//                }
+//                if(string != numberFiltered) {
+//                    return false
+//                }
+//                return updatedText.count <= 20
+//            }
+            
+            let allowedCharacters = CharacterSet(charactersIn: "0123456789").inverted
+            let filteredText = string.components(separatedBy: allowedCharacters).joined()
+            
+            if string != filteredText {
+                return false
             }
+            
+            var newText = (textField.text as? NSString)?.replacingCharacters(in: range, with: string) ?? string
+            newText = newText.replacingOccurrences(of: " ", with: "") // Remove existing spaces
+            
+            let formattedText = formatPhoneNumber(newText, type: phoneTextField)
+            textField.text = formattedText
+            
+            return false
+            
+            
         }
         return true
+    }
+    
+    // Function to format phone number
+    func formatPhoneNumber(_ number: String, type: UITextField) -> String {
+        var formatted = ""
+        for (index, char) in number.enumerated() {
+            if type == phoneTextField {
+                if index == 2 || index == 7 {
+                    formatted.append(" ")
+                }
+            } else {
+                if index == 4 || index == 8 {
+                    formatted.append(" ")
+                }
+            }
+
+            formatted.append(char)
+        }
+        return formatted
     }
 }
 
@@ -602,7 +677,6 @@ extension CreateAnAccountViewController {
                                   //  LocalStorage.saveRegionData(data: arrayOfRegion)
                                     self.arrayOfRegion = arrayOfRegion
                                     self.confiqureDropDown()
-                                   
                                 }
                                 if let enableRetailFeature = data.enableRetailFeature {
                                     if(enableRetailFeature == "1") {
