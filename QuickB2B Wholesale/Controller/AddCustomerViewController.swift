@@ -236,6 +236,22 @@ class AddCustomerViewController: UIViewController, PopUpDelegate {
         mobileTextField.delegate = self;
         emailTextField.delegate = self;
         
+        userNameTextField.autocapitalizationType = .sentences
+        businessNameTextField.autocapitalizationType = .sentences
+        firstNameTextField.autocapitalizationType = .sentences
+        lastNameTextField.autocapitalizationType = .sentences
+        delieveryAddressNumberTextField.autocapitalizationType = .sentences
+        deliverySuburbTextField.autocapitalizationType = .sentences
+        deliveryCountryTextField.autocapitalizationType = .sentences
+        deliveryStateTextField.autocapitalizationType = .sentences
+        postalNumberTextField.autocapitalizationType = .sentences
+        postalSubUrbTextField.autocapitalizationType = .sentences
+        postalState.autocapitalizationType = .sentences
+        postalCountry.autocapitalizationType = .sentences
+        postalPostCode.autocapitalizationType = .sentences
+        deliveryPostCodeTextField.autocapitalizationType = .sentences
+        // selectRegionTextfield.autocapitalizationType = .sentences
+        
         delieveryAddressNumberTextField.delegate = self;
         deliverySuburbTextField.delegate = self;
         deliveryCountryTextField.delegate = self;
@@ -516,36 +532,83 @@ extension AddCustomerViewController: UITextFieldDelegate{
         }
         
         else if(textField == mobileTextField ) {
-            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-            let compSepByCharInSet = string.components(separatedBy: aSet)
-            let numberFiltered = compSepByCharInSet.joined(separator: "")
-            let count = updatedText.count
-            if string != "" {
-                if ( count == 4 || count == 8) {
-                    textField.text = updatedText + " "
-                }
-                if(string != numberFiltered) {
-                    return false
-                }
-                return updatedText.count <= 20
+//            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+//            let compSepByCharInSet = string.components(separatedBy: aSet)
+//            let numberFiltered = compSepByCharInSet.joined(separator: "")
+//            let count = updatedText.count
+//            if string != "" {
+//                if ( count == 4 || count == 8) {
+//                    textField.text = updatedText + " "
+//                }
+//                if(string != numberFiltered) {
+//                    return false
+//                }
+//                return updatedText.count <= 20
+//            }
+            let allowedCharacters = CharacterSet(charactersIn: "0123456789").inverted
+            let filteredText = string.components(separatedBy: allowedCharacters).joined()
+
+            if string != filteredText {
+                return false
             }
+
+            var newText = (textField.text as? NSString)?.replacingCharacters(in: range, with: string) ?? string
+            newText = newText.replacingOccurrences(of: " ", with: "") // Remove existing spaces
+
+            let formattedText = formatPhoneNumber(newText, type: mobileTextField)
+            textField.text = formattedText
+
+            return false
         }
         else if(textField == phoneTextField ) {
-            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
-            let compSepByCharInSet = string.components(separatedBy: aSet)
-            let numberFiltered = compSepByCharInSet.joined(separator: "")
-            let count = updatedText.count
-            if string != "" {
-                if ( count == 2 || count == 7) {
-                    textField.text = updatedText + " "
-                }
-                if(string != numberFiltered) {
-                    return false
-                }
-                return updatedText.count <= 20
+//            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+//            let compSepByCharInSet = string.components(separatedBy: aSet)
+//            let numberFiltered = compSepByCharInSet.joined(separator: "")
+//            let count = updatedText.count
+//            if string != "" {
+//                if ( count == 2 || count == 7) {
+//                    textField.text = updatedText + " "
+//                }
+//                if(string != numberFiltered) {
+//                    return false
+//                }
+//                return updatedText.count <= 20
+//            }
+            let allowedCharacters = CharacterSet(charactersIn: "0123456789").inverted
+            let filteredText = string.components(separatedBy: allowedCharacters).joined()
+            
+            if string != filteredText {
+                return false
             }
+            
+            var newText = (textField.text as? NSString)?.replacingCharacters(in: range, with: string) ?? string
+            newText = newText.replacingOccurrences(of: " ", with: "") // Remove existing spaces
+            
+            let formattedText = formatPhoneNumber(newText, type: phoneTextField)
+            textField.text = formattedText
+            
+            return false
         }
         return true
+    }
+    
+    // Function to format phone number
+    func formatPhoneNumber(_ number: String, type: UITextField) -> String {
+        var formatted = ""
+        for (index, char) in number.enumerated() {
+            if type == phoneTextField {
+                if index == 2 || index == 7 {
+                    formatted.append(" ")
+                }
+            } else {
+                if index == 4 || index == 8 {
+                    formatted.append(" ")
+                }
+            }
+
+            formatted.append(char)
+        }
+        return formatted
     }
     
     func presentPopUpWithDelegate(strMessage:String,buttonTitle:String) {
