@@ -597,11 +597,11 @@ extension AddCustomerViewController: UITextFieldDelegate{
         var formatted = ""
         for (index, char) in number.enumerated() {
             if type == phoneTextField {
-                if index == 2 || index == 7 {
+                if index == 2 || index == 6 {
                     formatted.append(" ")
                 }
             } else {
-                if index == 4 || index == 8 {
+                if index == 4 || index == 7 {
                     formatted.append(" ")
                 }
             }
