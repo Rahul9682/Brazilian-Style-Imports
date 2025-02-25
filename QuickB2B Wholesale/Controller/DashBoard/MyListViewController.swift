@@ -3473,11 +3473,11 @@ extension MyListViewController: DelegeteBannerImageClick {
             //vc.selectedTabIndex = 2
             self.navigationController?.pushViewController(vc, animated: false)
         } else if linkItemType == "specials" {
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
-            vc.tabType = self.tabType
-            //vc.selectedTabIndex = 3
-            self.navigationController?.pushViewController(vc, animated: false)
+//            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
+//            vc.tabType = self.tabType
+//            //vc.selectedTabIndex = 3
+//            self.navigationController?.pushViewController(vc, animated: false)
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController

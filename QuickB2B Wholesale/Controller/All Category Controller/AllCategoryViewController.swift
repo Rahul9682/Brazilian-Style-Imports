@@ -360,10 +360,10 @@ extension AllCategoryViewController: DelegeteBannerImageClick {
             vc.categoryId = self.viewModel.arrayOfBanner[ind].linkItemTypeID ?? ""
             self.navigationController?.pushViewController(vc, animated: false)
         } else if linkItemType == "specials" {
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
-            //vc.selectedTabIndex = 3
-            self.navigationController?.pushViewController(vc, animated: false)
+//            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
+//            //vc.selectedTabIndex = 3
+//            self.navigationController?.pushViewController(vc, animated: false)
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
