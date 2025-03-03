@@ -1050,6 +1050,8 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
                         if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
                             if (strQuantity == "0.00" || strQuantity == "0") {
                                 cell.starImageView.isHidden = false
+                            } else {
+                                cell.starImageView.isHidden = true
                             }
                         } else {
                             cell.starImageView.isHidden = true
@@ -1259,6 +1261,8 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
                             if let strQuantity = viewModel.arrayOfListItems[indexPath.row].quantity {
                                 if (strQuantity == "0.00" || strQuantity == "0") {
                                     cell.starImageView.isHidden = false
+                                } else {
+                                    cell.starImageView.isHidden = true
                                 }
                             } else {
                                 cell.starImageView.isHidden = true
@@ -1950,7 +1954,7 @@ extension ProductsViewController: DelegeteMyListSuccess {
         }
         self.updateTotaPrice()
         self.productListCollectionView.reloadData()
-        self.tableView.reloadData()
+        // self.tableView.reloadData()
     }
 }
 

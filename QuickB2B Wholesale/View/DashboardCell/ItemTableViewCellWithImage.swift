@@ -169,12 +169,21 @@ extension ItemTableViewCellWithImage: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("TextField did begin editing method called")
         let text = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-//
+        if text.count == 0 {
+            starImageView.isHidden = false
+        } else {
+            starImageView.isHidden = true
+        }
     }
     
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }
+        if text.count == 0 {
+            starImageView.isHidden = false
+        } else {
+            starImageView.isHidden = true
+        }
         // Combine the current text with the replacement text
         let updatedText = (text as NSString).replacingCharacters(in: range, with: string)
         // Regular expression to match the allowed format
@@ -205,6 +214,11 @@ extension ItemTableViewCellWithImage: UITextFieldDelegate {
                     
                 }
             } else {
+                if cell.quantityTextField.text?.count == 0 {
+                    starImageView.isHidden = false
+                } else {
+                    starImageView.isHidden = true
+                }
                 if let quantityTextField = cell.quantityTextField.text {
                     if quantityTextField != ""  {
                         if let delegeteMyListSuccess = delegeteMyListSuccess {

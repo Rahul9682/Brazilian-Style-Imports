@@ -1779,6 +1779,8 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                             if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
                                 if (strQuantity == "0.00" || strQuantity == "0") {
                                     cell.starImageView.isHidden = false
+                                } else {
+                                    cell.starImageView.isHidden = true
                                 }
                             } else {
                                 cell.starImageView.isHidden = true
@@ -2025,6 +2027,8 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                                 if (strQuantity == "0.00" || strQuantity == "0") {
                                     cell.starImageView.isHidden = false
                                     //cell.addContainerView.isHidden = true
+                                } else {
+                                    cell.starImageView.isHidden = true
                                 }
                             } else {
                                 cell.starImageView.isHidden = true
@@ -2202,7 +2206,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
             return 38
         } else if tableView == bannerTableView {
             let isShowBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int
-            if isShowBanner == 1 {
+            if isShowBanner == 1 && self.viewModel.arrayOfBanner.count > 0  {
                 bannerContainerViewHeightConst.constant = Constants.bannerHeight
                 return Constants.bannerHeight
             } else {
@@ -2691,7 +2695,7 @@ extension MyListViewController: DelegeteMyListSuccess {
         }
         self.updateTotaPrice()
         self.productListCollectionView.reloadData()
-        self.tableView.reloadData()
+        // self.tableView.reloadData()
     }
 }
 

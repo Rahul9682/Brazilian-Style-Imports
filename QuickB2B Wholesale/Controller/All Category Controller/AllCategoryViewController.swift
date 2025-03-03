@@ -338,7 +338,7 @@ extension AllCategoryViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if self.showAppBanner == 1 {
+        if self.showAppBanner == 1 && self.viewModel.arrayOfBanner.count > 0 {
             bannerTableViewHeightConst.constant = Constants.bannerHeight
             return Constants.bannerHeight
         } else {
@@ -378,7 +378,7 @@ extension AllCategoryViewController: DelegeteBannerImageClick {
 extension AllCategoryViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let isShowBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int
-        if isShowBanner == 1 {
+        if isShowBanner == 1 && self.viewModel.arrayOfBanner.count > 0 {
             if scrollView.contentOffset.y > 0 {
                 bannerTableViewHeightConst.constant = 0
             } else {

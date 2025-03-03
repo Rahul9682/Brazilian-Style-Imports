@@ -1633,7 +1633,7 @@ extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView != outletsTableView {
             let isShowBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int
-            if isShowBanner == 1 {
+            if isShowBanner == 1 && self.viewModel.arrayOfBanner.count > 0 {
                 if scrollView.contentOffset.y > 0 {
                     //bannerContainerView.isHidden = true
                     bannerTableViewHeightConst.constant = 0
