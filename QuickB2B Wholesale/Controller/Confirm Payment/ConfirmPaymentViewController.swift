@@ -1446,7 +1446,7 @@ extension ConfirmPaymentViewController:UITableViewDelegate,UITableViewDataSource
         } else {
             if section == 0 {
                 let cell = confirmPaymentTableView.dequeueReusableCell(withIdentifier: "ConfirmPaymentHeaderTableViewCell") as! ConfirmPaymentHeaderTableViewCell
-                cell.configureShowPrice(showPrice: self.showPrice)
+                cell.configureShowPrice(showPrice: self.showPrice, sortedItem: self.sortedItem)
                 return cell.contentView
             } else {
                 return nil
@@ -1499,6 +1499,7 @@ extension ConfirmPaymentViewController:UITableViewDelegate,UITableViewDataSource
                let  confirmPaymentCell = confirmPaymentTableView.dequeueReusableCell(withIdentifier: "ConfirmPaymentItemTableViewCell", for: indexPath) as! ConfirmPaymentItemTableViewCell
                 confirmPaymentCell.selectionStyle = .none
                 confirmPaymentCell.delegeteGetStringText = self
+                
                 //confirmPaymentCell?.quantityTextField.delegate = self
                 confirmPaymentCell.configureShowPrice(showPrice: self.showPrice)
              
@@ -1600,7 +1601,7 @@ extension ConfirmPaymentViewController:UITableViewDelegate,UITableViewDataSource
                     self.updateTotaPrice()
                     self.confirmPaymentTableView.reloadData()
                 }
-                
+                confirmPaymentCell.configureISMeasure(sortedItem: self.sortedItem)
                 return confirmPaymentCell
             case 1:
                 //MARK: - Show Multi List
@@ -2563,6 +2564,15 @@ extension ConfirmPaymentViewController: DelegeteBannerImageClick {
 //            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 //            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
 //            self.navigationController?.pushViewController(vc, animated: false)
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
+            DispatchQueue.main.async {
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                vc.tabType = .myProduct
+                vc.isSpecialSelected = true
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController

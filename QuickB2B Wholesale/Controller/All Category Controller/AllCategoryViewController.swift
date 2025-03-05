@@ -364,6 +364,15 @@ extension AllCategoryViewController: DelegeteBannerImageClick {
 //            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
 //            //vc.selectedTabIndex = 3
 //            self.navigationController?.pushViewController(vc, animated: false)
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
+            DispatchQueue.main.async {
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                vc.tabType = .myProduct
+                vc.isSpecialSelected = true
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController

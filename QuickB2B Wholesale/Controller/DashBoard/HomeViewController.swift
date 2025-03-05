@@ -63,6 +63,7 @@ class HomeViewController: UIViewController{
     var updateAlertMessage = ""
     var displayAllItems = UserDefaults.standard.bool(forKey: "displayAllItem")
     var acmCode  = UserDefaults.standard.string(forKey: UserDefaultsKeys.acmLoginID)
+    var specialHeaderTitle: String?
     
     //MARK: -> LifeCycle
     override func viewDidLoad() {
@@ -614,28 +615,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "TitleTableViewCell") as! TitleTableViewCell
                 //cell.spcingheightConst.constant = 25
                 cell.containerViewTopConst.constant = 8
-                cell.titleLabel.text = "Specials"
+                cell.titleLabel.text = self.specialHeaderTitle ?? "Specials"
                 cell.configureSellAllButton(isShow: true)
                 cell.didClickSeeAll = { [weak self] in
-//                    let StoryBoard = UIStoryboard(name: "Main", bundle: nil)
-//                    let tabVC = StoryBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as? SpecialsViewController
-//                    // tabVC?.selectedTabIndex = 3
-//                    self?.navigationController?.pushViewController(tabVC!, animated: false)
                     let notificationCenter = NotificationCenter.default
                     notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
                     DispatchQueue.main.async {
-                        if self?.displayAllItems == true {
-                            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                            let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
-                            vc.tabType = .myList
-                            self?.navigationController?.pushViewController(vc, animated: false)
-                        } else {
-                            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                            let vc = storyBoard.instantiateViewController(withIdentifier: "MyListViewController") as! MyListViewController
-                            vc.tabType = .myList
-                            vc.isSpecialSelected = true
-                            self?.navigationController?.pushViewController(vc, animated: false)
-                        }
+                        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                        vc.tabType = .myProduct
+                        vc.isSpecialSelected = true
+                        self?.navigationController?.pushViewController(vc, animated: false)
                     }
                 }
                 return cell
@@ -648,6 +638,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.popUpDelegate = self
                 cell.reloadDelegate = self
                 cell.configureHomeData(data: self.viewModel.arrayOfSpecial, showImage: self.viewModel.showImage, showPrice: self.viewModel.showPrice, listingType: .specials)
+                
                 return cell
             case 4:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "TitleTableViewCell") as! TitleTableViewCell
@@ -824,6 +815,15 @@ extension HomeViewController: DelegeteBannerImageClick {
 //            let vc = storyBoard.instantiateViewController(withIdentifier: "SpecialsViewController") as! SpecialsViewController
 //            vc.tabType = self.tabType
 //            self.navigationController?.pushViewController(vc, animated: false)
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
+            DispatchQueue.main.async {
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                vc.tabType = .myProduct
+                vc.isSpecialSelected = true
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
@@ -871,8 +871,8 @@ extension HomeViewController: DelegeteProductClick {
 extension HomeViewController: DelegeteGetItemCode {
     func itemCode(itemCode: String) {
         viewModel.itemCode = itemCode
-        //addProduct(param: viewModel.AddProductParam() as [String : Any],itemCode: itemCode)
-        self.deleteItemWithId(itemCode: itemCode)
+        addProduct(param: viewModel.AddProductParam() as [String : Any],itemCode: itemCode)
+        // self.deleteItemWithId(itemCode: itemCode)
         LocalStorage.deleteGetItemsIndex(itemCode: itemCode)
         LocalStorage.deleteMultiItemsIndex(itemCode: itemCode)
     }
@@ -1121,6 +1121,8 @@ extension HomeViewController {
                         UserDefaults.standard.set(displayAllItem, forKey: "displayAllItem")
                         self.displayAllItems = displayAllItem
                     }
+                    self.specialHeaderTitle = getUserItemsData.specialHeaderTitle
+     
                     self.viewModel.homeData = getUserItemsData.data
                     if let app_version_update = getUserItemsData.app_version_update {
                         self.appstoreVersion = app_version_update
@@ -1290,7 +1292,7 @@ extension HomeViewController {
                         self.presentPopUpVC(message:messge,title: "")
                     }
                 }
-                
+                self.tableView.reloadData()
             case .failure(let error):
                 if(error == .networkError) {
                     self.presentPopUpVC(message: validateInternetConnection, title: validateInternetTitle)

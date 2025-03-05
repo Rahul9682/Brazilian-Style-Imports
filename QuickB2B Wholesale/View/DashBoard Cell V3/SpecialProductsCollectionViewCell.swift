@@ -99,7 +99,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
         inactiveLabel.isHidden = true
         inactiveLabel.text = ""
         //quantityTextField.font = UIFont.OpenSans(.semibold, size: 13)
-        addButtonContainerVIew.isHidden = true
+        // addButtonContainerVIew.isHidden = true
         inactiveLabel.textColor = AppColors.redTextColor
         quantityTextField.isEnabled  = true
         //cell.quantityTextField.tag = indexPath.row

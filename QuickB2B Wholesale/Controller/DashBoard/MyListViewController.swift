@@ -452,155 +452,157 @@ class MyListViewController: UIViewController, CalendarDelegate {
         let locationInView = sender.location(in: tableView)
         let indexPath = tableView.indexPathForRow(at: locationInView)
         
-        if searching {
-            if sender.state == .began {
-                if indexPath != nil {
-                    if   let senderItemID = self.viewModel.arrayOfFilteredData[indexPath!.row].special_item_id {
-                        if(senderItemID == 1){
-                            return
-                        }
+        if self.viewModel.arrayOfChips[self.selectedChipIndex].category_title == "All Products" {
+            if searching {
+                if sender.state == .began {
+                    if indexPath != nil {
+                        //                    if   let senderItemID = self.viewModel.arrayOfFilteredData[indexPath!.row].special_item_id {
+                        //                        if(senderItemID == 1){
+                        //                            return
+                        //                        }
+                        //                    }
+                        //                    if let specialTitle = viewModel.arrayOfFilteredData[indexPath!.row].special_title {
+                        //                        if(specialTitle == 1){
+                        //                            return
+                        //                        }
+                        //                    }
+                        
+                        viewModel.dragInitialIndexPath = indexPath
+                        let cell = tableView.cellForRow(at: indexPath!)
+                        viewModel.dragCellSnapshot = snapshotOfCell(inputView: cell!)
+                        var center = cell?.center
+                        viewModel.dragCellSnapshot?.center = center!
+                        viewModel.dragCellSnapshot?.alpha = 0.0
+                        tableView.addSubview(viewModel.dragCellSnapshot!)
+                        
+                        UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                            center?.y = locationInView.y
+                            self.viewModel.dragCellSnapshot?.center = center!
+                            self.viewModel.dragCellSnapshot?.transform = (self.viewModel.dragCellSnapshot?.transform.scaledBy(x: 1.05, y: 1.05))!
+                            self.viewModel.dragCellSnapshot?.alpha = 0.99
+                            cell?.alpha = 0.0
+                        }, completion: { (finished) -> Void in
+                            if finished {
+                                cell?.isHidden = true
+                            }
+                        })
                     }
-                    if let specialTitle = viewModel.arrayOfFilteredData[indexPath!.row].special_title {
-                        if(specialTitle == 1){
-                            return
-                        }
-                    }
-                    
-                    viewModel.dragInitialIndexPath = indexPath
-                    let cell = tableView.cellForRow(at: indexPath!)
-                    viewModel.dragCellSnapshot = snapshotOfCell(inputView: cell!)
-                    var center = cell?.center
+                } else if sender.state == .changed && viewModel.dragInitialIndexPath != nil {
+                    var center = viewModel.dragCellSnapshot?.center
+                    center?.y = locationInView.y
                     viewModel.dragCellSnapshot?.center = center!
-                    viewModel.dragCellSnapshot?.alpha = 0.0
-                    tableView.addSubview(viewModel.dragCellSnapshot!)
                     
+                    // to lock dragging to same section add: "&& indexPath?.section == dragInitialIndexPath?.section" to the if below
+                    if indexPath != nil && indexPath != viewModel.dragInitialIndexPath {
+                        // update your data model
+                        let dataToMove = self.viewModel.arrayOfListItems[viewModel.dragInitialIndexPath!.row]
+                        viewModel.arrayOfListItems.remove(at: viewModel.dragInitialIndexPath!.row)
+                        viewModel.arrayOfListItems.insert(dataToMove, at: indexPath!.row)
+                        //arrItemsData.swapAt(indexPath!.row, dragInitialIndexPath!.row)
+                        print(viewModel.arrayOfListItems)
+                        tableView.moveRow(at: viewModel.dragInitialIndexPath!, to: indexPath!)
+                        viewModel.dragInitialIndexPath = indexPath
+                        //
+                    }
+                } else if sender.state == .ended && viewModel.dragInitialIndexPath != nil {
+                    let cell = tableView.cellForRow(at: viewModel.dragInitialIndexPath!)
+                    cell?.isHidden = false
+                    cell?.alpha = 0.0
                     UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                        center?.y = locationInView.y
-                        self.viewModel.dragCellSnapshot?.center = center!
-                        self.viewModel.dragCellSnapshot?.transform = (self.viewModel.dragCellSnapshot?.transform.scaledBy(x: 1.05, y: 1.05))!
-                        self.viewModel.dragCellSnapshot?.alpha = 0.99
-                        cell?.alpha = 0.0
+                        self.viewModel.dragCellSnapshot?.center = (cell?.center)!
+                        self.viewModel.dragCellSnapshot?.transform = CGAffineTransform.identity
+                        self.viewModel.dragCellSnapshot?.alpha = 0.0
+                        cell?.alpha = 1.0
                     }, completion: { (finished) -> Void in
                         if finished {
-                            cell?.isHidden = true
+                            self.viewModel.dragInitialIndexPath = nil
+                            self.viewModel.dragCellSnapshot?.removeFromSuperview()
+                            self.viewModel.dragCellSnapshot = nil
+                            UserDefaults.standard.set("1", forKey:UserDefaultsKeys.orderFlag)
+                            self.viewModel.isLongPressGestureRecogized = true
+                            print(self.viewModel.arrayOfListItems)
+                            print(self.viewModel.arrLongPressGesture)
+                            self.tableView.reloadData()
+                            self.RearrangingOrder()
+                            return
                         }
                     })
                 }
-            } else if sender.state == .changed && viewModel.dragInitialIndexPath != nil {
-                var center = viewModel.dragCellSnapshot?.center
-                center?.y = locationInView.y
-                viewModel.dragCellSnapshot?.center = center!
-                
-                // to lock dragging to same section add: "&& indexPath?.section == dragInitialIndexPath?.section" to the if below
-                if indexPath != nil && indexPath != viewModel.dragInitialIndexPath {
-                    // update your data model
-                    let dataToMove = self.viewModel.arrayOfListItems[viewModel.dragInitialIndexPath!.row]
-                    viewModel.arrayOfListItems.remove(at: viewModel.dragInitialIndexPath!.row)
-                    viewModel.arrayOfListItems.insert(dataToMove, at: indexPath!.row)
-                    //arrItemsData.swapAt(indexPath!.row, dragInitialIndexPath!.row)
-                    print(viewModel.arrayOfListItems)
-                    tableView.moveRow(at: viewModel.dragInitialIndexPath!, to: indexPath!)
-                    viewModel.dragInitialIndexPath = indexPath
-                    //
-                }
-            } else if sender.state == .ended && viewModel.dragInitialIndexPath != nil {
-                let cell = tableView.cellForRow(at: viewModel.dragInitialIndexPath!)
-                cell?.isHidden = false
-                cell?.alpha = 0.0
-                UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                    self.viewModel.dragCellSnapshot?.center = (cell?.center)!
-                    self.viewModel.dragCellSnapshot?.transform = CGAffineTransform.identity
-                    self.viewModel.dragCellSnapshot?.alpha = 0.0
-                    cell?.alpha = 1.0
-                }, completion: { (finished) -> Void in
-                    if finished {
-                        self.viewModel.dragInitialIndexPath = nil
-                        self.viewModel.dragCellSnapshot?.removeFromSuperview()
-                        self.viewModel.dragCellSnapshot = nil
-                        UserDefaults.standard.set("1", forKey:UserDefaultsKeys.orderFlag)
-                        self.viewModel.isLongPressGestureRecogized = true
-                        print(self.viewModel.arrayOfListItems)
-                        print(self.viewModel.arrLongPressGesture)
-                        self.tableView.reloadData()
-                        self.RearrangingOrder()
-                        return
+            } else {
+                if sender.state == .began {
+                    if indexPath != nil {
+                        //                    if   let senderItemID = self.viewModel.arrayOfListItems[indexPath!.row].special_item_id {
+                        //                        if(senderItemID == 1){
+                        //                            return
+                        //                        }
+                        //                    }
+                        //                    if let specialTitle = viewModel.arrayOfListItems[indexPath!.row].special_title {
+                        //                        if(specialTitle == 1){
+                        //                            return
+                        //                        }
+                        //                    }
+                        
+                        viewModel.dragInitialIndexPath = indexPath
+                        let cell = tableView.cellForRow(at: indexPath!)
+                        viewModel.dragCellSnapshot = snapshotOfCell(inputView: cell!)
+                        var center = cell?.center
+                        viewModel.dragCellSnapshot?.center = center!
+                        viewModel.dragCellSnapshot?.alpha = 0.0
+                        tableView.addSubview(viewModel.dragCellSnapshot!)
+                        
+                        UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                            center?.y = locationInView.y
+                            self.viewModel.dragCellSnapshot?.center = center!
+                            self.viewModel.dragCellSnapshot?.transform = (self.viewModel.dragCellSnapshot?.transform.scaledBy(x: 1.05, y: 1.05))!
+                            self.viewModel.dragCellSnapshot?.alpha = 0.99
+                            cell?.alpha = 0.0
+                        }, completion: { (finished) -> Void in
+                            if finished {
+                                cell?.isHidden = true
+                            }
+                        })
                     }
-                })
-            }
-        } else {
-            if sender.state == .began {
-                if indexPath != nil {
-                    if   let senderItemID = self.viewModel.arrayOfListItems[indexPath!.row].special_item_id {
-                        if(senderItemID == 1){
-                            return
-                        }
-                    }
-                    if let specialTitle = viewModel.arrayOfListItems[indexPath!.row].special_title {
-                        if(specialTitle == 1){
-                            return
-                        }
-                    }
-                    
-                    viewModel.dragInitialIndexPath = indexPath
-                    let cell = tableView.cellForRow(at: indexPath!)
-                    viewModel.dragCellSnapshot = snapshotOfCell(inputView: cell!)
-                    var center = cell?.center
+                } else if sender.state == .changed && viewModel.dragInitialIndexPath != nil {
+                    var center = viewModel.dragCellSnapshot?.center
+                    center?.y = locationInView.y
                     viewModel.dragCellSnapshot?.center = center!
-                    viewModel.dragCellSnapshot?.alpha = 0.0
-                    tableView.addSubview(viewModel.dragCellSnapshot!)
                     
+                    // to lock dragging to same section add: "&& indexPath?.section == dragInitialIndexPath?.section" to the if below
+                    if indexPath != nil && indexPath != viewModel.dragInitialIndexPath {
+                        // update your data model
+                        let dataToMove = self.viewModel.arrayOfListItems[viewModel.dragInitialIndexPath!.row]
+                        viewModel.arrayOfListItems.remove(at: viewModel.dragInitialIndexPath!.row)
+                        viewModel.arrayOfListItems.insert(dataToMove, at: indexPath!.row)
+                        //arrItemsData.swapAt(indexPath!.row, dragInitialIndexPath!.row)
+                        print(viewModel.arrayOfListItems)
+                        tableView.moveRow(at: viewModel.dragInitialIndexPath!, to: indexPath!)
+                        viewModel.dragInitialIndexPath = indexPath
+                        //
+                    }
+                } else if sender.state == .ended && viewModel.dragInitialIndexPath != nil {
+                    let cell = tableView.cellForRow(at: viewModel.dragInitialIndexPath!)
+                    cell?.isHidden = false
+                    cell?.alpha = 0.0
                     UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                        center?.y = locationInView.y
-                        self.viewModel.dragCellSnapshot?.center = center!
-                        self.viewModel.dragCellSnapshot?.transform = (self.viewModel.dragCellSnapshot?.transform.scaledBy(x: 1.05, y: 1.05))!
-                        self.viewModel.dragCellSnapshot?.alpha = 0.99
-                        cell?.alpha = 0.0
+                        self.viewModel.dragCellSnapshot?.center = (cell?.center)!
+                        self.viewModel.dragCellSnapshot?.transform = CGAffineTransform.identity
+                        self.viewModel.dragCellSnapshot?.alpha = 0.0
+                        cell?.alpha = 1.0
                     }, completion: { (finished) -> Void in
                         if finished {
-                            cell?.isHidden = true
+                            self.viewModel.dragInitialIndexPath = nil
+                            self.viewModel.dragCellSnapshot?.removeFromSuperview()
+                            self.viewModel.dragCellSnapshot = nil
+                            UserDefaults.standard.set("1", forKey:UserDefaultsKeys.orderFlag)
+                            self.viewModel.isLongPressGestureRecogized = true
+                            print(self.viewModel.arrayOfListItems)
+                            print(self.viewModel.arrLongPressGesture)
+                            self.tableView.reloadData()
+                            self.RearrangingOrder()
+                            return
                         }
                     })
                 }
-            } else if sender.state == .changed && viewModel.dragInitialIndexPath != nil {
-                var center = viewModel.dragCellSnapshot?.center
-                center?.y = locationInView.y
-                viewModel.dragCellSnapshot?.center = center!
-                
-                // to lock dragging to same section add: "&& indexPath?.section == dragInitialIndexPath?.section" to the if below
-                if indexPath != nil && indexPath != viewModel.dragInitialIndexPath {
-                    // update your data model
-                    let dataToMove = self.viewModel.arrayOfListItems[viewModel.dragInitialIndexPath!.row]
-                    viewModel.arrayOfListItems.remove(at: viewModel.dragInitialIndexPath!.row)
-                    viewModel.arrayOfListItems.insert(dataToMove, at: indexPath!.row)
-                    //arrItemsData.swapAt(indexPath!.row, dragInitialIndexPath!.row)
-                    print(viewModel.arrayOfListItems)
-                    tableView.moveRow(at: viewModel.dragInitialIndexPath!, to: indexPath!)
-                    viewModel.dragInitialIndexPath = indexPath
-                    //
-                }
-            } else if sender.state == .ended && viewModel.dragInitialIndexPath != nil {
-                let cell = tableView.cellForRow(at: viewModel.dragInitialIndexPath!)
-                cell?.isHidden = false
-                cell?.alpha = 0.0
-                UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                    self.viewModel.dragCellSnapshot?.center = (cell?.center)!
-                    self.viewModel.dragCellSnapshot?.transform = CGAffineTransform.identity
-                    self.viewModel.dragCellSnapshot?.alpha = 0.0
-                    cell?.alpha = 1.0
-                }, completion: { (finished) -> Void in
-                    if finished {
-                        self.viewModel.dragInitialIndexPath = nil
-                        self.viewModel.dragCellSnapshot?.removeFromSuperview()
-                        self.viewModel.dragCellSnapshot = nil
-                        UserDefaults.standard.set("1", forKey:UserDefaultsKeys.orderFlag)
-                        self.viewModel.isLongPressGestureRecogized = true
-                        print(self.viewModel.arrayOfListItems)
-                        print(self.viewModel.arrLongPressGesture)
-                        self.tableView.reloadData()
-                        self.RearrangingOrder()
-                        return
-                    }
-                })
             }
         }
     }
@@ -1401,7 +1403,7 @@ extension MyListViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == chipsCollectionView {
-            
+            self.view.endEditing(true)
             self.isChipSelelect = true
             for i in 0...viewModel.arrayOfChips.count - 1 {
                 viewModel.arrayOfChips[i].isSlected = false
@@ -1587,7 +1589,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
             return outletCell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCellWithImage", for: indexPath) as! ItemTableViewCellWithImage
-            cell.configureShowImage(isShow: self.showImage)
+            cell.configureShowImage(isShow: self.showImage, isSpecialItem: self.viewModel.arrayOfListItems[indexPath.row].special_item_id == 1)
             cell.selectionStyle = .none
             tableView.separatorStyle = .none
             cell.quantityTextField.isHidden = false
@@ -1595,16 +1597,27 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
             cell.inactiveLabel.text = ""
             cell.quantityTextField.font = UIFont.OpenSans(.semibold, size: 13)
             cell.delegeteMyListSuccess = self
-            cell.addContainerView.isHidden = true
+            // cell.addContainerView.isHidden = true
             cell.addIcon.image = Icons.remove
             cell.quantityTextField.tag = indexPath.row
             cell.measureTexfield.tag = indexPath.row
-            cell.addIconWIdthConstraint.constant = 0
+            // cell.addIconWIdthConstraint.constant = 0
           
             
             
             cell.addItemButton = {
-                print("add")
+                print("Delete from index")
+                if self.searching {
+                    if let itemCode = self.viewModel.arrayOfFilteredData[indexPath.row].item_code {
+                        self.deleteItemWithId(itemCode: itemCode, index: indexPath.row, isSearching: self.searching)
+                    }
+                    //self.configureBackground(with: Icons.noDataFound, message: "", count: self.viewModel.arrayOfFilteredData.count)
+                } else {
+                    if let itemCode = self.viewModel.arrayOfListItems[indexPath.row].item_code {
+                        self.deleteItemWithId(itemCode: itemCode, index: indexPath.row, isSearching: self.searching)
+                    }
+                    // self.configureBackground(with: Icons.noDataFound, message: "", count: self.viewModel.arrayOfListItems.count)
+                }
             }
             
             cell.didClickAdd = {
@@ -1776,15 +1789,16 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                     if let specialItemID = viewModel.arrayOfFilteredData[indexPath.row].special_item_id {
                         if (specialItemID == 1)
                         {
-                            if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
-                                if (strQuantity == "0.00" || strQuantity == "0") {
-                                    cell.starImageView.isHidden = false
-                                } else {
-                                    cell.starImageView.isHidden = true
-                                }
-                            } else {
-                                cell.starImageView.isHidden = true
-                            }
+//                            if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
+//                                if (strQuantity == "0.00" || strQuantity == "0") {
+//                                    cell.starImageView.isHidden = false
+//                                } else {
+//                                    cell.starImageView.isHidden = true
+//                                }
+//                            } else {
+//                                cell.starImageView.isHidden = true
+//                            }
+                            cell.starImageView.isHidden = false
                         }
                         else
                         {
@@ -2023,17 +2037,18 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                     if let specialItemID = viewModel.arrayOfListItems[indexPath.row].special_item_id {
                         if (specialItemID == 1)
                         {
-                            if let strQuantity = viewModel.arrayOfListItems[indexPath.row].quantity {
-                                if (strQuantity == "0.00" || strQuantity == "0") {
-                                    cell.starImageView.isHidden = false
-                                    //cell.addContainerView.isHidden = true
-                                } else {
-                                    cell.starImageView.isHidden = true
-                                }
-                            } else {
-                                cell.starImageView.isHidden = true
-                                //  cell.addContainerView.isHidden = false
-                            }
+//                            if let strQuantity = viewModel.arrayOfListItems[indexPath.row].quantity {
+//                                if (strQuantity == "0.00" || strQuantity == "0") {
+//                                    cell.starImageView.isHidden = false
+//                                    //cell.addContainerView.isHidden = true
+//                                } else {
+//                                    cell.starImageView.isHidden = true
+//                                }
+//                            } else {
+//                                cell.starImageView.isHidden = true
+//                                //  cell.addContainerView.isHidden = false
+//                            }
+                            cell.starImageView.isHidden = false
                         }
                         else
                         {
@@ -2695,7 +2710,7 @@ extension MyListViewController: DelegeteMyListSuccess {
         }
         self.updateTotaPrice()
         self.productListCollectionView.reloadData()
-        // self.tableView.reloadData()
+        self.tableView.reloadData()
     }
 }
 
@@ -2780,6 +2795,19 @@ extension MyListViewController {
                     if let showAppBanner = getUserItemsData.showAppBanner {
                         UserDefaults.standard.set(showAppBanner, forKey:UserDefaultsKeys.showAppBanner)
                     }
+                    //
+                    if let bannerLists = getUserItemsData.bannerLists {
+                        self.viewModel.arrayOfBanner = bannerLists
+                        let showBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int
+                        if showBanner == 1 &&  self.viewModel.arrayOfBanner.count > 0 {
+                            self.bannerContainerViewHeightConst.constant = 130
+                        } else {
+                            self.bannerContainerViewHeightConst.constant = 0
+                        }
+                    } else {
+                        self.bannerContainerViewHeightConst.constant = 0
+                    }
+                    //
                     
                     if let showItemInGrid = getUserItemsData.showItemInGrid {
                         UserDefaults.standard.set(showItemInGrid, forKey:UserDefaultsKeys.showItemInGrid)
@@ -3482,6 +3510,15 @@ extension MyListViewController: DelegeteBannerImageClick {
 //            vc.tabType = self.tabType
 //            //vc.selectedTabIndex = 3
 //            self.navigationController?.pushViewController(vc, animated: false)
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
+            DispatchQueue.main.async {
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                vc.tabType = .myProduct
+                vc.isSpecialSelected = true
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController

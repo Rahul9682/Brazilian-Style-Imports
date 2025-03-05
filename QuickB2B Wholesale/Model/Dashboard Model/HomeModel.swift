@@ -44,6 +44,7 @@ struct HomeModel: Codable {
     let app_version_update_content: String?
     let show_image: String?
     let displayAllItems: Bool?
+    let specialHeaderTitle: String?
 
     enum CodingKeys: String, CodingKey {
         case message, status, outlets
@@ -64,6 +65,7 @@ struct HomeModel: Codable {
         case app_version_update_content = "app_version_update_content"
         case show_image = "show_image"
         case displayAllItems = "display_all_items_in_app"
+        case specialHeaderTitle = "special_header_title"
     }
     
     init(from decoder: Decoder) throws {
@@ -88,6 +90,7 @@ struct HomeModel: Codable {
         app_version_update_content = try? (values.decodeIfPresent(String.self,forKey: .app_version_update_content))
         show_image = try? (values.decodeIfPresent(String.self,forKey: .show_image))
         displayAllItems = try? (values.decodeIfPresent(Bool.self,forKey: .displayAllItems))
+        specialHeaderTitle = try? (values.decodeIfPresent(String.self,forKey: .specialHeaderTitle))
     }
 }
 

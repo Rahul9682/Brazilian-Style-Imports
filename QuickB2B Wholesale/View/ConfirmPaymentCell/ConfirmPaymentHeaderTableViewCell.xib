@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -100,9 +100,11 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="containerView" destination="PSI-ZH-u4n" id="O44-f4-029"/>
+                <outlet property="measureWidthConst" destination="3hf-6w-g5s" id="APN-cI-cvE"/>
                 <outlet property="priceHeaderLabel" destination="Ejs-6S-sIz" id="Rhs-Dn-yqx"/>
                 <outlet property="priceLabelTrailingConst" destination="git-IK-qlD" id="y3e-a9-Jj7"/>
                 <outlet property="priceLabelWidthConst" destination="DIa-o5-fQb" id="6cD-vl-7gF"/>
+                <outlet property="qtMeasureConstraint" destination="LiQ-hs-zBJ" id="Cqi-uC-W1z"/>
                 <outlet property="qtyTrailingConst" destination="6xM-mw-LgE" id="edp-MH-SFg"/>
             </connections>
             <point key="canvasLocation" x="134.78260869565219" y="97.433035714285708"/>

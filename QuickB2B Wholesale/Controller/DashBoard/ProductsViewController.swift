@@ -47,6 +47,7 @@ class ProductsViewController: UIViewController {
     
 
     //MARK: -> Properties
+    var isSpecialSelected = false
     var viewModel = ProductsViewModel()
     var searching = false
     var refreshEnable = true
@@ -830,7 +831,7 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
             return outletCell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCellWithImage", for: indexPath) as! ItemTableViewCellWithImage
-            cell.configureShowImage(isShow: self.viewModel.showImage)
+            cell.configureShowImage(isShow: self.viewModel.showImage, isSpecialItem: self.viewModel.arrayOfListItems[indexPath.row].special_item_id == 1)
             cell.selectionStyle = .none
             tableView.separatorStyle = .none
             cell.quantityTextField.isHidden = false
@@ -1047,15 +1048,16 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
                 
                 if let specialItemID = viewModel.arrayOfFilteredData[indexPath.row].special_item_id {
                     if ( specialItemID == 1) {
-                        if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
-                            if (strQuantity == "0.00" || strQuantity == "0") {
-                                cell.starImageView.isHidden = false
-                            } else {
-                                cell.starImageView.isHidden = true
-                            }
-                        } else {
-                            cell.starImageView.isHidden = true
-                        }
+//                        if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
+//                            if (strQuantity == "0.00" || strQuantity == "0") {
+//                                cell.starImageView.isHidden = false
+//                            } else {
+//                                cell.starImageView.isHidden = true
+//                            }
+//                        } else {
+//                            cell.starImageView.isHidden = true
+//                        }
+                        cell.starImageView.isHidden = false
                     }
                     else {
                         cell.starImageView.isHidden = true
@@ -1258,15 +1260,16 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
                     if let specialItemID = viewModel.arrayOfListItems[indexPath.row].special_item_id {
                         if ( specialItemID == 1)
                         {
-                            if let strQuantity = viewModel.arrayOfListItems[indexPath.row].quantity {
-                                if (strQuantity == "0.00" || strQuantity == "0") {
-                                    cell.starImageView.isHidden = false
-                                } else {
-                                    cell.starImageView.isHidden = true
-                                }
-                            } else {
-                                cell.starImageView.isHidden = true
-                            }
+//                            if let strQuantity = viewModel.arrayOfListItems[indexPath.row].quantity {
+//                                if (strQuantity == "0.00" || strQuantity == "0") {
+//                                    cell.starImageView.isHidden = false
+//                                } else {
+//                                    cell.starImageView.isHidden = true
+//                                }
+//                            } else {
+//                                cell.starImageView.isHidden = true
+//                            }
+                            cell.starImageView.isHidden = false
                         }
                         else
                         {
@@ -1954,7 +1957,7 @@ extension ProductsViewController: DelegeteMyListSuccess {
         }
         self.updateTotaPrice()
         self.productListCollectionView.reloadData()
-        // self.tableView.reloadData()
+        self.tableView.reloadData()
     }
 }
 
@@ -2378,39 +2381,49 @@ extension ProductsViewController {
                             print(self.viewModel.arrayOfChips)
                             self.chipsCollectionView.reloadData()
                             if self.viewModel.arrayOfChips.count > 0 {
-                                if let allCategoryId = UserDefaults.standard.value(forKey: "AllCategoryId") as? Int {
-                                    if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.id == "\(allCategoryId)"}) {
+                                if self.isSpecialSelected {
+                                    if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.name == "SPECIALS"}) {
                                         self.selectedChipIndex = index
                                         self.viewModel.arrayOfChips[index].isSlected = true
                                         self.categoryId = self.viewModel.arrayOfChips[index].id ?? ""
-                                        self.chipsCollectionView.scrollToItem(at:IndexPath(item: index, section: 0), at: .left, animated: false)
+                                        // self.chipsCollectionView.scrollToItem(at:IndexPath(item: index, section: 0), at: .left, animated: false)
                                     }
-                                    UserDefaults.standard.removeObject(forKey: "AllCategoryId")
+                                    self.getItems()
                                 } else {
-                                    if let isComeFromBanner = UserDefaults.standard.object(forKey: UserDefaultsKeys.isComeFromBanner) as? Bool {
-                                        if !(isComeFromBanner) {
+                                    if let allCategoryId = UserDefaults.standard.value(forKey: "AllCategoryId") as? Int {
+                                        if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.id == "\(allCategoryId)"}) {
+                                            self.selectedChipIndex = index
+                                            self.viewModel.arrayOfChips[index].isSlected = true
+                                            self.categoryId = self.viewModel.arrayOfChips[index].id ?? ""
+                                            self.chipsCollectionView.scrollToItem(at:IndexPath(item: index, section: 0), at: .left, animated: false)
+                                        }
+                                        UserDefaults.standard.removeObject(forKey: "AllCategoryId")
+                                    } else {
+                                        if let isComeFromBanner = UserDefaults.standard.object(forKey: UserDefaultsKeys.isComeFromBanner) as? Bool {
+                                            if !(isComeFromBanner) {
+                                                if let ind = self.selectedChipIndex {
+                                                    self.viewModel.arrayOfChips[ind].isSlected = true
+                                                    self.categoryId = self.viewModel.arrayOfChips[ind].id ?? ""
+                                                }
+                                            } else {
+                                                if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.id == self.categoryId}) {
+                                                    self.selectedChipIndex = index
+                                                    self.viewModel.arrayOfChips[index].isSlected = true
+                                                    let indexPath = IndexPath(item: index, section: 0)
+                                                    // Scroll to the item with or without animation
+                                                    self.chipsCollectionView.scrollToItem(at: indexPath, at: .left, animated: true)
+                                                }
+                                            }
+                                        } else {
                                             if let ind = self.selectedChipIndex {
                                                 self.viewModel.arrayOfChips[ind].isSlected = true
                                                 self.categoryId = self.viewModel.arrayOfChips[ind].id ?? ""
                                             }
-                                        } else {
-                                            if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.id == self.categoryId}) {
-                                                self.selectedChipIndex = index
-                                                self.viewModel.arrayOfChips[index].isSlected = true
-                                                let indexPath = IndexPath(item: index, section: 0)
-                                                // Scroll to the item with or without animation
-                                                self.chipsCollectionView.scrollToItem(at: indexPath, at: .left, animated: true)
-                                            }
                                         }
-                                    } else {
-                                        if let ind = self.selectedChipIndex {
-                                            self.viewModel.arrayOfChips[ind].isSlected = true
-                                            self.categoryId = self.viewModel.arrayOfChips[ind].id ?? ""
-                                        }
+                                        
                                     }
-                                    
+                                    self.getItems()
                                 }
-                                self.getItems()
                             }
                         }
                     } else if(status == 2) {
@@ -2822,6 +2835,15 @@ extension ProductsViewController: DelegeteBannerImageClick {
 //            vc.tabType = self.tabType
 //            //vc.selectedTabIndex = 3
 //            self.navigationController?.pushViewController(vc, animated: false)
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.post(name: Notification.Name("tabChange"), object: nil, userInfo: nil)
+            DispatchQueue.main.async {
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                vc.tabType = .myProduct
+                vc.isSpecialSelected = true
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
         } else if linkItemType == "product" {
             let storyBoard = UIStoryboard(name: Storyboard.productDetailsStoryboard, bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController

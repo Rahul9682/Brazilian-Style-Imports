@@ -47,6 +47,7 @@ class ConfirmPaymentItemTableViewCell: UITableViewCell {
         cancelViewWidthConst.constant = 0
         dashedTextField.borderStyle = .none
         dashedTextField.isUserInteractionEnabled = false
+        
     }
     
     func configureShowPrice(showPrice: String) {
@@ -83,7 +84,14 @@ class ConfirmPaymentItemTableViewCell: UITableViewCell {
     }
     
    
-    
+    func configureISMeasure(sortedItem : [GetItemsData]) {
+        let isMeasureBox = sortedItem.contains { $0.is_meas_box == 1 }
+        if !isMeasureBox {
+            dashedTextField.isHidden = true
+            measureTextField.isHidden = true
+            quantityTextField.isHidden = false
+        }
+    }
     
     func configureEdit(isEdit: Bool) {
         if isEdit {

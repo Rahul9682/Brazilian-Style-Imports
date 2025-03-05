@@ -14,17 +14,20 @@ class ConfirmPaymentHeaderTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabelWidthConst: NSLayoutConstraint!
     @IBOutlet weak var priceLabelTrailingConst: NSLayoutConstraint!
     
+    @IBOutlet weak var measureWidthConst: NSLayoutConstraint!
+    
+    @IBOutlet weak var qtMeasureConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        configureShowPrice(showPrice: "0")
+//        configureShowPrice(showPrice: "0")
         containerView.layer.cornerRadius = 4
         containerView.layer.borderWidth = 1
         containerView.layer.borderColor = UIColor.black.cgColor
         containerView.clipsToBounds = true
     }
     
-    func configureShowPrice(showPrice: String) {
+    func configureShowPrice(showPrice: String, sortedItem : [GetItemsData]) {
         if showPrice == "0" {
             priceHeaderLabel.isHidden = true
             priceLabelWidthConst.constant = 0
@@ -35,6 +38,13 @@ class ConfirmPaymentHeaderTableViewCell: UITableViewCell {
             priceLabelWidthConst.constant = 50
             priceLabelTrailingConst.constant = 12
             qtyTrailingConst.constant = 26
+        }
+        
+        let isMeasureBox = sortedItem.contains { $0.is_meas_box == 1 }
+        if !isMeasureBox {
+            measureWidthConst.constant = 0
+//            qtyTrailingConst.constant = 0
+            qtMeasureConstraint.constant = 0
         }
     }
     

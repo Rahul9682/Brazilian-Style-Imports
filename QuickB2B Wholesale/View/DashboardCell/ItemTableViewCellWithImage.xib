@@ -45,7 +45,7 @@
                         </connections>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="pOd-64-rT5">
-                        <rect key="frame" x="311" y="15" width="23" height="21"/>
+                        <rect key="frame" x="197" y="13" width="23" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="23" id="LrI-Yz-XEf"/>
                             <constraint firstAttribute="height" constant="21" id="iFM-jt-a8d"/>
@@ -75,9 +75,9 @@
                         </connections>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5t-ik-iLY" customClass="SemiBoldLabelSize12" customModule="QuickB2B" customModuleProvider="target">
-                        <rect key="frame" x="175" y="13" width="49" height="21"/>
+                        <rect key="frame" x="224" y="13" width="0.0" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="49" id="jyg-C9-P01"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="jyg-C9-P01"/>
                             <constraint firstAttribute="height" constant="21" id="k7q-vY-gkI"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -237,7 +237,6 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="nZk-mN-Iba" firstAttribute="leading" secondItem="Krp-wX-Cbc" secondAttribute="trailing" constant="20" id="1yY-9B-wrI"/>
-                    <constraint firstItem="pOd-64-rT5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="513-Vf-Ynb"/>
                     <constraint firstItem="Cus-t5-Xib" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="6uf-RS-2qM"/>
                     <constraint firstItem="E9E-3u-DhD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6vn-lx-eAO"/>
                     <constraint firstAttribute="trailing" secondItem="NW1-jd-rH5" secondAttribute="trailing" constant="8" id="8b0-Ke-Rma"/>
@@ -254,9 +253,10 @@
                     <constraint firstItem="XNa-1j-zil" firstAttribute="leading" secondItem="E9E-3u-DhD" secondAttribute="trailing" constant="8" id="V8W-pz-bX7"/>
                     <constraint firstItem="Krp-wX-Cbc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XbI-tX-fnd"/>
                     <constraint firstItem="q3y-ao-fPQ" firstAttribute="top" secondItem="uMI-Ok-hPn" secondAttribute="bottom" constant="8" id="ZR8-Pp-Gc8"/>
-                    <constraint firstAttribute="trailing" secondItem="pOd-64-rT5" secondAttribute="trailing" constant="24" id="a3X-Qo-Oov"/>
                     <constraint firstItem="q3y-ao-fPQ" firstAttribute="top" secondItem="NW1-jd-rH5" secondAttribute="bottom" constant="8" id="c1v-3a-y6D"/>
                     <constraint firstItem="tgm-nx-u0z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cGD-Cp-gj8"/>
+                    <constraint firstItem="Q5t-ik-iLY" firstAttribute="leading" secondItem="pOd-64-rT5" secondAttribute="trailing" constant="4" id="esD-a7-aJQ"/>
+                    <constraint firstItem="pOd-64-rT5" firstAttribute="centerY" secondItem="Q5t-ik-iLY" secondAttribute="centerY" id="fyR-fB-vfH"/>
                     <constraint firstItem="aGt-Bq-Qhd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="gl5-TQ-sN9"/>
                     <constraint firstAttribute="trailing" secondItem="q3y-ao-fPQ" secondAttribute="trailing" constant="5" id="hNJ-p4-DJ1"/>
                     <constraint firstItem="tgm-nx-u0z" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hcp-Y1-g7V"/>

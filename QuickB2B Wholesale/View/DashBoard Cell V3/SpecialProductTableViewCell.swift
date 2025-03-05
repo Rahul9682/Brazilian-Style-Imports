@@ -87,6 +87,7 @@ extension SpecialProductTableViewCell: UICollectionViewDelegate, UICollectionVie
             cell.measureTextField.tag = indexPath.row * 2 + 1 // Unique identifier for unit
             cell.configureHomeData(data: arrayOfSpecialItems[indexPath.row], showImage: self.show_image, showPrice: self.showPrice)
             cell.didClickAdd = { [weak self] in
+                print("didClickAdd")
                 if let delegeteGetItemCode = self?.delegeteGetItemCode {
                     if let itemCode = self?.arrayOfSpecialItems[indexPath.row].item_code {
                         delegeteGetItemCode.itemCode(itemCode: itemCode)
@@ -148,6 +149,23 @@ extension SpecialProductTableViewCell: UICollectionViewDelegate, UICollectionVie
                     delegeteProductClick.didClickProduct(index: indexPath.row, listingType: self.productType)
                 }
             }
+        
+        
+//                                if self.searching {
+//                                    if self.arrayOfSpecialItems[indexPath.row].inMyList == 0 {
+//                                        cell.addIconImageView.image = Icons.add
+//                                    } else {
+//                                        cell.addIconImageView.image = UIImage()
+//                                    }
+//                                } else {
+                                    if self.arrayOfSpecialItems.count != 0 {
+                                        if self.arrayOfSpecialItems[indexPath.row].inMyList == 0 {
+                                            cell.addIconImageView.image = Icons.add
+                                        } else {
+                                            cell.addIconImageView.image = UIImage()
+                                        }
+                                    }
+//                                }
             
             return  cell
     }
