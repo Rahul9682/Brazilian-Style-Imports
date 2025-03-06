@@ -43,7 +43,6 @@ class ItemTableViewCellWithImage: UITableViewCell {
     var addItemButton: (() -> Void)?
     var didClickProduct: (() ->Void)?
     var didClickProductNameLabel: (() ->Void)?
-    var isSpecial = false
     
     @IBOutlet weak var itemLabeltrailingConst: NSLayoutConstraint!
     
@@ -90,8 +89,7 @@ class ItemTableViewCellWithImage: UITableViewCell {
     }
     
     //MARK: -> configure-Product Visibility
-    func configureShowImage(isShow: String, isSpecialItem: Bool = false) {
-        self.isSpecial = isSpecialItem
+    func configureShowImage(isShow: String) {
         if isShow == "1" {
             itemLabel.isUserInteractionEnabled = false
             productImageHeihtConstarint.constant = 75

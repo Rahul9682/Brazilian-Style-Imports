@@ -831,7 +831,7 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
             return outletCell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCellWithImage", for: indexPath) as! ItemTableViewCellWithImage
-            cell.configureShowImage(isShow: self.viewModel.showImage, isSpecialItem: self.viewModel.arrayOfListItems[indexPath.row].special_item_id == 1)
+            cell.configureShowImage(isShow: self.viewModel.showImage)
             cell.selectionStyle = .none
             tableView.separatorStyle = .none
             cell.quantityTextField.isHidden = false
@@ -2382,7 +2382,7 @@ extension ProductsViewController {
                             self.chipsCollectionView.reloadData()
                             if self.viewModel.arrayOfChips.count > 0 {
                                 if self.isSpecialSelected {
-                                    if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.name == "SPECIALS"}) {
+                                    if let index = self.viewModel.arrayOfChips.firstIndex(where: {$0.id == "SPECIALS"}) {
                                         self.selectedChipIndex = index
                                         self.viewModel.arrayOfChips[index].isSlected = true
                                         self.categoryId = self.viewModel.arrayOfChips[index].id ?? ""

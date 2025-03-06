@@ -1589,7 +1589,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
             return outletCell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCellWithImage", for: indexPath) as! ItemTableViewCellWithImage
-            cell.configureShowImage(isShow: self.showImage, isSpecialItem: self.viewModel.arrayOfListItems[indexPath.row].special_item_id == 1)
+            cell.configureShowImage(isShow: self.showImage)
             cell.selectionStyle = .none
             tableView.separatorStyle = .none
             cell.quantityTextField.isHidden = false
@@ -1690,7 +1690,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
             }
 
             if searching {
-                if self.viewModel.arrayOfFilteredData.count > 0 {
+                if self.viewModel.arrayOfFilteredData.count > 0 && indexPath.row < viewModel.arrayOfFilteredData.count {
                     cell.didChangeQuantity = { value in
                         cell.index = indexPath.row
                         let itemCode = self.viewModel.arrayOfFilteredData[indexPath.row].item_code ?? ""
@@ -1906,7 +1906,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                 }
             }
             else { // Without Searching
-                if self.viewModel.arrayOfListItems.count > 0 {
+                if self.viewModel.arrayOfListItems.count > 0 && indexPath.row < viewModel.arrayOfListItems.count {
                     cell.didChangeQuantity = { value in
                         cell.index = indexPath.row
                         let itemCode = self.viewModel.arrayOfListItems[indexPath.row].item_code ?? ""
@@ -2235,7 +2235,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         if tableView != self.bannerTableView || tableView != self.outletsTableView {
             if searching {
-                if self.viewModel.arrayOfFilteredData.count > 0 {
+                if self.viewModel.arrayOfFilteredData.count > 0 && indexPath.row < viewModel.arrayOfFilteredData.count {
                     guard let specialTitle = self.viewModel.arrayOfFilteredData[indexPath.row].special_title else {return false}
                     guard let specialItemID = self.viewModel.arrayOfFilteredData[indexPath.row].special_item_id else {return false}
                     guard let isDelete = self.viewModel.arrayOfFilteredData[indexPath.row].is_delete else {return false}
@@ -2250,7 +2250,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                     }
                 }
             } else {
-                if self.viewModel.arrayOfListItems.count > 0 {
+                if self.viewModel.arrayOfListItems.count > 0 && indexPath.row < viewModel.arrayOfListItems.count {
                     print(self.viewModel.arrayOfListItems.count)
                     if indexPath.row > self.viewModel.arrayOfListItems.count {
                         guard let specialTitle = self.viewModel.arrayOfListItems[indexPath.row].special_title else {return false}
@@ -2594,36 +2594,63 @@ extension MyListViewController: DelegeteMyListSuccess {
             arrUpdatedPriceQuantity.insert(dictData, at: i)
         }
         //----------------------------------------------------//
-        var arrayOfListItems = self.viewModel.arrayOfListItems
-        
-        // Step 1: Store items from arrUpdatedPriceQuantity in an array instead of a dictionary
-        var itemList = arrUpdatedPriceQuantity
+        let arrayOfListItems = self.viewModel.arrayOfListItems
+        let itemList = arrUpdatedPriceQuantity
 
-        // Step 2: Create a sorted array based on arrayOfListItems order
+        // Step 1: Filter items that match arrayOfListItems and have priority 1
+        let matchingItems = itemList.filter { item in
+            if let itemCode = item["item_code"] as? String,
+               let priority = item["priority"] as? Int,
+               priority == 1,
+               arrayOfListItems.contains(where: { $0.item_code == itemCode }) {
+                return true
+            }
+            return false
+        }
+
+        // Step 2: Sort matching items based on arrayOfListItems order
         var sortedItems = [[String: Any]]()
-        var seenItemCodes = Set<String>()
+        var existingItemCodes = Set<String>()
 
         for item in arrayOfListItems {
-            if let itemCode = item.item_code {
-                // Find the first matching item from itemList
-                if let index = itemList.firstIndex(where: { $0["item_code"] as? String == itemCode }) {
-                    sortedItems.append(itemList[index]) // Add the item in correct order
-                    seenItemCodes.insert(itemCode)      // Track seen items
-                    itemList.remove(at: index)          // Remove it to avoid duplicates
-                }
+            if let itemCode = item.item_code,
+               let index = matchingItems.firstIndex(where: { $0["item_code"] as? String == itemCode }) {
+                sortedItems.append(matchingItems[index])
+                existingItemCodes.insert(itemCode)
             }
         }
 
-        // Step 3: Append remaining items with originQty == "0"
-        for remainingItem in itemList {
-            if let originQty = remainingItem["originQty"] as? String, originQty == "0",
-               let itemCode = remainingItem["item_code"] as? String, !seenItemCodes.contains(itemCode) {
-                sortedItems.append(remainingItem) // Add only if originQty is zero and not already added
+        // Step 3: Keep other items unchanged
+        let unchangedItems = itemList.filter { item in
+            if let itemCode = item["item_code"] as? String,
+               let priority = item["priority"] as? Int,
+               priority == 1,
+               arrayOfListItems.contains(where: { $0.item_code == itemCode }) {
+                return false // Exclude these, as they are already sorted
+            }
+            return true
+        }
+
+        // Step 4: Add missing items from arrayOfListItems with full details
+        for item in arrayOfListItems {
+            if let itemCode = item.item_code, !existingItemCodes.contains(itemCode) {
+                // Convert arrayOfListItems object to dictionary format expected in arrUpdatedPriceQuantity
+                let newItem: [String: Any] = [
+                    "priority": item.priority ?? 0,
+                    "measureQty": item.measureQty ?? "0",
+                    "originQty": item.originQty ?? "0",
+                    "item_code": itemCode,
+                    "id": item.id ?? 0,
+                    "is_meas_box": item.is_meas_box ?? 0,
+                    "item_name": item.item_name ?? "",
+                    "quantity": item.quantity ?? "0"
+                ]
+                sortedItems.append(newItem)
             }
         }
 
-        // Step 4: Assign back to arrUpdatedPriceQuantity
-        arrUpdatedPriceQuantity = sortedItems
+        // Step 5: Combine sorted matching items + missing items + unchanged items
+        arrUpdatedPriceQuantity = sortedItems + unchangedItems
         //----------------------------------------------------//
         let userID = UserDefaults.standard.object(forKey:UserDefaultsKeys.UserLoginID) as? String ?? ""
         var dictParam = [String:Any]()
