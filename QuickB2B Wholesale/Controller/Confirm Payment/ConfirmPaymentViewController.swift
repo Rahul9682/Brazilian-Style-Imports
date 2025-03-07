@@ -359,6 +359,7 @@ class ConfirmPaymentViewController: UIViewController,PopUpDelegate,ConfirmPaymen
             UpdateProductList.orderFlag.rawValue:orderFlag,
             UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
             UpdateProductList.device_id.rawValue:Constants.deviceId,
+            UpdateProductList.device_type.rawValue:Constants.deviceType,
         ]
         print("Update",JSON(dictParam))
         self.updateProductList(with: dictParam)
@@ -443,6 +444,7 @@ class ConfirmPaymentViewController: UIViewController,PopUpDelegate,ConfirmPaymen
             UpdateProductList.orderFlag.rawValue:orderFlag,
             UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
             UpdateProductList.device_id.rawValue:Constants.deviceId,
+            UpdateProductList.device_type.rawValue:Constants.deviceType,
         ]
         print("Update",JSON(dictParam))
         self.updateProductList(with: dictParam)
@@ -528,6 +530,7 @@ class ConfirmPaymentViewController: UIViewController,PopUpDelegate,ConfirmPaymen
             UpdateProductList.orderFlag.rawValue:orderFlag,
             UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
             UpdateProductList.device_id.rawValue:Constants.deviceId,
+            UpdateProductList.device_type.rawValue:Constants.deviceType,
         ]
         print("Update",JSON(dictParam))
         self.updateProductList(with: dictParam)

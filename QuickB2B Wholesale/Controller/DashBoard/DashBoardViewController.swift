@@ -645,6 +645,7 @@ class DashBoardViewController:UIViewController,CalendarDelegate,UITextFieldDeleg
             UpdateProductList.user_code.rawValue:userID ,
             UpdateProductList.orderFlag.rawValue:orderFlag,
             UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
+            UpdateProductList.device_type.rawValue:Constants.deviceType,
         ]
         self.updateProductList(with: dictParam)
     }

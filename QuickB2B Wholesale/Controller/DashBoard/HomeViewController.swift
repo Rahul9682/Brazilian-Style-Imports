@@ -1100,6 +1100,7 @@ extension HomeViewController: DelegeteGetStringText, DelegeteSuccessWithListType
             UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
             UpdateProductList.device_id.rawValue:Constants.deviceId,
             UpdateProductList.acm_code.rawValue:acmCode,
+            UpdateProductList.device_type.rawValue:Constants.deviceType,
         ]
         print("Update",JSON(dictParam))
         self.updateProductList(with: dictParam)

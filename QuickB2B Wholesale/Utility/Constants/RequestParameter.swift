@@ -64,6 +64,7 @@ enum UpdateProductList : String {
     case multiItems = "multiItems"
     case device_id = "device_id"
     case acm_code = "acm_code"
+    case device_type = "device_type"
 }
 
 // MARK: - UpdateProductList Param

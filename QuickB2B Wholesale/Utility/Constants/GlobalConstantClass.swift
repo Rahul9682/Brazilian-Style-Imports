@@ -247,6 +247,7 @@ struct Constants {
     
     static let bannerHeight = 130.0
     static let deviceId = getDeviceId() //"39d568bf23a11f0e"
+    static let deviceType = "I" //"39d568bf23a11f0e"
     static let deviceName = UIDevice.current.name//"iphone XR"
     static let deviceIP =  getIPAddress() ?? "192.168.3.101"
 }

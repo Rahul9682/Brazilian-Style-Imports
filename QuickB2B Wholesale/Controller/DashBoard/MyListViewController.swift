@@ -2428,6 +2428,7 @@ extension MyListViewController: DelegeteMyListSuccess {
     //            UpdateProductList.orderFlag.rawValue:orderFlag,
     //            UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
     //            UpdateProductList.device_id.rawValue:Constants.deviceId,
+//    UpdateProductList.device_type.rawValue:Constants.deviceType,
     //        ]
     //        print(JSON(dictParam))
     //        self.isChipSelelect = !isChipSelelect //use for enable selected Chip
@@ -2522,6 +2523,7 @@ extension MyListViewController: DelegeteMyListSuccess {
 //            UpdateProductList.user_code.rawValue:userID ,
 //            UpdateProductList.orderFlag.rawValue: orderFlag,
 //            UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
+//    UpdateProductList.device_type.rawValue:Constants.deviceType,
 //            UpdateProductList.device_id.rawValue:Constants.deviceId]
 //        print("Update",JSON(dictParam))
 //        self.isChipSelelect = !isChipSelelect//use for enable selected Chip
@@ -2678,6 +2680,7 @@ extension MyListViewController: DelegeteMyListSuccess {
             UpdateProductList.user_code.rawValue:userID ,
             UpdateProductList.orderFlag.rawValue: orderFlag,
             UpdateProductList.cartItems.rawValue:arrUpdatedPriceQuantity,
+            UpdateProductList.device_type.rawValue:Constants.deviceType,
             UpdateProductList.device_id.rawValue:Constants.deviceId]
         print("Update",JSON(dictParam))
         self.isChipSelelect = !isChipSelelect//use for enable selected Chip
