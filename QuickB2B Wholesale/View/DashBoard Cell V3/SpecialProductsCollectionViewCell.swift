@@ -907,11 +907,11 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
                        if (strQuantity == "0.00" || strQuantity == "0") {
                            favouriteButton.isHidden = false
                            favoriteViewWidthConstraints.constant = 18
-                           addButtonContainerVIew.isHidden = true
+                         //  addButtonContainerVIew.isHidden = true
                        } else {
                            favouriteButton.isHidden = true
                            favoriteViewWidthConstraints.constant = 18
-                           addButtonContainerVIew.isHidden = false
+                          // addButtonContainerVIew.isHidden = false
                        }
                    }
                }
@@ -919,13 +919,13 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
                    priceLabel.textColor = UIColor.black
                    favouriteButton.isHidden = true
                    favoriteViewWidthConstraints.constant = 18
-                   addButtonContainerVIew.isHidden = false
+                 //  addButtonContainerVIew.isHidden = false
                }
            } else {
                priceLabel.textColor = UIColor.black
                favouriteButton.isHidden = true
                favoriteViewWidthConstraints.constant = 18
-               addButtonContainerVIew.isHidden = false
+              // addButtonContainerVIew.isHidden = false
            }
            
           
@@ -1027,7 +1027,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
                        //priceLabel.isHidden = true
                        favouriteButton.isHidden  = false
                        favoriteViewWidthConstraints.constant = 18
-                       addButtonContainerVIew.isHidden = true
+                      // addButtonContainerVIew.isHidden = true
                    } else {
                        //productNameLabel.isHidden = false
                        // quantityTextField.isHidden = false
@@ -1035,16 +1035,17 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
                        //favouriteButton.setImage(UIImage(named: "starFill"), for: .normal)
                        favouriteButton.isHidden  = true
                        favoriteViewWidthConstraints.constant = 18
-                       addButtonContainerVIew.isHidden = false
+                      // addButtonContainerVIew.isHidden = false
                    }
                }
            }
            
            if displayAll {
-               addButtonContainerVIew.isHidden = true
+               //addButtonContainerVIew.isHidden = true
            } else {
-               addButtonContainerVIew.isHidden = false
+               //addButtonContainerVIew.isHidden = false
            }
+           addButtonContainerVIew.isHidden = false
        }
     
     //MARK: -> configure-Specials-Data

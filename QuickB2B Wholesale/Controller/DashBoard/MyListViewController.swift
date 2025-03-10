@@ -385,18 +385,20 @@ class MyListViewController: UIViewController, CalendarDelegate {
     }
     
     @objc func handleLongGesture(gesture: UILongPressGestureRecognizer) {
-        switch(gesture.state) {
-        case .began:
-            guard let selectedIndexPath = productListCollectionView.indexPathForItem(at: gesture.location(in: productListCollectionView)) else {
-                break
+        if self.viewModel.arrayOfChips[self.selectedChipIndex].category_title == "All Products" {
+            switch(gesture.state) {
+            case .began:
+                guard let selectedIndexPath = productListCollectionView.indexPathForItem(at: gesture.location(in: productListCollectionView)) else {
+                    break
+                }
+                productListCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+            case .changed:
+                productListCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))
+            case .ended:
+                productListCollectionView.endInteractiveMovement()
+            default:
+                productListCollectionView.cancelInteractiveMovement()
             }
-            productListCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
-        case .changed:
-            productListCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))
-        case .ended:
-            productListCollectionView.endInteractiveMovement()
-        default:
-            productListCollectionView.cancelInteractiveMovement()
         }
     }
     
@@ -1447,16 +1449,16 @@ extension MyListViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
         if collectionView == productListCollectionView {
             if indexPath.section == 0 {
-                if   let senderItemID = self.viewModel.arrayOfListItems[indexPath.row].special_item_id {
-                    if(senderItemID == 1){
-                        return false
-                    }
-                }
-                if let specialTitle = viewModel.arrayOfListItems[indexPath.row].special_title {
-                    if(specialTitle == 1){
-                        return false
-                    }
-                }
+//                if   let senderItemID = self.viewModel.arrayOfListItems[indexPath.row].special_item_id {
+//                    if(senderItemID == 1){
+//                        return false
+//                    }
+//                }
+//                if let specialTitle = viewModel.arrayOfListItems[indexPath.row].special_title {
+//                    if(specialTitle == 1){
+//                        return false
+//                    }
+//                }
                 return true
             } else {
                 return false

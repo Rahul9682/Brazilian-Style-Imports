@@ -62,7 +62,7 @@ class AllCategoryViewController: UIViewController {
         didEnterBackgroundObserver()
         
         if let showBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int {
-            if showBanner == 1 {
+            if showBanner == 1 && self.viewModel.arrayOfBanner.count > 0 {
                 bannerTableViewHeightConst.constant = Constants.bannerHeight
             } else {
                 bannerTableViewHeightConst.constant = 0
@@ -160,7 +160,7 @@ class AllCategoryViewController: UIViewController {
         )
         
         if let showBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int {
-            if showBanner == 1 {
+            if showBanner == 1 && self.viewModel.arrayOfBanner.count > 0 {
                 bannerTableViewHeightConst.constant = Constants.bannerHeight
             } else {
                 bannerTableViewHeightConst.constant = 0
