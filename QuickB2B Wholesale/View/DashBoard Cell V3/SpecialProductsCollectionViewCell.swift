@@ -876,9 +876,9 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
            }
            
            if let strQuantity = Constants.getPrice(itemCode: data.item_code){
-               // if (strQuantity == "0.00" || strQuantity == "0") {
-               let Intprice = Int(strQuantity)
-               if (Intprice == 0) {
+                if (strQuantity == "0.00" || strQuantity == "0") {
+//               let Intprice = Int(strQuantity)
+//               if (Intprice == 0) {
                    if (data.special_item_id == 1) {
                        quantityTextField.text = ""
                    }

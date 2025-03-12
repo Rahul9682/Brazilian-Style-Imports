@@ -97,6 +97,12 @@ class MyListViewController: UIViewController, CalendarDelegate {
     var displayAllItem: Bool = false
     var acmCode  = UserDefaults.standard.string(forKey: UserDefaultsKeys.acmLoginID)
     
+    var displayLink: CADisplayLink?
+    var scrollDirection: ScrollDirection?
+    var scrollSpeed: CGFloat = 0.0
+    let maxScrollSpeed: CGFloat = 8.0 // Adjust for smoothness
+    let scrollZoneHeight: CGFloat = 60.0
+    
     //MARK: -> LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -506,6 +512,7 @@ class MyListViewController: UIViewController, CalendarDelegate {
                         viewModel.dragInitialIndexPath = indexPath
                         //
                     }
+                    checkAutoScroll(location: locationInView)
                 } else if sender.state == .ended && viewModel.dragInitialIndexPath != nil {
                     let cell = tableView.cellForRow(at: viewModel.dragInitialIndexPath!)
                     cell?.isHidden = false
@@ -581,6 +588,7 @@ class MyListViewController: UIViewController, CalendarDelegate {
                         viewModel.dragInitialIndexPath = indexPath
                         //
                     }
+                    checkAutoScroll(location: locationInView)
                 } else if sender.state == .ended && viewModel.dragInitialIndexPath != nil {
                     let cell = tableView.cellForRow(at: viewModel.dragInitialIndexPath!)
                     cell?.isHidden = false
@@ -607,6 +615,55 @@ class MyListViewController: UIViewController, CalendarDelegate {
                 }
             }
         }
+    }
+    
+    func checkAutoScroll(location: CGPoint) {
+        let tableViewHeight = tableView.bounds.height
+        let topZone = tableView.contentOffset.y + scrollZoneHeight
+        let bottomZone = tableView.contentOffset.y + tableViewHeight - scrollZoneHeight
+
+        if location.y <= topZone {
+            let distance = topZone - location.y
+            scrollSpeed = min(maxScrollSpeed, (distance / scrollZoneHeight) * maxScrollSpeed)
+            startAutoScroll(direction: .up)
+        } else if location.y >= bottomZone {
+            let distance = location.y - bottomZone
+            scrollSpeed = min(maxScrollSpeed, (distance / scrollZoneHeight) * maxScrollSpeed)
+            startAutoScroll(direction: .down)
+        } else {
+            stopAutoScroll()
+        }
+    }
+
+    func startAutoScroll(direction: ScrollDirection) {
+        if displayLink == nil {
+            scrollDirection = direction
+            displayLink = CADisplayLink(target: self, selector: #selector(handleAutoScroll))
+            displayLink?.add(to: .main, forMode: .common)
+        }
+    }
+
+    @objc func handleAutoScroll() {
+        guard let direction = scrollDirection else { return }
+        var offset = tableView.contentOffset
+
+        switch direction {
+        case .up:
+            offset.y = max(0, offset.y - scrollSpeed)
+        case .down:
+            offset.y = min(tableView.contentSize.height - tableView.frame.height, offset.y + scrollSpeed)
+        }
+
+        tableView.setContentOffset(offset, animated: false)
+    }
+
+    func stopAutoScroll() {
+        displayLink?.invalidate()
+        displayLink = nil
+    }
+
+    enum ScrollDirection {
+        case up, down
     }
     
     func snapshotOfCell(inputView: UIView) -> UIView {
@@ -1761,7 +1818,8 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                     }
                     
                     //                if let strQuantity = viewModel.arrayOfFilteredData[indexPath.row].quantity {
-                    if let strQuantity = Constants.getPrice(itemCode: viewModel.arrayOfFilteredData[indexPath.row].quantity) {
+//                    if let strQuantity = Constants.getPrice(itemCode: viewModel.arrayOfFilteredData[indexPath.row].quantity) {
+                    if let strQuantity = Constants.getPrice(itemCode: viewModel.arrayOfFilteredData[indexPath.row].item_code) {
                         if (strQuantity == "0.00" || strQuantity == "0") {
                             if (viewModel.arrayOfFilteredData[indexPath.row].special_title == 1)
                             {
@@ -2006,9 +2064,9 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
                     }
                      
                     if let strQuantity = Constants.getPrice(itemCode: viewModel.arrayOfListItems[indexPath.row].item_code) {
-                        // if (strQuantity == "0.00" || strQuantity == "0") {
-                        let Intprice = Int(strQuantity)
-                        if (Intprice == 0) {
+                         if (strQuantity == "0.00" || strQuantity == "0") {
+//                        let Intprice = Int(strQuantity)
+//                        if (Intprice == 0) {
                             if (viewModel.arrayOfListItems[indexPath.row].special_item_id == 1) {
                                 cell.quantityTextField.text = ""
                             }
@@ -2187,30 +2245,30 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    //    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-    //        return true
-    //    }
-    //
-    //    func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
-    //        let dragItem = UIDragItem(itemProvider: NSItemProvider())
-    //        if searching {
-    //            dragItem.localObject =  self.viewModel.arrayOfFilteredData[indexPath.row]
-    //        } else {
-    //            dragItem.localObject =  self.viewModel.arrayOfListItems[indexPath.row]
-    //        }
-    //        return [ dragItem ]
-    //    }
-    //
-    //    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-    //        // Update the model
-    //        if searching {
-    //            let mover = self.viewModel.arrayOfFilteredData.remove(at: sourceIndexPath.row)
-    //            self.viewModel.arrayOfFilteredData.insert(mover, at: destinationIndexPath.row)
-    //        } else {
-    //            let mover = self.viewModel.arrayOfListItems.remove(at: sourceIndexPath.row)
-    //            self.viewModel.arrayOfListItems.insert(mover, at: destinationIndexPath.row)
-    //        }
-    //    }
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        let dragItem = UIDragItem(itemProvider: NSItemProvider())
+        if searching {
+            dragItem.localObject =  self.viewModel.arrayOfFilteredData[indexPath.row]
+        } else {
+            dragItem.localObject =  self.viewModel.arrayOfListItems[indexPath.row]
+        }
+        return [ dragItem ]
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        // Update the model
+        if searching {
+            let mover = self.viewModel.arrayOfFilteredData.remove(at: sourceIndexPath.row)
+            self.viewModel.arrayOfFilteredData.insert(mover, at: destinationIndexPath.row)
+        } else {
+            let mover = self.viewModel.arrayOfListItems.remove(at: sourceIndexPath.row)
+            self.viewModel.arrayOfListItems.insert(mover, at: destinationIndexPath.row)
+        }
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == self.tableView {

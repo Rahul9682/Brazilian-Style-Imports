@@ -1857,6 +1857,13 @@ extension ConfirmPaymentViewController:UITableViewDelegate,UITableViewDataSource
                                 }
                             }
                         }
+                        
+                        self.sortedItem.removeAll { item in
+                            if let originQty = item.originQty {
+                                return originQty == "0.00" || originQty == "0" || originQty.isEmpty
+                            }
+                            return false
+                        }
 
                         LocalStorage.saveMultiData(data: myArray1)
                         self.updateTotaPrice()
@@ -2279,7 +2286,7 @@ extension ConfirmPaymentViewController: DelegeteGetStringText {
 //            print("hii")
 //        }
         
-        
+        self.view.endEditing(true)
         if sortedItem[ind].priority == 0 {
             var i = 0
             for i in 0..<arrMultiListItems.count {

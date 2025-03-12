@@ -49,6 +49,7 @@ class BannerTableViewCell: UITableViewCell {
     }
     
     func registerCell() {
+        collectionView.isPrefetchingEnabled = false
         collectionView.register(UINib(nibName: "BannerImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BannerImageCollectionViewCell")
     }
     

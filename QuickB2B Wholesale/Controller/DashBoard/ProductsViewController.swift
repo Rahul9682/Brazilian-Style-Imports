@@ -1166,7 +1166,7 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource{
                     }
                 }
             } else {
-                if viewModel.arrayOfListItems.count > 0 {
+                if viewModel.arrayOfListItems.count > 0 && indexPath.row < viewModel.arrayOfListItems.count {
                     if let strUOM = viewModel.arrayOfListItems[indexPath.row].uom {
                         cell.quantityTextField.attributedPlaceholder = NSAttributedString(string: strUOM,
                                                                                           attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
@@ -1513,12 +1513,12 @@ extension ProductsViewController: UICollectionViewDelegate, UICollectionViewData
 //                cellB.measureTextFieldWidth.constant = 48
 //            }
             if searching {
-                if viewModel.arrayOfFilteredData.count > 0 {
+                if viewModel.arrayOfFilteredData.count > 0 && indexPath.row < viewModel.arrayOfFilteredData.count {
                     cellB.configureProductListData(data:viewModel.arrayOfFilteredData[indexPath.row], showPrice: self.viewModel.showPrice, showImage: self.viewModel.showImage, showAllItem: self.showAllItem)
                     multiItemCount = Constants.getCount(itemCode: self.viewModel.arrayOfFilteredData[indexPath.row].item_code)
                 }
             } else {
-                if viewModel.arrayOfListItems.count > 0 {
+                if viewModel.arrayOfListItems.count > 0 && indexPath.row < viewModel.arrayOfListItems.count {
                     cellB.configureProductListData(data:viewModel.arrayOfListItems[indexPath.row],showPrice: self.viewModel.showPrice, showImage: self.viewModel.showImage,  showAllItem: self.showAllItem)
                     multiItemCount = Constants.getCount(itemCode: self.viewModel.arrayOfListItems[indexPath.row].item_code)
                 }
