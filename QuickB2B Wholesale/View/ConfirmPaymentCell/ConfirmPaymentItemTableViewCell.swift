@@ -187,6 +187,12 @@ extension ConfirmPaymentItemTableViewCell: UITextFieldDelegate {
 //        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
 //        return updatedText.count <= 4
 //    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        DispatchQueue.main.async {
+            textField.selectAll(nil)
+        }
+    }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }

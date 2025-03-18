@@ -1859,8 +1859,8 @@ extension ConfirmPaymentViewController:UITableViewDelegate,UITableViewDataSource
                         }
                         
                         self.sortedItem.removeAll { item in
-                            if let originQty = item.originQty {
-                                return originQty == "0.00" || originQty == "0" || originQty.isEmpty
+                            if let originQty = item.originQty, let measureQty = item.measureQty {
+                                return (originQty == "0.00" || originQty == "0" || originQty.isEmpty) || (measureQty == "0.00" || measureQty == "0" || measureQty.isEmpty)
                             }
                             return false
                         }
