@@ -2275,7 +2275,7 @@ extension MyListViewController: UITableViewDelegate, UITableViewDataSource {
             if self.showImage == "1" {
                 return 130
             } else {
-                return 74
+                return 96
             }
         } else if tableView == outletsTableView {
             return 38
