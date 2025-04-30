@@ -112,7 +112,7 @@ class ConfirmPaymentViewController: UIViewController,PopUpDelegate,ConfirmPaymen
     //MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.arrayOfBanner = LocalStorage.getBannerData()
         configureTabBar()
         if #available(iOS 15.0, *) {
             bannerTableView.sectionHeaderTopPadding = 0
@@ -2061,7 +2061,8 @@ extension ConfirmPaymentViewController {
                             self.minimumOrderQty = minimumOrderQty
                         }
                         
-                        if let bannerLists = getUserItemsData.bannerLists {
+//                        if let bannerLists = getUserItemsData.bannerLists {
+                        let bannerLists = LocalStorage.getBannerData()
                             self.arrayOfBanner = bannerLists
                             let showBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int
                             if showBanner == 1 &&  self.arrayOfBanner.count > 0 {
@@ -2069,9 +2070,9 @@ extension ConfirmPaymentViewController {
                             } else {
                                 self.bannerContainerViewHeightConst.constant =  0
                             }
-                        } else {
-                            self.bannerContainerViewHeightConst.constant =  0
-                        }
+//                        } else {
+//                            self.bannerContainerViewHeightConst.constant =  0
+//                        }
                         
                         if let customerType = getUserItemsData.customer_type {
                             UserDefaults.standard.set(customerType, forKey:UserDefaultsKeys.CustomerType)
@@ -2927,7 +2928,8 @@ extension ConfirmPaymentViewController {
                             self.show_image = showImage
                         }
                         
-                        if let bannerLists = getUserItemsData.bannerLists {
+//                        if let bannerLists = getUserItemsData.bannerLists {
+                        let bannerLists = LocalStorage.getBannerData()
                             self.arrayOfBanner = bannerLists
                             let showBanner = UserDefaults.standard.value(forKey:UserDefaultsKeys.showAppBanner) as? Int
                             if showBanner == 1 &&  self.arrayOfBanner.count > 0 {
@@ -2935,9 +2937,9 @@ extension ConfirmPaymentViewController {
                             } else {
                                 self.bannerContainerViewHeightConst.constant =  0
                             }
-                        } else {
-                            self.bannerContainerViewHeightConst.constant =  0
-                        }
+//                        } else {
+//                            self.bannerContainerViewHeightConst.constant =  0
+//                        }
                         
                         if let customerType = getUserItemsData.customer_type {
                             UserDefaults.standard.set(customerType, forKey:UserDefaultsKeys.CustomerType)
@@ -3140,6 +3142,11 @@ extension ConfirmPaymentViewController {
                         LocalStorage.clearItemsData()
                         LocalStorage.clearMultiItemsData()
                         if let cartData =  cartData.data {
+                            if let bannerLists = cartData.bannerLists {
+                                if bannerLists.count > 0 {
+                                    LocalStorage.saveBannerData(data: bannerLists)
+                                }
+                            }
                             if let allInventories = cartData.allInventories {
                                 if allInventories.count > 0 {
                                     LocalStorage.saveItemsData(data: allInventories)

@@ -58,7 +58,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
         addIconImageView.tintColor = UIColor.lightGray
         quantityTextField.delegate = self
         measureTextField.delegate = self
-        inactiveLabel.textColor = AppColors.redTextColor
+        inactiveLabel.textColor = AppColors.blackTextColor
         containerVIew.dropShadow()
         measureTextField.isHidden = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapProductLabel))
@@ -100,7 +100,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
         inactiveLabel.text = ""
         //quantityTextField.font = UIFont.OpenSans(.semibold, size: 13)
         // addButtonContainerVIew.isHidden = true
-        inactiveLabel.textColor = AppColors.redTextColor
+        inactiveLabel.textColor = AppColors.blackTextColor
         quantityTextField.isEnabled  = true
         //cell.quantityTextField.tag = indexPath.row
         
@@ -322,7 +322,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
         addButtonContainerVIew.isHidden = false
         addIconImageView.image = Icons.remove
         //quantityTextField.font = UIFont.OpenSans(.semibold, size: 13)
-        inactiveLabel.textColor = AppColors.redTextColor
+        inactiveLabel.textColor = AppColors.blackTextColor
         quantityTextField.isEnabled  = true
         //cell.quantityTextField.tag = indexPath.row
         
@@ -550,11 +550,11 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
     //MARK: -> configure-Products-Data
     func configureProductListData(data: GetItemsData?, showPrice: String, showImage: String, showAllItem: Bool) {
         configureShowImage(isShow: showImage)
-        inactiveLabel.textColor = AppColors.redTextColor
+        inactiveLabel.textColor = AppColors.blackTextColor
         quantityTextField.isHidden = false
         inactiveLabel.isHidden = true
         inactiveLabel.text = ""
-        inactiveLabel.textColor = AppColors.redTextColor
+        inactiveLabel.textColor = AppColors.blackTextColor
         quantityTextField.isEnabled  = true
         if showAllItem {
             addButtonContainerVIew.isHidden = true
@@ -809,7 +809,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
            inactiveLabel.text = ""
            quantityTextField.isEnabled  = true
            priceLabel.textColor = UIColor.black
-           inactiveLabel.textColor = AppColors.redTextColor
+           inactiveLabel.textColor = AppColors.blackTextColor
            if let strUOM = data.uom {
                quantityTextField.attributedPlaceholder = NSAttributedString(string: strUOM, attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
                
@@ -1056,7 +1056,7 @@ class SpecialProductsCollectionViewCell: UICollectionViewCell {
         inactiveLabel.isHidden = true
         inactiveLabel.text = ""
         //quantityTextField.font = UIFont.OpenSans(.semibold, size: 13)
-        inactiveLabel.textColor = UIColor.red
+        inactiveLabel.textColor = AppColors.blackTextColor
         //        cell.didChangeQuantity = { value in
         //            let itemCode = self.viewModel.arrItemsData[indexPath.row].item_code ?? ""
         //            if(value == "") {

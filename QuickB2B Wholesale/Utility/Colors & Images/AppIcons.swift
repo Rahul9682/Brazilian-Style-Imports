@@ -44,6 +44,7 @@ struct Icons {
 //MARK: -> AppColors
 struct AppColors {
     static let  redTextColor: UIColor = UIColor.init(red: 197.0/255, green: 29.0/255, blue: 34.0/255, alpha: 1.0)
+    static let  blackTextColor: UIColor = UIColor.black
     static let  popUpCrossBorderColor: UIColor = UIColor.white
     static let  tealColor = UIColor.init(red: 0.0/255, green: 128.0/255, blue: 128.0/255, alpha: 1.0)
     static let  lightTealColor = UIColor.init(red: 0.0/255, green: 128.0/255, blue: 128.0/255, alpha:0.5)

@@ -7,6 +7,18 @@ import Foundation
 class LocalStorage {
     //*****************========********************//
     //MARK: -> save-Get-Items-Data
+    static func saveBannerData(data: [BannerList]) {
+        do {
+            let encodedData = try JSONEncoder().encode(data)
+            let userDefaults = UserDefaults.standard
+            userDefaults.setValue(encodedData, forKey: UserDefaultsKeys.getBannerData)
+            print("Successfully Saved")
+        } catch {
+            // Failed to encode Contact to Data
+            print("Failed to encode [BannerList] to Data")
+        }
+    }
+
     static func saveItemsData(data: [GetItemsData]) {
       //  if data.count > 0 {
             do {
@@ -51,6 +63,23 @@ class LocalStorage {
     }
     
     //MARK: -> get-GetItemsData
+    static func getBannerData() -> [BannerList] {
+        let userDefaults = UserDefaults.standard
+        var getBannerData = [BannerList]()
+        if let savedData = userDefaults.value(forKey: UserDefaultsKeys.getBannerData) as? Data {
+            do {
+                let savedgetItemsData = try JSONDecoder().decode([BannerList].self, from: savedData)
+                getBannerData = savedgetItemsData
+                print("Successfully Retrievd")
+            } catch {
+                print("Failed to Convert to Data")
+            }
+            return getBannerData
+        } else {
+            return []
+        }
+    }
+    
 //    static func getItemsData() -> [GetItemsData] {
 //        let userDefaults = UserDefaults.standard
 //        var getItemsData: [GetItemsData]?

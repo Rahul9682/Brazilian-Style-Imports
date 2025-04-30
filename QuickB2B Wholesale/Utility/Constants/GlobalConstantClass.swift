@@ -53,7 +53,8 @@ class GlobalConstantClass: NSObject {
         static let searchItemByCategoryV3 = "search_product_bycategory_v3_4.json"
         static let cartItemsV3 = "cart_list_v6"
         static let reOrder = "reorder_v6"
-        static let productDetailV3 = "product_detail_v3"
+        static let productDetailV3 = "product_detail_v6"
+        // static let productDetailV3 = "product_detail_v3"
         static let getCategoriesV3 = "GetCategories_v3_4.json"
         static let fetchUserOrderV3 = "get_user_order_v3.json"
         static let updateUserProductList = "update_user_inventory_v6.json"
@@ -92,6 +93,7 @@ struct KeyConstants {
 
 struct UserDefaultsKeys {
     //static let homeData = "homeData"
+    static let getBannerData = "getBannerData"
     static let getItemsData = "getItemsData"
     static let showRegion = "showRegion"
     static let showList = "ShowList"
@@ -525,6 +527,11 @@ extension Constants {
                     if (status == 1) {
                         LocalStorage.clearItemsData()
                         if let cartData =  cartData.data {
+                            if let bannerLists = cartData.bannerLists {
+                                if bannerLists.count > 0 {
+                                    LocalStorage.saveBannerData(data: bannerLists)
+                                }
+                            }
                             if let allInventories = cartData.allInventories {
                                 if allInventories.count > 0 {
                                     LocalStorage.saveItemsData(data: allInventories)

@@ -235,6 +235,11 @@ extension OutletsListController {
                         LocalStorage.clearItemsData()
                         LocalStorage.clearMultiItemsData()
                         if let cartData = cartData.data {
+                            if let bannerLists = cartData.bannerLists {
+                                if bannerLists.count > 0 {
+                                    LocalStorage.saveBannerData(data: bannerLists)
+                                }
+                            }
                             if let allInventories = cartData.allInventories {
                                 if allInventories.count > 0 {
                                     LocalStorage.saveItemsData(data: allInventories)

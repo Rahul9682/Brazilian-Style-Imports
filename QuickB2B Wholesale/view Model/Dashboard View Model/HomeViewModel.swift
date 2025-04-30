@@ -230,6 +230,11 @@ extension HomeViewModel {
                     if (status == 1) {
                         LocalStorage.clearItemsData()
                         if let cartData = cartData.data {
+                            if let bannerLists = cartData.bannerLists {
+                                if bannerLists.count > 0 {
+                                    LocalStorage.saveBannerData(data: bannerLists)
+                                }
+                            }
                             if let allInventories = cartData.allInventories {
                                 LocalStorage.saveItemsData(data: allInventories)
                                 let notificationCenter = NotificationCenter.default
