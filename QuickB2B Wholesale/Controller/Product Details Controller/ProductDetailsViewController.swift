@@ -270,11 +270,11 @@ class ProductDetailsViewController: UIViewController{
                     quantityTextField.text = "NA"
                     quantityTextField.isUserInteractionEnabled = false
                     quantityTextField.borderStyle = .none
-                    quantityTextField.textColor = UIColor.red
+                    quantityTextField.textColor = AppColors.blackTextColor
                     measureTextfield.text = "NA"
                     measureTextfield.isUserInteractionEnabled = false
                     measureTextfield.borderStyle = .none
-                    measureTextfield.textColor = UIColor.red
+                    measureTextfield.textColor = AppColors.blackTextColor
                     
                 } else {
                     measureTextfield.layer.borderWidth = 0.5
@@ -302,7 +302,7 @@ class ProductDetailsViewController: UIViewController{
                 quantityTextField.text = "NA"
                 quantityTextField.isUserInteractionEnabled = false
                 quantityTextField.borderStyle = .none
-                quantityTextField.textColor = UIColor.red
+                quantityTextField.textColor = AppColors.blackTextColor
             }
             
             if let inMyList = productDetails.inMyList {
